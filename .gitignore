@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+apps/*/node_modules/
+venv/
+apps/engine-python/venv/
+__pycache__/
+*.pyc
+
+# Build output
+.next/
+apps/web/.next/
+dist/
+build/
+
+# Env files
+.env
+.env.local
+.env.*.local
+apps/*/.env
+apps/*/.env.local
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# Prisma
+apps/api-node/prisma/dev.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Docker volumes
+pgdata/
+redisdata/
