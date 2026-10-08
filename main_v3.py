@@ -266,8 +266,12 @@ def main():
                                 "open": latest["open"], "high": latest["high"],
                                 "low": latest["low"], "close": latest["close"],
                             }
+                            print("candle", candle)
                             tracked = state.classify()
+                            print("tracked", tracked)
                             side, fvg = check_entry(candle, tracked, require_full_body=True)
+                            print("side", side)
+                            print("fvg", fvg)
                             if side is not None:
                                 fvg["traded"] = True
                                 spot_entry_price = candle["close"]

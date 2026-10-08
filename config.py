@@ -32,8 +32,8 @@ STRIKE_STEP = 50                   # 50 for NIFTY, 100 for BANKNIFTY
 
 LOT_SIZE = 65          # NIFTY lot size (check current exchange lot size)
 MAX_LOTS = 1            # position size in lots (if > 1: sells 1 lot on target, remaining trail with no target)
-otm = 100                 # Strike offset from ATM: 0 for ATM, +50 for 1-strike OTM CE, etc.
-papertrading = 1        # 0 = paper trading (simulated), 1 = real live trades sent to broker
+otm = 0                 # Strike offset from ATM: 0 for ATM, +50 for 1-strike OTM CE, etc.
+papertrading = 0        # 0 = paper trading (simulated), 1 = real live trades sent to broker
 producttype = "intraday_fno"  # "intraday_eq", "positional_eq", "intraday_fno", "positional_fno"
 
 # ---- Telegram Alerts ----
@@ -47,7 +47,7 @@ SHORT_WINDOW = 9         # short SMA period (in candles)
 LONG_WINDOW = 21         # long SMA period (in candles)
 CANDLE_INTERVAL = "minute"   # kite historical data interval
 POLL_SECONDS = 60        # how often the main loop checks for a new candle
-EXIT_CHECK_SECONDS = 10  # how often open positions are checked against SL/target using live price
+EXIT_CHECK_SECONDS = 60  # how often open positions are checked against SL/target using live price
 
 # ---- Strategy v2 parameters: EMA/ADX/RSI scalping system ----
 EMA_SHORT = 10
@@ -64,9 +64,9 @@ TRAILING_STOP_ENABLED = True
 
 # ---- Strategy v3 parameters: FVG rejection system ----
 FVG_INTERVAL = "minute"     # 1-minute candles for signal detection on spot
-FVG_SL_BUFFER_POINTS = 2    # SL buffer in option points beyond FVG risk
-FVG_TARGET_POINTS = 20      # target in option points (premium)
-FVG_MAX_SL_POINTS = 8      # hard cap: option SL distance from entry never exceeds this
+FVG_SL_BUFFER_POINTS = 1    # SL buffer in option points beyond FVG risk
+FVG_TARGET_POINTS = 10      # target in option points (premium)
+FVG_MAX_SL_POINTS = 10      # hard cap: option SL distance from entry never exceeds this
 FVG_TRAILING_STOP_ENABLED = True   # ratchet the option SL as option premium moves favorably
 
 # ---- Risk management ----
@@ -82,5 +82,5 @@ KILL_SWITCH_FILE = "KILL_SWITCH"
 
 # ---- Logging ----
 LOG_FILE = "trading_agent.log"
-DRY_RUN = False  # <-- IMPORTANT: keep True until you've tested thoroughly.
+DRY_RUN = True  # <-- IMPORTANT: keep True until you've tested thoroughly.
                  # When True, orders are logged but NOT sent to Kite.
