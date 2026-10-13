@@ -31,7 +31,7 @@ import config
 import risk
 import executor
 from auth import get_kite_client
-from strategy_v3 import DayFVGState, check_entry, compute_exit_levels, update_trailing_stop
+from strategy_v3 import DayFVGState, check_entry, compute_exit_levels, update_trailing_stop, compute_adx
 
 logging.basicConfig(
     level=logging.INFO,
@@ -266,63 +266,76 @@ def main():
                                 "open": latest["open"], "high": latest["high"],
                                 "low": latest["low"], "close": latest["close"],
                             }
-                            print("candle", candle)
                             tracked = state.classify()
-                            print("tracked", tracked)
                             side, fvg = check_entry(candle, tracked, require_full_body=True)
-                            print("side", side)
-                            print("fvg", fvg)
                             if side is not None:
-                                fvg["traded"] = True
-                                spot_entry_price = candle["close"]
-                                open_txn = "BUY" if side == "CALL" else "SELL"
-                                result = executor.place_order(
-                                    kite, open_txn, qty, is_option=True,
-                                    position=None, spot_price=spot_entry_price, fvg=fvg
-                                )
-                                if result["status"] in ("placed", "dry_run"):
-                                    opt_symbol = result["tradingsymbol"]
-                                    opt_exchange = result.get("exchange", "NFO")
-                                    opt_entry = float(result.get("entry_price", 0.0))
-                                    if opt_entry <= 0:
-                                        opt_entry = executor.get_option_ltp(kite, opt_exchange, opt_symbol)
+                                adx_enabled = getattr(config, "FVG_ADX_ENABLED", True)
+                                adx_period = getattr(config, "FVG_ADX_PERIOD", getattr(config, "ADX_PERIOD", 14))
+                                adx_threshold = getattr(config, "FVG_ADX_THRESHOLD", getattr(config, "ADX_THRESHOLD", 20.0))
 
-                                    sl = result.get("sl")
-                                    tgt = result.get("target")
-                                    if sl is None or tgt is None:
-                                        sl, tgt = compute_exit_levels(
-                                            side, opt_entry, fvg=fvg, is_option=True
-                                        )
-
-                                    risk_dist = abs(opt_entry - sl)
-                                    total_lots = config.MAX_LOTS
-                                    total_qty = config.LOT_SIZE * total_lots
-
-                                    position = {
-                                        "side": side,
-                                        "ce_pe": result.get("ce_pe", "CE" if side == "CALL" else "PE"),
-                                        "tradingsymbol": opt_symbol,
-                                        "exchange": opt_exchange,
-                                        "entry_price": opt_entry,
-                                        "stop_loss": sl,
-                                        "target": tgt,
-                                        "target_hit": False,
-                                        "total_lots": total_lots,
-                                        "remaining_lots": total_lots,
-                                        "lot_size": config.LOT_SIZE,
-                                        "quantity": total_qty,
-                                        "fvg": fvg,
-                                        "extreme_price": opt_entry,
-                                        "risk_distance": risk_dist,
-                                        "is_option": True,
-                                        "spot_entry_price": spot_entry_price,
-                                    }
-                                    trades_today += 1
+                                adx_series = compute_adx(candles, period=adx_period)
+                                current_adx = float(adx_series.iloc[-1]) if (not adx_series.empty and not pd.isna(adx_series.iloc[-1])) else 0.0
+                                print("current_adx", current_adx)
+                                print("tracked", tracked)
+                                print("side", side)
+                                print("fvg", fvg)
+                                if adx_enabled and adx_series.iloc[-1]>adx_threshold:
                                     logger.info(
-                                        f"Entered {opt_symbol} ({side}) {total_lots} lot(s) ({total_qty} qty) @ ₹{opt_entry:.2f} | "
-                                        f"SL=₹{sl:.2f} Target=₹{tgt:.2f} | Spot: {spot_entry_price:.2f} "
-                                        f"(FVG {fvg['direction']} {fvg['bottom']:.2f}-{fvg['top']:.2f})"
+                                        f"FVG {side} rejection signal detected, but ADX is {current_adx:.2f} (< {adx_threshold}). "
+                                        f"Skipping entry (trend filter not met)."
                                     )
+                                else:
+                                    fvg["traded"] = True
+                                    spot_entry_price = candle["close"]
+                                    open_txn = "BUY" if side == "CALL" else "SELL"
+                                    result = executor.place_order(
+                                        kite, open_txn, qty, is_option=True,
+                                        position=None, spot_price=spot_entry_price, fvg=fvg
+                                    )
+                                    if result["status"] in ("placed", "dry_run"):
+                                        opt_symbol = result["tradingsymbol"]
+                                        opt_exchange = result.get("exchange", "NFO")
+                                        opt_entry = float(result.get("entry_price", 0.0))
+                                        if opt_entry <= 0:
+                                            opt_entry = executor.get_option_ltp(kite, opt_exchange, opt_symbol)
+
+                                        sl = result.get("sl")
+                                        tgt = result.get("target")
+                                        if sl is None or tgt is None:
+                                            sl, tgt = compute_exit_levels(
+                                                side, opt_entry, fvg=fvg, is_option=True
+                                            )
+
+                                        risk_dist = abs(opt_entry - sl)
+                                        total_lots = config.MAX_LOTS
+                                        total_qty = config.LOT_SIZE * total_lots
+
+                                        position = {
+                                            "side": side,
+                                            "ce_pe": result.get("ce_pe", "CE" if side == "CALL" else "PE"),
+                                            "tradingsymbol": opt_symbol,
+                                            "exchange": opt_exchange,
+                                            "entry_price": opt_entry,
+                                            "stop_loss": sl,
+                                            "target": tgt,
+                                            "target_hit": False,
+                                            "total_lots": total_lots,
+                                            "remaining_lots": total_lots,
+                                            "lot_size": config.LOT_SIZE,
+                                            "quantity": total_qty,
+                                            "fvg": fvg,
+                                            "extreme_price": opt_entry,
+                                            "risk_distance": risk_dist,
+                                            "is_option": True,
+                                            "spot_entry_price": spot_entry_price,
+                                            "adx": current_adx,
+                                        }
+                                        trades_today += 1
+                                        logger.info(
+                                            f"Entered {opt_symbol} ({side}) {total_lots} lot(s) ({total_qty} qty) @ ₹{opt_entry:.2f} | "
+                                            f"SL=₹{sl:.2f} Target=₹{tgt:.2f} | Spot: {spot_entry_price:.2f} | ADX: {current_adx:.2f} "
+                                            f"(FVG {fvg['direction']} {fvg['bottom']:.2f}-{fvg['top']:.2f})"
+                                        )
 
         except Exception as e:
             logger.error(f"Error in main loop: {e}", exc_info=True)

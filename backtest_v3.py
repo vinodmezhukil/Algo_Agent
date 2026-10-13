@@ -1,51 +1,136 @@
 import json
 import sys
-import os
 import pandas as pd
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, '/home/claude/nifty_agent')
 import config
-from strategy_v3 import DayFVGState, check_entry, compute_exit_levels
-
-# ---- Load the same 1-minute candle data used for strategy_v2 ----
-#with open('/mnt/user-data/tool_results/kite_get_historical_data_toolu_01U6pfog53FHjJAHuydnhZWP.json') as f:
-#    wrapper = json.load(f)
-#raw = json.loads(wrapper[0]['text'])
+from strategy_v3 import DayFVGState, check_entry, compute_exit_levels, compute_adx
 from kiteconnect import KiteConnect
+from datetime import datetime, timedelta
 import json
 import time
-from datetime import datetime, timedelta
 
-def get_kite_client():
-    """Load a saved access token and return a ready-to-use KiteConnect client."""
-    kite = KiteConnect(api_key=config.API_KEY)
-    with open(config.ACCESS_TOKEN_FILE) as f:
-        access_token = f.read().strip()
-    kite.set_access_token(access_token)
-    return kite
-
-kite = get_kite_client()
-
+# Example: NIFTY 50 index
+# Replace with the correct instrument token for your instrument.
 INSTRUMENT_TOKEN = 256265
+
+kite = KiteConnect(api_key='svijmckulq7rxc90')
+kite.set_access_token('nttHJ0lSVJ64trpsyeoOwzLjZQiVJATr')
 
 
 def get_3_month_minute_data(instrument_token):
 
     end_date = datetime.now()
-    start_date = end_date - timedelta(days=60)
-    raw = kite.historical_data(
-        instrument_token=INSTRUMENT_TOKEN,
-        from_date=start_date,
-        to_date=end_date,
-        interval="minute"
-    )
-    return raw
+    start_date = end_date - timedelta(days=90)
 
-raw = get_3_month_minute_data(INSTRUMENT_TOKEN)
+    all_candles = []
+
+    # 30-day chunks
+    chunk_days = 30
+
+    current_start = start_date
+
+    while current_start < end_date:
+
+        current_end = min(
+            current_start + timedelta(days=chunk_days),
+            end_date
+        )
+
+        print(
+            f"Fetching: "
+            f"{current_start.strftime('%Y-%m-%d')} -> "
+            f"{current_end.strftime('%Y-%m-%d')}"
+        )
+
+        try:
+
+            candles = kite.historical_data(
+                instrument_token=instrument_token,
+                from_date=current_start,
+                to_date=current_end,
+                interval="minute",
+                continuous=False,
+                oi=False
+            )
+
+            for candle in candles:
+
+                all_candles.append({
+                    "date": str(candle[0]),
+                    "open": float(candle[1]),
+                    "high": float(candle[2]),
+                    "low": float(candle[3]),
+                    "close": float(candle[4]),
+                    "volume": int(candle[5])
+                })
+
+            print(f"Received: {len(candles)} candles")
+
+        except Exception as e:
+            print("Error:", e)
+
+        current_start = current_end + timedelta(seconds=1)
+
+        time.sleep(0.5)
+
+    # --------------------------------------------------
+    # Remove duplicate candles
+    # --------------------------------------------------
+
+    unique_candles = {}
+
+    for candle in all_candles:
+        unique_candles[candle["date"]] = candle
+
+    # --------------------------------------------------
+    # Sort candles
+    # --------------------------------------------------
+
+    result = sorted(
+        unique_candles.values(),
+        key=lambda x: x["date"]
+    )
+
+    return result
+
+
+# ------------------------------------------------------
+# Get data
+# ------------------------------------------------------
+
+#raw = get_3_month_minute_data(INSTRUMENT_TOKEN)
+
+
+# ------------------------------------------------------
+# Save JSON
+# ------------------------------------------------------
+
+#with open("nifty_3months_1minute.json", "w") as f:
+    #json.dump(raw, f, indent=2)
+
+
+# ---- Load the same 1-minute candle data used for strategy_v2 ----
+#with open("nifty_3months_1minute.json") as f:
+    #raw = json.load(f)
+end_date = datetime.now()
+start_date = end_date - timedelta(days=60)
+
+raw = kite.historical_data(
+    instrument_token=INSTRUMENT_TOKEN,
+    from_date=start_date,
+    to_date=end_date,
+    interval="minute"
+)
 
 df = pd.DataFrame(raw)
+
+print("DF COLUMNS:", df.columns.tolist())
+print(df.head())
+
 df['date'] = pd.to_datetime(df['date'])
 df = df.sort_values('date').reset_index(drop=True)
+print(df.columns.tolist())
 df['day'] = df['date'].dt.date
 
 print(f"Loaded {len(df)} 1-minute candles across {df['day'].nunique()} trading days")
@@ -56,10 +141,6 @@ print(f"Entry mode: {'FULL CANDLE-BODY rejection' if REQUIRE_FULL_BODY else 'wic
 LOT_SIZE = config.LOT_SIZE
 MAX_LOTS = config.MAX_LOTS
 qty = LOT_SIZE * MAX_LOTS
-MAX_DAILY_LOSS_RS = config.MAX_DAILY_LOSS_RS
-MAX_TRADES_PER_DAY = config.MAX_TRADES_PER_DAY
-
-print(f"Risk Limits: Max Daily Loss = Rs.{MAX_DAILY_LOSS_RS:,.0f} | Max Trades/Day = {MAX_TRADES_PER_DAY}")
 
 trades = []
 
@@ -68,8 +149,6 @@ for day, day_df in df.groupby('day'):
     state = DayFVGState()
 
     position = None  # dict: side, entry_price, entry_time, stop_loss, target, fvg
-    day_realized_pnl = 0.0
-    day_trades_count = 0
 
     for i in range(len(day_df)):
         row = day_df.iloc[i]
@@ -97,37 +176,31 @@ for day, day_df in df.groupby('day'):
             if exit_price is not None:
                 pnl_pts = (exit_price - position['entry_price']) if side == "CALL" \
                     else (position['entry_price'] - exit_price)
-                pnl_rs = pnl_pts * qty
-                day_realized_pnl += pnl_rs
                 trades.append({
                     'day': day, 'side': side,
                     'entry_time': position['entry_time'], 'entry_price': position['entry_price'],
                     'exit_time': row['date'], 'exit_price': exit_price, 'exit_reason': reason,
                     'fvg_direction': position['fvg']['direction'],
-                    'pnl_points': pnl_pts, 'pnl_rs': pnl_rs,
+                    'pnl_points': pnl_pts, 'pnl_rs': pnl_pts * qty,
                 })
                 position = None
 
         if position is None:
-            # Check risk limits before entering a new trade
-            can_trade = True
-            if MAX_TRADES_PER_DAY is not None and day_trades_count >= MAX_TRADES_PER_DAY:
-                can_trade = False
-            if MAX_DAILY_LOSS_RS is not None and day_realized_pnl <= -abs(MAX_DAILY_LOSS_RS):
-                can_trade = False
+            tracked = state.classify()
+            side, fvg = check_entry(candle, tracked, require_full_body=REQUIRE_FULL_BODY)
+            if side is not None:
+                adx_series = compute_adx(day_df.iloc[: i + 1], period=getattr(config, "FVG_ADX_PERIOD", 14))
+                current_adx = float(adx_series.iloc[-1]) if not adx_series.empty else 0.0
+                adx_threshold = getattr(config, "FVG_ADX_THRESHOLD", 20.0)
 
-            if can_trade:
-                tracked = state.classify()
-                side, fvg = check_entry(candle, tracked, require_full_body=REQUIRE_FULL_BODY)
-                if side is not None:
+                if not getattr(config, "FVG_ADX_ENABLED", True) or current_adx >= adx_threshold:
                     fvg['traded'] = True
                     entry_price = row['close']
                     sl, tgt = compute_exit_levels(side, entry_price, fvg, is_option=False)
                     position = {
                         'side': side, 'entry_price': entry_price, 'entry_time': row['date'],
-                        'stop_loss': sl, 'target': tgt, 'fvg': fvg,
+                        'stop_loss': sl, 'target': tgt, 'fvg': fvg, 'adx': current_adx,
                     }
-                    day_trades_count += 1
 
     if position is not None:
         last = day_df.iloc[-1]
@@ -135,14 +208,12 @@ for day, day_df in df.groupby('day'):
         exit_price = last['close']
         pnl_pts = (exit_price - position['entry_price']) if side == "CALL" \
             else (position['entry_price'] - exit_price)
-        pnl_rs = pnl_pts * qty
-        day_realized_pnl += pnl_rs
         trades.append({
             'day': day, 'side': side,
             'entry_time': position['entry_time'], 'entry_price': position['entry_price'],
             'exit_time': last['date'], 'exit_price': exit_price, 'exit_reason': "END_OF_DAY",
             'fvg_direction': position['fvg']['direction'],
-            'pnl_points': pnl_pts, 'pnl_rs': pnl_rs,
+            'pnl_points': pnl_pts, 'pnl_rs': pnl_pts * qty,
         })
 
 trades_df = pd.DataFrame(trades)
@@ -169,7 +240,6 @@ else:
     puts = (trades_df['side'] == 'PUT').sum()
 
     print(f"\n===== BACKTEST: FVG Rejection Strategy (day high/low/middle), 1-min, SL=2pt buffer/Target=15 =====")
-    print(f"Risk limits: Max Daily Loss = Rs.{MAX_DAILY_LOSS_RS:,.0f} | Max Trades/Day = {MAX_TRADES_PER_DAY}")
     print(f"Total trades: {n}  (CALL: {calls}, PUT: {puts})")
     print(f"Trading days covered: {trades_df['day'].nunique()} / {df['day'].nunique()}")
     print(f"Win rate: {win_rate:.1f}%  ({len(wins)} wins / {len(losses)} losses)")

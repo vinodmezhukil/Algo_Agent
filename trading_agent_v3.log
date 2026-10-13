@@ -1023,249 +1023,754 @@
 2026-10-01 15:05:09,288 [INFO] Not trading right now: Outside configured trading hours
 2026-10-01 15:06:09,423 [INFO] Not trading right now: Outside configured trading hours
 2026-10-01 15:07:09,554 [INFO] Not trading right now: Outside configured trading hours
-2026-10-05 09:20:05,652 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-05 09:20:05,653 [INFO] DRY_RUN = False
-2026-10-05 09:20:05,653 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-05 09:34:54,469 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-05 09:34:54,469 [INFO] DRY_RUN = False
-2026-10-05 09:34:54,469 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-05 09:35:02,013 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-05 09:35:02,013 [INFO] DRY_RUN = False
-2026-10-05 09:35:02,013 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-05 09:45:59,965 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-05 09:45:59,965 [INFO] DRY_RUN = False
-2026-10-05 09:45:59,965 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-05 09:50:05,081 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-05 09:50:05,081 [INFO] DRY_RUN = False
-2026-10-05 09:50:05,081 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-05 09:55:06,082 [ERROR] Option order placement FAILED for NIFTY26O0622500PE: NFO is disabled for your account. You can activate the segment on [Console.](https://console.zerodha.com/account/segment-activation)
-2026-10-05 09:56:09,096 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-05 09:56:09,096 [INFO] DRY_RUN = False
-2026-10-05 09:56:09,096 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-05 09:57:00,069 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-05 09:57:00,069 [INFO] DRY_RUN = False
-2026-10-05 09:57:00,069 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-05 10:10:01,749 [INFO] Option order placed: ID=2106967624054661121 (NIFTY26O0622650CE BUY 130 @ 61.4)
-2026-10-05 10:10:02,791 [INFO] Entered NIFTY26O0622650CE (CALL) 2 lot(s) (130 qty) @ ₹61.40 | SL=₹53.65 Target=₹66.40 | Spot: 22562.60 (FVG bearish 22552.10-22557.85)
-2026-10-05 10:10:12,870 [INFO] [10s check] Trailing stop moved to ₹54.60 for open NIFTY26O0622650CE (LTP: ₹62.35)
-2026-10-05 10:15:55,394 [INFO] [10s check] Exiting ALL 130 qty of NIFTY26O0622650CE (CALL) @ ₹54.40 (STOP_LOSS) | Entry: ₹61.40 | SL: ₹54.60
-2026-10-05 10:15:55,620 [INFO] Option order placed: ID=2106969108255268864 (NIFTY26O0622650CE SELL 130 @ 54.4)
-2026-10-05 10:15:56,914 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-910.00 (-7.00 pts on 130 qty)
-2026-10-05 10:25:08,072 [INFO] Option order placed: ID=2106971425415290880 (NIFTY26O0622400PE BUY 130 @ 54.25)
-2026-10-05 10:25:15,273 [INFO] Entered NIFTY26O0622400PE (PUT) 2 lot(s) (130 qty) @ ₹54.25 | SL=₹46.25 Target=₹59.25 | Spot: 22502.35 (FVG bearish 22506.10-22518.40)
-2026-10-05 10:25:25,325 [INFO] [10s check] Trailing stop moved to ₹48.75 for open NIFTY26O0622400PE (LTP: ₹56.75)
-2026-10-05 10:25:35,383 [INFO] [10s check] Trailing stop moved to ₹50.95 for open NIFTY26O0622400PE (LTP: ₹58.95)
-2026-10-05 10:26:05,575 [INFO] [10s check] TARGET achieved @ ₹61.10 (Target: ₹59.25)! Partial exit: Sold 1 lot (65 qty). Remaining: 1 lot(s) (65 qty) with trailing SL=₹50.95 and NO further target.
-2026-10-05 10:26:05,756 [INFO] Option order placed: ID=2106971667422437376 (NIFTY26O0622400PE SELL 65 @ 61.1)
-2026-10-05 10:26:06,706 [INFO] Partial Target P&L: ₹445.25 (+6.85 pts on 65 qty)
-2026-10-05 10:26:06,706 [INFO] [10s check] Trailing stop moved to ₹53.10 for remaining NIFTY26O0622400PE (LTP: ₹61.10)
-2026-10-05 10:26:47,047 [INFO] [10s check] Trailing stop moved to ₹54.00 for open NIFTY26O0622400PE (LTP: ₹62.00)
-2026-10-05 10:27:07,175 [INFO] [10s check] Trailing stop moved to ₹54.90 for open NIFTY26O0622400PE (LTP: ₹62.90)
-2026-10-05 10:27:17,365 [INFO] [10s check] Trailing stop moved to ₹56.45 for open NIFTY26O0622400PE (LTP: ₹64.45)
-2026-10-05 10:27:37,581 [INFO] [10s check] Trailing stop moved to ₹56.75 for open NIFTY26O0622400PE (LTP: ₹64.75)
-2026-10-05 10:28:07,771 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O0622400PE (PUT) @ ₹53.10 (TRAILING_STOP) | Entry: ₹54.25 | SL: ₹56.75
-2026-10-05 10:28:07,957 [INFO] Option order placed: ID=2106972179911860224 (NIFTY26O0622400PE SELL 65 @ 53.1)
-2026-10-05 10:28:09,214 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹-74.75 (-1.15 pts on 65 qty)
-2026-10-05 11:52:00,913 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-05 11:52:00,913 [INFO] DRY_RUN = False
-2026-10-05 11:52:00,913 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-05 11:59:02,106 [INFO] Option order placed: ID=2106995056014974976 (NIFTY26O0622400PE BUY 65 @ 68.35)
-2026-10-05 11:59:03,231 [INFO] Entered NIFTY26O0622400PE (PUT) 1 lot(s) (65 qty) @ ₹68.35 | SL=₹60.35 Target=₹78.35 | Spot: 22446.55 (FVG bearish 22446.80-22457.65)
-2026-10-05 11:59:13,292 [INFO] [10s check] Trailing stop moved to ₹61.80 for open NIFTY26O0622400PE (LTP: ₹69.80)
-2026-10-05 11:59:23,348 [INFO] [10s check] Trailing stop moved to ₹62.60 for open NIFTY26O0622400PE (LTP: ₹70.60)
-2026-10-05 11:59:33,403 [INFO] [10s check] Trailing stop moved to ₹63.60 for open NIFTY26O0622400PE (LTP: ₹71.60)
-2026-10-05 11:59:43,454 [INFO] [10s check] Trailing stop moved to ₹67.05 for open NIFTY26O0622400PE (LTP: ₹75.05)
-2026-10-05 14:28:06,521 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-05 14:28:06,521 [INFO] DRY_RUN = False
-2026-10-05 14:28:06,521 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-05 14:47:01,835 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-05 14:47:01,835 [INFO] DRY_RUN = False
-2026-10-05 14:47:01,835 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-06 09:18:02,935 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-06 09:18:02,935 [INFO] DRY_RUN = False
-2026-10-06 09:18:02,936 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-06 09:18:09,478 [INFO] Not trading right now: Outside configured trading hours
-2026-10-06 09:19:09,582 [INFO] Not trading right now: Outside configured trading hours
-2026-10-06 09:34:11,163 [INFO] Option order placed: ID=2107320991436169216 (NIFTY26O0622650CE BUY 130 @ 43.9)
-2026-10-06 09:34:16,201 [INFO] Entered NIFTY26O0622650CE (CALL) 2 lot(s) (130 qty) @ ₹43.90 | SL=₹40.95 Target=₹49.90 | Spot: 22610.55 (FVG bullish 22605.55-22607.50)
-2026-10-06 09:34:26,262 [INFO] [10s check] Trailing stop moved to ₹41.15 for open NIFTY26O0622650CE (LTP: ₹44.10)
-2026-10-06 09:35:06,511 [INFO] [10s check] Trailing stop moved to ₹41.80 for open NIFTY26O0622650CE (LTP: ₹44.75)
-2026-10-06 09:35:46,832 [INFO] [10s check] Exiting ALL 130 qty of NIFTY26O0622650CE (CALL) @ ₹40.60 (STOP_LOSS) | Entry: ₹43.90 | SL: ₹41.80
-2026-10-06 09:35:47,038 [INFO] Option order placed: ID=2107321393565065216 (NIFTY26O0622650CE SELL 130 @ 40.6)
-2026-10-06 09:35:47,962 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-429.00 (-3.30 pts on 130 qty)
-2026-10-06 09:52:00,709 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-06 09:52:00,710 [INFO] DRY_RUN = False
-2026-10-06 09:52:00,710 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-06 09:54:04,498 [ERROR] Option order placement FAILED for NIFTY26O1322650CE: Insufficient funds. Margin required: 12398.75. Margin available: 9215.80. Add 3182.95 to place this order.
-2026-10-06 10:06:01,445 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-06 10:06:01,445 [INFO] DRY_RUN = False
-2026-10-06 10:06:01,445 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-06 10:11:02,430 [INFO] Option order placed: ID=2107330266241884160 (NIFTY26O0622650CE BUY 65 @ 49.1)
-2026-10-06 10:11:06,759 [INFO] Entered NIFTY26O0622650CE (CALL) 1 lot(s) (65 qty) @ ₹49.10 | SL=₹41.10 Target=₹64.10 | Spot: 22636.35 (FVG bearish 22627.55-22634.85)
-2026-10-06 10:12:27,313 [INFO] [10s check] Trailing stop moved to ₹41.70 for open NIFTY26O0622650CE (LTP: ₹49.70)
-2026-10-06 10:12:47,417 [INFO] [10s check] Trailing stop moved to ₹41.90 for open NIFTY26O0622650CE (LTP: ₹49.90)
-2026-10-06 10:12:57,473 [INFO] [10s check] Trailing stop moved to ₹42.45 for open NIFTY26O0622650CE (LTP: ₹50.45)
-2026-10-06 10:26:00,540 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-06 10:26:00,540 [INFO] DRY_RUN = False
-2026-10-06 10:26:00,540 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-06 10:28:04,055 [INFO] Option order placed: ID=2107334551314817024 (NIFTY26O0622650PE BUY 65 @ 61.5)
-2026-10-06 10:28:05,039 [INFO] Entered NIFTY26O0622650PE (PUT) 1 lot(s) (65 qty) @ ₹61.50 | SL=₹53.50 Target=₹76.50 | Spot: 22643.25 (FVG bearish 22648.85-22656.85)
-2026-10-06 10:33:00,301 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-06 10:33:00,301 [INFO] DRY_RUN = False
-2026-10-06 10:33:00,301 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
-2026-10-06 10:33:00,660 [INFO] Option order placed: ID=2107335795357966336 (NIFTY26O1322500PE BUY 65 @ 108.45)
-2026-10-06 10:33:01,626 [INFO] Entered NIFTY26O1322500PE (PUT) 1 lot(s) (65 qty) @ ₹108.45 | SL=₹100.45 Target=₹123.45 | Spot: 22644.50 (FVG bearish 22648.85-22656.85)
-2026-10-07 09:27:59,502 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-07 09:27:59,505 [INFO] DRY_RUN = True
-2026-10-07 09:27:59,505 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 5s
-2026-10-07 09:31:00,573 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-07 09:31:00,573 [INFO] DRY_RUN = True
-2026-10-07 09:31:00,573 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 5s
-2026-10-07 09:36:01,358 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 650 x NIFTY26O1922600PE on NFO @ ~201.35 (Spot: 22612.25, SL: 199.2, Target: 206.35)
-2026-10-07 09:36:02,430 [INFO] Entered NIFTY26O1922600PE (PUT) 10 lot(s) (650 qty) @ ₹201.35 | SL=₹199.20 Target=₹206.35 | Spot: 22612.25 (FVG bearish 22612.50-22613.65)
-2026-10-07 09:36:07,489 [INFO] [10s check] Trailing stop moved to ₹199.35 for open NIFTY26O1922600PE (LTP: ₹201.50)
-2026-10-07 09:36:12,556 [INFO] [10s check] Trailing stop moved to ₹200.30 for open NIFTY26O1922600PE (LTP: ₹202.45)
-2026-10-07 09:37:23,422 [INFO] [10s check] Trailing stop moved to ₹200.55 for open NIFTY26O1922600PE (LTP: ₹202.70)
-2026-10-07 09:37:33,537 [INFO] [10s check] Trailing stop moved to ₹201.75 for open NIFTY26O1922600PE (LTP: ₹203.90)
-2026-10-07 09:38:03,961 [INFO] [10s check] Trailing stop moved to ₹202.05 for open NIFTY26O1922600PE (LTP: ₹204.20)
-2026-10-07 09:38:09,078 [INFO] [10s check] Trailing stop moved to ₹202.40 for open NIFTY26O1922600PE (LTP: ₹204.55)
-2026-10-07 09:38:14,133 [INFO] [10s check] Trailing stop moved to ₹203.80 for open NIFTY26O1922600PE (LTP: ₹205.95)
-2026-10-07 09:38:34,354 [INFO] [10s check] TARGET achieved @ ₹206.60 (Target: ₹206.35)! Partial exit: Sold 1 lot (65 qty). Remaining: 9 lot(s) (585 qty) with trailing SL=₹203.80 and NO further target.
-2026-10-07 09:38:34,461 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1922600PE on NFO @ ~206.60 (Exit LTP: 206.60)
-2026-10-07 09:38:35,508 [INFO] Partial Target P&L: ₹341.25 (+5.25 pts on 65 qty)
-2026-10-07 09:38:35,508 [INFO] [10s check] Trailing stop moved to ₹204.45 for remaining NIFTY26O1922600PE (LTP: ₹206.60)
-2026-10-07 09:39:00,807 [INFO] [10s check] Trailing stop moved to ₹204.75 for open NIFTY26O1922600PE (LTP: ₹206.90)
-2026-10-07 09:39:10,998 [INFO] [10s check] Trailing stop moved to ₹208.00 for open NIFTY26O1922600PE (LTP: ₹210.15)
-2026-10-07 09:39:16,058 [INFO] [10s check] Trailing stop moved to ₹209.30 for open NIFTY26O1922600PE (LTP: ₹211.45)
-2026-10-07 09:39:21,124 [INFO] [10s check] Trailing stop moved to ₹209.80 for open NIFTY26O1922600PE (LTP: ₹211.95)
-2026-10-07 09:39:26,185 [INFO] [10s check] Trailing stop moved to ₹209.85 for open NIFTY26O1922600PE (LTP: ₹212.00)
-2026-10-07 09:39:31,246 [INFO] [10s check] Trailing stop moved to ₹210.25 for open NIFTY26O1922600PE (LTP: ₹212.40)
-2026-10-07 09:39:36,305 [INFO] [10s check] Trailing stop moved to ₹211.95 for open NIFTY26O1922600PE (LTP: ₹214.10)
-2026-10-07 09:40:01,595 [INFO] [10s check] Trailing stop moved to ₹214.65 for open NIFTY26O1922600PE (LTP: ₹216.80)
-2026-10-07 09:40:06,651 [INFO] [10s check] Exiting ALL 585 qty of NIFTY26O1922600PE (PUT) @ ₹213.50 (TRAILING_STOP) | Entry: ₹201.35 | SL: ₹214.65
-2026-10-07 09:40:06,755 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 585 x NIFTY26O1922600PE on NFO @ ~213.50 (Exit LTP: 213.50)
-2026-10-07 09:40:08,346 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹7107.75 (+12.15 pts on 585 qty)
-2026-10-07 09:40:08,487 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 650 x NIFTY26O1922600PE on NFO @ ~213.90 (Spot: 22587.50, SL: 203.9, Target: 218.9)
-2026-10-07 09:40:09,916 [INFO] Entered NIFTY26O1922600PE (PUT) 10 lot(s) (650 qty) @ ₹213.90 | SL=₹203.90 Target=₹218.90 | Spot: 22587.50 (FVG bearish 22589.40-22601.35)
-2026-10-07 09:40:14,972 [INFO] [10s check] Trailing stop moved to ₹204.90 for open NIFTY26O1922600PE (LTP: ₹214.90)
-2026-10-07 09:40:45,335 [INFO] [10s check] Trailing stop moved to ₹206.80 for open NIFTY26O1922600PE (LTP: ₹216.80)
-2026-10-07 09:40:50,401 [INFO] [10s check] Trailing stop moved to ₹207.85 for open NIFTY26O1922600PE (LTP: ₹217.85)
-2026-10-07 09:41:51,203 [INFO] [10s check] Exiting ALL 650 qty of NIFTY26O1922600PE (PUT) @ ₹207.80 (STOP_LOSS) | Entry: ₹213.90 | SL: ₹207.85
-2026-10-07 09:41:51,316 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 650 x NIFTY26O1922600PE on NFO @ ~207.80 (Exit LTP: 207.80)
-2026-10-07 09:41:52,859 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-3965.00 (-6.10 pts on 650 qty)
-2026-10-07 09:46:13,514 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 650 x NIFTY26O1922600PE on NFO @ ~196.60 (Spot: 22621.00, SL: 190.85, Target: 201.6)
-2026-10-07 09:46:15,071 [INFO] Entered NIFTY26O1922600PE (PUT) 10 lot(s) (650 qty) @ ₹196.60 | SL=₹190.85 Target=₹201.60 | Spot: 22621.00 (FVG bearish 22621.30-22626.05)
-2026-10-07 09:46:20,132 [INFO] [10s check] Trailing stop moved to ₹193.55 for open NIFTY26O1922600PE (LTP: ₹199.30)
-2026-10-07 09:46:25,189 [INFO] [10s check] Trailing stop moved to ₹194.85 for open NIFTY26O1922600PE (LTP: ₹200.60)
-2026-10-07 09:46:35,312 [INFO] [10s check] Trailing stop moved to ₹195.40 for open NIFTY26O1922600PE (LTP: ₹201.15)
-2026-10-07 09:46:40,371 [INFO] [10s check] Trailing stop moved to ₹195.50 for open NIFTY26O1922600PE (LTP: ₹201.25)
-2026-10-07 09:46:50,489 [INFO] [10s check] TARGET achieved @ ₹202.15 (Target: ₹201.60)! Partial exit: Sold 1 lot (65 qty). Remaining: 9 lot(s) (585 qty) with trailing SL=₹195.50 and NO further target.
-2026-10-07 09:46:50,595 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1922600PE on NFO @ ~202.15 (Exit LTP: 202.15)
-2026-10-07 09:46:51,760 [INFO] Partial Target P&L: ₹360.75 (+5.55 pts on 65 qty)
-2026-10-07 09:46:51,761 [INFO] [10s check] Trailing stop moved to ₹196.40 for remaining NIFTY26O1922600PE (LTP: ₹202.15)
-2026-10-07 09:47:17,072 [INFO] [10s check] Trailing stop moved to ₹197.25 for open NIFTY26O1922600PE (LTP: ₹203.00)
-2026-10-07 09:47:42,552 [INFO] [10s check] Trailing stop moved to ₹198.25 for open NIFTY26O1922600PE (LTP: ₹204.00)
-2026-10-07 09:47:47,627 [INFO] [10s check] Trailing stop moved to ₹199.25 for open NIFTY26O1922600PE (LTP: ₹205.00)
-2026-10-07 09:47:52,683 [INFO] [10s check] Trailing stop moved to ₹199.55 for open NIFTY26O1922600PE (LTP: ₹205.30)
-2026-10-07 09:50:19,667 [INFO] [10s check] Exiting ALL 585 qty of NIFTY26O1922600PE (PUT) @ ₹198.50 (TRAILING_STOP) | Entry: ₹196.60 | SL: ₹199.55
-2026-10-07 09:50:19,779 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 585 x NIFTY26O1922600PE on NFO @ ~198.50 (Exit LTP: 198.50)
-2026-10-07 09:50:21,282 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹1111.50 (+1.90 pts on 585 qty)
-2026-10-07 09:55:22,089 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 650 x NIFTY26O1922600PE on NFO @ ~202.00 (Spot: 22611.50, SL: 195.5, Target: 207.0)
-2026-10-07 09:55:23,334 [INFO] Entered NIFTY26O1922600PE (PUT) 10 lot(s) (650 qty) @ ₹202.00 | SL=₹195.50 Target=₹207.00 | Spot: 22611.50 (FVG bearish 22615.55-22621.05)
-2026-10-07 09:55:28,401 [INFO] [10s check] Trailing stop moved to ₹195.70 for open NIFTY26O1922600PE (LTP: ₹202.20)
-2026-10-07 09:55:33,465 [INFO] [10s check] Trailing stop moved to ₹197.00 for open NIFTY26O1922600PE (LTP: ₹203.50)
-2026-10-07 09:55:43,585 [INFO] [10s check] Trailing stop moved to ₹197.10 for open NIFTY26O1922600PE (LTP: ₹203.60)
-2026-10-07 09:55:48,653 [INFO] [10s check] Trailing stop moved to ₹198.15 for open NIFTY26O1922600PE (LTP: ₹204.65)
-2026-10-07 09:55:53,711 [INFO] [10s check] Trailing stop moved to ₹198.45 for open NIFTY26O1922600PE (LTP: ₹204.95)
-2026-10-07 09:56:24,050 [INFO] [10s check] Trailing stop moved to ₹198.50 for open NIFTY26O1922600PE (LTP: ₹205.00)
-2026-10-07 09:56:34,244 [INFO] [10s check] Trailing stop moved to ₹199.00 for open NIFTY26O1922600PE (LTP: ₹205.50)
-2026-10-07 09:58:15,533 [INFO] [10s check] Trailing stop moved to ₹200.40 for open NIFTY26O1922600PE (LTP: ₹206.90)
-2026-10-07 09:58:30,779 [INFO] [10s check] TARGET achieved @ ₹207.20 (Target: ₹207.00)! Partial exit: Sold 1 lot (65 qty). Remaining: 9 lot(s) (585 qty) with trailing SL=₹200.40 and NO further target.
-2026-10-07 09:58:30,888 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1922600PE on NFO @ ~207.20 (Exit LTP: 207.20)
-2026-10-07 09:58:32,296 [INFO] Partial Target P&L: ₹338.00 (+5.20 pts on 65 qty)
-2026-10-07 09:58:32,297 [INFO] [10s check] Trailing stop moved to ₹200.70 for remaining NIFTY26O1922600PE (LTP: ₹207.20)
-2026-10-07 10:00:18,589 [INFO] [10s check] Exiting ALL 585 qty of NIFTY26O1922600PE (PUT) @ ₹200.40 (TRAILING_STOP) | Entry: ₹202.00 | SL: ₹200.70
-2026-10-07 10:00:18,708 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 585 x NIFTY26O1922600PE on NFO @ ~200.40 (Exit LTP: 200.40)
-2026-10-07 10:00:19,618 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹-936.00 (-1.60 pts on 585 qty)
-2026-10-07 10:00:29,746 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 650 x NIFTY26O1922600CE on NFO @ ~237.75 (Spot: 22616.30, SL: 227.75, Target: 242.75)
-2026-10-07 10:00:30,642 [INFO] Entered NIFTY26O1922600CE (CALL) 10 lot(s) (650 qty) @ ₹237.75 | SL=₹227.75 Target=₹242.75 | Spot: 22616.30 (FVG bullish 22602.25-22612.45)
-2026-10-07 10:00:55,931 [INFO] [10s check] Trailing stop moved to ₹229.10 for open NIFTY26O1922600CE (LTP: ₹239.10)
-2026-10-07 10:02:47,368 [INFO] [10s check] Exiting ALL 650 qty of NIFTY26O1922600CE (CALL) @ ₹229.00 (STOP_LOSS) | Entry: ₹237.75 | SL: ₹229.10
-2026-10-07 10:02:47,488 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 650 x NIFTY26O1922600CE on NFO @ ~229.00 (Exit LTP: 229.00)
-2026-10-07 10:02:48,508 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-5687.50 (-8.75 pts on 650 qty)
-2026-10-07 10:03:33,633 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
-2026-10-07 10:04:33,769 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
-2026-10-07 10:05:33,920 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
-2026-10-07 10:06:34,029 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
-2026-10-07 10:07:03,354 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-07 10:07:03,355 [INFO] DRY_RUN = True
-2026-10-07 10:07:03,355 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 60s
-2026-10-07 10:07:03,823 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1922600PE on NFO @ ~202.00 (Spot: 22619.45, SL: 196.25, Target: 207.0)
-2026-10-07 10:07:04,970 [INFO] Entered NIFTY26O1922600PE (PUT) 1 lot(s) (65 qty) @ ₹202.00 | SL=₹196.25 Target=₹207.00 | Spot: 22619.45 (FVG bearish 22621.30-22626.05)
-2026-10-07 10:08:05,029 [INFO] [10s check] Trailing stop moved to ₹199.05 for open NIFTY26O1922600PE (LTP: ₹204.80)
-2026-10-07 10:09:05,163 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1922600PE (PUT) @ ₹197.50 (STOP_LOSS) | Entry: ₹202.00 | SL: ₹199.05
-2026-10-07 10:09:05,266 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1922600PE on NFO @ ~197.50 (Exit LTP: 197.50)
-2026-10-07 10:09:09,596 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-292.50 (-4.50 pts on 65 qty)
-2026-10-07 10:34:11,881 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1922650PE on NFO @ ~186.40 (Spot: 22672.35, SL: 179.15, Target: 191.4)
-2026-10-07 10:34:12,924 [INFO] Entered NIFTY26O1922650PE (PUT) 1 lot(s) (65 qty) @ ₹186.40 | SL=₹179.15 Target=₹191.40 | Spot: 22672.35 (FVG bearish 22678.20-22684.45)
-2026-10-07 10:35:13,001 [INFO] [10s check] TARGET achieved @ ₹193.45 (Target: ₹191.40)! Full exit: Sold 65 qty of NIFTY26O1922650PE (PUT) | Entry: ₹186.40
-2026-10-07 10:35:13,128 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1922650PE on NFO @ ~193.45 (Exit LTP: 193.45)
-2026-10-07 10:35:14,071 [INFO] Trade closed (TARGET). Realized P&L: ₹458.25 (+7.05 pts on 65 qty)
-2026-10-07 10:37:14,372 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1922650PE on NFO @ ~209.80 (Spot: 22626.50, SL: 199.8, Target: 214.8)
-2026-10-07 10:37:15,438 [INFO] Entered NIFTY26O1922650PE (PUT) 1 lot(s) (65 qty) @ ₹209.80 | SL=₹199.80 Target=₹214.80 | Spot: 22626.50 (FVG bearish 22631.50-22650.25)
-2026-10-07 10:39:15,666 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1922650PE (PUT) @ ₹196.90 (STOP_LOSS) | Entry: ₹209.80 | SL: ₹199.80
-2026-10-07 10:39:15,777 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1922650PE on NFO @ ~196.90 (Exit LTP: 196.90)
-2026-10-07 10:39:16,778 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-838.50 (-12.90 pts on 65 qty)
-2026-10-07 12:30:28,301 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1922650PE on NFO @ ~197.45 (Spot: 22648.85, SL: 195.75, Target: 202.45)
-2026-10-07 12:30:35,810 [INFO] Entered NIFTY26O1922650PE (PUT) 1 lot(s) (65 qty) @ ₹197.45 | SL=₹195.75 Target=₹202.45 | Spot: 22648.85 (FVG bearish 22649.75-22650.45)
-2026-10-07 12:31:35,896 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1922650PE (PUT) @ ₹194.70 (STOP_LOSS) | Entry: ₹197.45 | SL: ₹195.75
-2026-10-07 12:31:36,019 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1922650PE on NFO @ ~194.70 (Exit LTP: 194.70)
-2026-10-07 12:31:37,053 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-178.75 (-2.75 pts on 65 qty)
-2026-10-07 12:57:40,091 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1922650PE on NFO @ ~200.35 (Spot: 22641.35, SL: 197.15, Target: 205.35)
-2026-10-07 12:57:41,076 [INFO] Entered NIFTY26O1922650PE (PUT) 1 lot(s) (65 qty) @ ₹200.35 | SL=₹197.15 Target=₹205.35 | Spot: 22641.35 (FVG bearish 22647.55-22649.75)
-2026-10-07 12:58:41,134 [INFO] [10s check] TARGET achieved @ ₹205.95 (Target: ₹205.35)! Full exit: Sold 65 qty of NIFTY26O1922650PE (PUT) | Entry: ₹200.35
-2026-10-07 12:58:41,251 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1922650PE on NFO @ ~205.95 (Exit LTP: 205.95)
-2026-10-07 12:58:43,224 [INFO] Trade closed (TARGET). Realized P&L: ₹364.00 (+5.60 pts on 65 qty)
-2026-10-07 13:04:01,053 [INFO] Starting NIFTY FVG rejection strategy (v3)
-2026-10-07 13:04:01,053 [INFO] DRY_RUN = True
-2026-10-07 13:04:01,053 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 60s
-2026-10-07 13:07:01,747 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322600PE on NFO @ ~150.95 (Spot: 22592.75, SL: 143.45, Target: 160.95)
-2026-10-07 13:07:02,718 [INFO] Entered NIFTY26O1322600PE (PUT) 1 lot(s) (65 qty) @ ₹150.95 | SL=₹143.45 Target=₹160.95 | Spot: 22592.75 (FVG bearish 22605.35-22611.85)
-2026-10-07 13:08:02,789 [INFO] [10s check] Trailing stop moved to ₹143.70 for open NIFTY26O1322600PE (LTP: ₹151.20)
-2026-10-07 13:09:02,960 [INFO] [10s check] TARGET achieved @ ₹161.15 (Target: ₹160.95)! Full exit: Sold 65 qty of NIFTY26O1322600PE (PUT) | Entry: ₹150.95
-2026-10-07 13:09:03,083 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322600PE on NFO @ ~161.15 (Exit LTP: 161.15)
-2026-10-07 13:09:04,113 [INFO] Trade closed (TARGET). Realized P&L: ₹663.00 (+10.20 pts on 65 qty)
-2026-10-07 13:11:04,505 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322550PE on NFO @ ~146.10 (Spot: 22554.15, SL: 136.1, Target: 156.1)
-2026-10-07 13:11:05,582 [INFO] Entered NIFTY26O1322550PE (PUT) 1 lot(s) (65 qty) @ ₹146.10 | SL=₹136.10 Target=₹156.10 | Spot: 22554.15 (FVG bearish 22566.15-22578.90)
-2026-10-07 13:12:05,654 [INFO] [10s check] Trailing stop moved to ₹137.25 for open NIFTY26O1322550PE (LTP: ₹147.25)
-2026-10-07 13:14:06,005 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322550PE (PUT) @ ₹136.55 (STOP_LOSS) | Entry: ₹146.10 | SL: ₹137.25
-2026-10-07 13:14:06,125 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322550PE on NFO @ ~136.55 (Exit LTP: 136.55)
-2026-10-07 13:14:07,109 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-620.75 (-9.55 pts on 65 qty)
-2026-10-07 14:11:14,948 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322550PE on NFO @ ~138.25 (Spot: 22562.30, SL: 135.9, Target: 148.25)
-2026-10-07 14:11:15,988 [INFO] Entered NIFTY26O1322550PE (PUT) 1 lot(s) (65 qty) @ ₹138.25 | SL=₹135.90 Target=₹148.25 | Spot: 22562.30 (FVG bearish 22564.35-22565.70)
-2026-10-07 14:14:16,394 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322550PE (PUT) @ ₹135.65 (STOP_LOSS) | Entry: ₹138.25 | SL: ₹135.90
-2026-10-07 14:14:16,515 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322550PE on NFO @ ~135.65 (Exit LTP: 135.65)
-2026-10-07 14:14:17,884 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-169.00 (-2.60 pts on 65 qty)
-2026-10-07 14:32:20,064 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322650PE on NFO @ ~141.45 (Spot: 22630.60, SL: 131.45, Target: 151.45)
-2026-10-07 14:32:21,235 [INFO] Entered NIFTY26O1322650PE (PUT) 1 lot(s) (65 qty) @ ₹141.45 | SL=₹131.45 Target=₹151.45 | Spot: 22630.60 (FVG bearish 22633.65-22643.35)
-2026-10-07 14:35:21,654 [INFO] [10s check] Trailing stop moved to ₹134.10 for open NIFTY26O1322650PE (LTP: ₹144.10)
-2026-10-07 14:36:21,812 [INFO] [10s check] Trailing stop moved to ₹136.85 for open NIFTY26O1322650PE (LTP: ₹146.85)
-2026-10-07 14:37:21,984 [INFO] [10s check] Trailing stop moved to ₹136.95 for open NIFTY26O1322650PE (LTP: ₹146.95)
-2026-10-07 14:48:23,934 [INFO] [10s check] TARGET achieved @ ₹153.70 (Target: ₹151.45)! Full exit: Sold 65 qty of NIFTY26O1322650PE (PUT) | Entry: ₹141.45
-2026-10-07 14:48:24,063 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322650PE on NFO @ ~153.35 (Exit LTP: 153.35)
-2026-10-07 14:48:25,026 [INFO] Trade closed (TARGET). Realized P&L: ₹796.25 (+12.25 pts on 65 qty)
-2026-10-07 15:00:26,538 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:01:26,647 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:02:26,765 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:03:26,891 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:04:26,998 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:05:27,106 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:06:27,196 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:07:27,295 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:08:27,391 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:09:27,500 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:10:27,597 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:11:27,693 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:12:27,787 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:13:27,884 [INFO] Not trading right now: Outside configured trading hours
-2026-10-07 15:14:27,965 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 10:04:00,530 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-08 10:04:00,531 [INFO] DRY_RUN = True
+2026-10-08 10:04:00,531 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-08 10:16:04,756 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-08 10:16:04,757 [INFO] DRY_RUN = True
+2026-10-08 10:16:04,757 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-08 10:16:04,981 [INFO] FVG PUT rejection signal detected, but ADX is 12.87 (< 20). Skipping entry (trend filter not met).
+2026-10-08 10:17:05,097 [INFO] FVG PUT rejection signal detected, but ADX is 13.04 (< 20). Skipping entry (trend filter not met).
+2026-10-08 10:31:06,679 [INFO] FVG PUT rejection signal detected, but ADX is 19.58 (< 20). Skipping entry (trend filter not met).
+2026-10-08 10:32:06,858 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322450PE on NFO @ ~133.95 (Spot: 22452.25, SL: 124.5, Target: 148.95)
+2026-10-08 10:32:07,939 [INFO] Entered NIFTY26O1322450PE (PUT) 1 lot(s) (65 qty) @ ₹133.95 | SL=₹124.50 Target=₹148.95 | Spot: 22452.25 | ADX: 20.51 (FVG bearish 22455.40-22462.85)
+2026-10-08 10:32:18,005 [INFO] [10s check] Trailing stop moved to ₹124.60 for open NIFTY26O1322450PE (LTP: ₹134.05)
+2026-10-08 10:32:28,069 [INFO] [10s check] Trailing stop moved to ₹124.85 for open NIFTY26O1322450PE (LTP: ₹134.30)
+2026-10-08 10:32:38,154 [INFO] [10s check] Trailing stop moved to ₹125.30 for open NIFTY26O1322450PE (LTP: ₹134.75)
+2026-10-08 10:32:48,226 [INFO] [10s check] Trailing stop moved to ₹128.95 for open NIFTY26O1322450PE (LTP: ₹138.40)
+2026-10-08 10:33:08,381 [INFO] [10s check] Trailing stop moved to ₹130.50 for open NIFTY26O1322450PE (LTP: ₹139.95)
+2026-10-08 10:33:18,526 [INFO] [10s check] Trailing stop moved to ₹132.00 for open NIFTY26O1322450PE (LTP: ₹141.45)
+2026-10-08 10:33:28,590 [INFO] [10s check] Trailing stop moved to ₹132.95 for open NIFTY26O1322450PE (LTP: ₹142.40)
+2026-10-08 10:34:49,172 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322450PE (PUT) @ ₹131.05 (STOP_LOSS) | Entry: ₹133.95 | SL: ₹132.95
+2026-10-08 10:34:49,290 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322450PE on NFO @ ~131.05 (Exit LTP: 131.05)
+2026-10-08 10:34:50,226 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-188.50 (-2.90 pts on 65 qty)
+2026-10-08 10:38:10,699 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322450PE on NFO @ ~138.15 (Spot: 22440.55, SL: 128.75, Target: 153.15)
+2026-10-08 10:38:11,783 [INFO] Entered NIFTY26O1322450PE (PUT) 1 lot(s) (65 qty) @ ₹138.15 | SL=₹128.75 Target=₹153.15 | Spot: 22440.55 | ADX: 25.10 (FVG bearish 22441.65-22449.05)
+2026-10-08 10:38:31,912 [INFO] [10s check] Trailing stop moved to ₹130.60 for open NIFTY26O1322450PE (LTP: ₹140.00)
+2026-10-08 10:38:52,044 [INFO] [10s check] Trailing stop moved to ₹130.85 for open NIFTY26O1322450PE (LTP: ₹140.25)
+2026-10-08 10:39:12,169 [INFO] [10s check] Trailing stop moved to ₹130.95 for open NIFTY26O1322450PE (LTP: ₹140.35)
+2026-10-08 10:39:22,301 [INFO] [10s check] Trailing stop moved to ₹132.40 for open NIFTY26O1322450PE (LTP: ₹141.80)
+2026-10-08 10:39:52,503 [INFO] [10s check] Trailing stop moved to ₹132.70 for open NIFTY26O1322450PE (LTP: ₹142.10)
+2026-10-08 10:40:02,568 [INFO] [10s check] Trailing stop moved to ₹135.45 for open NIFTY26O1322450PE (LTP: ₹144.85)
+2026-10-08 10:40:42,890 [INFO] [10s check] Trailing stop moved to ₹138.10 for open NIFTY26O1322450PE (LTP: ₹147.50)
+2026-10-08 10:40:52,952 [INFO] [10s check] Trailing stop moved to ₹139.75 for open NIFTY26O1322450PE (LTP: ₹149.15)
+2026-10-08 10:41:43,360 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322450PE (PUT) @ ₹137.30 (STOP_LOSS) | Entry: ₹138.15 | SL: ₹139.75
+2026-10-08 10:41:43,554 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322450PE on NFO @ ~137.30 (Exit LTP: 137.30)
+2026-10-08 10:41:44,469 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-55.25 (-0.85 pts on 65 qty)
+2026-10-08 10:48:59,916 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-08 10:48:59,916 [INFO] DRY_RUN = True
+2026-10-08 10:48:59,916 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-08 10:49:04,748 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-08 10:49:04,748 [INFO] DRY_RUN = True
+2026-10-08 10:49:04,748 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-08 11:01:06,787 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322400PE on NFO @ ~122.70 (Spot: 22423.80, SL: 116.7, Target: 132.7)
+2026-10-08 11:01:07,824 [INFO] Entered NIFTY26O1322400PE (PUT) 1 lot(s) (65 qty) @ ₹122.70 | SL=₹116.70 Target=₹132.70 | Spot: 22423.80 | ADX: 22.88 (FVG bearish 22424.70-22434.90)
+2026-10-08 11:01:17,892 [INFO] [10s check] Trailing stop moved to ₹117.55 for open NIFTY26O1322400PE (LTP: ₹123.55)
+2026-10-08 11:02:28,436 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322400PE (PUT) @ ₹115.05 (STOP_LOSS) | Entry: ₹122.70 | SL: ₹117.55
+2026-10-08 11:02:28,547 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322400PE on NFO @ ~115.05 (Exit LTP: 115.05)
+2026-10-08 11:02:29,576 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-497.25 (-7.65 pts on 65 qty)
+2026-10-08 11:21:11,829 [INFO] FVG PUT rejection signal detected, but ADX is 13.17 (< 20). Skipping entry (trend filter not met).
+2026-10-08 11:22:11,953 [INFO] FVG PUT rejection signal detected, but ADX is 16.40 (< 20). Skipping entry (trend filter not met).
+2026-10-08 11:23:12,078 [INFO] FVG PUT rejection signal detected, but ADX is 19.21 (< 20). Skipping entry (trend filter not met).
+2026-10-08 11:28:12,754 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322350PE on NFO @ ~146.70 (Spot: 22344.35, SL: 140.7, Target: 156.7)
+2026-10-08 11:28:13,745 [INFO] Entered NIFTY26O1322350PE (PUT) 1 lot(s) (65 qty) @ ₹146.70 | SL=₹140.70 Target=₹156.70 | Spot: 22344.35 | ADX: 33.81 (FVG bearish 22348.65-22354.35)
+2026-10-08 11:28:23,817 [INFO] [10s check] Trailing stop moved to ₹144.95 for open NIFTY26O1322350PE (LTP: ₹150.95)
+2026-10-08 11:28:33,883 [INFO] [10s check] Trailing stop moved to ₹148.30 for open NIFTY26O1322350PE (LTP: ₹154.30)
+2026-10-08 11:28:54,021 [INFO] [10s check] TARGET achieved @ ₹157.00 (Target: ₹156.70)! Full exit: Sold 65 qty of NIFTY26O1322350PE (PUT) | Entry: ₹146.70
+2026-10-08 11:28:54,147 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322350PE on NFO @ ~157.00 (Exit LTP: 157.00)
+2026-10-08 11:28:55,220 [INFO] Trade closed (TARGET). Realized P&L: ₹669.50 (+10.30 pts on 65 qty)
+2026-10-08 11:30:15,516 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322350PE on NFO @ ~153.20 (Spot: 22336.20, SL: 147.2, Target: 163.2)
+2026-10-08 11:30:16,723 [INFO] Entered NIFTY26O1322350PE (PUT) 1 lot(s) (65 qty) @ ₹153.20 | SL=₹147.20 Target=₹163.20 | Spot: 22336.20 | ADX: 39.67 (FVG bearish 22337.25-22342.70)
+2026-10-08 11:30:46,931 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322350PE (PUT) @ ₹146.05 (STOP_LOSS) | Entry: ₹153.20 | SL: ₹147.20
+2026-10-08 11:30:47,059 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322350PE on NFO @ ~146.05 (Exit LTP: 146.05)
+2026-10-08 11:30:47,967 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-464.75 (-7.15 pts on 65 qty)
+2026-10-08 12:01:21,878 [INFO] FVG PUT rejection signal detected, but ADX is 16.72 (< 20). Skipping entry (trend filter not met).
+2026-10-08 12:06:22,527 [INFO] FVG CALL rejection signal detected, but ADX is 19.59 (< 20). Skipping entry (trend filter not met).
+2026-10-08 12:15:23,661 [INFO] FVG PUT rejection signal detected, but ADX is 15.73 (< 20). Skipping entry (trend filter not met).
+2026-10-08 12:27:25,460 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26O1322350CE on NFO @ ~133.45 (Spot: 22328.30, SL: 127.45, Target: 143.45)
+2026-10-08 12:27:26,379 [INFO] Entered NIFTY26O1322350CE (CALL) 1 lot(s) (65 qty) @ ₹133.45 | SL=₹127.45 Target=₹143.45 | Spot: 22328.30 | ADX: 24.33 (FVG bullish 22314.45-22322.95)
+2026-10-08 12:28:06,669 [INFO] [10s check] Trailing stop moved to ₹127.80 for open NIFTY26O1322350CE (LTP: ₹133.80)
+2026-10-08 12:30:17,795 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322350CE (CALL) @ ₹127.00 (STOP_LOSS) | Entry: ₹133.45 | SL: ₹127.80
+2026-10-08 12:30:17,929 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26O1322350CE on NFO @ ~127.00 (Exit LTP: 127.00)
+2026-10-08 12:30:18,886 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-419.25 (-6.45 pts on 65 qty)
+2026-10-08 12:36:29,948 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322300PE on NFO @ ~152.15 (Spot: 22292.45, SL: 146.15, Target: 162.15)
+2026-10-08 12:36:30,939 [INFO] Entered NIFTY26O1322300PE (PUT) 1 lot(s) (65 qty) @ ₹152.15 | SL=₹146.15 Target=₹162.15 | Spot: 22292.45 | ADX: 28.45 (FVG bearish 22302.95-22322.15)
+2026-10-08 12:36:41,010 [INFO] [10s check] Trailing stop moved to ₹147.15 for open NIFTY26O1322300PE (LTP: ₹153.15)
+2026-10-08 12:38:52,111 [INFO] [10s check] Trailing stop moved to ₹150.00 for open NIFTY26O1322300PE (LTP: ₹156.00)
+2026-10-08 12:39:02,183 [INFO] [10s check] Trailing stop moved to ₹150.60 for open NIFTY26O1322300PE (LTP: ₹156.60)
+2026-10-08 12:39:32,392 [INFO] [10s check] Trailing stop moved to ₹151.70 for open NIFTY26O1322300PE (LTP: ₹157.70)
+2026-10-08 12:39:42,571 [INFO] [10s check] Trailing stop moved to ₹152.05 for open NIFTY26O1322300PE (LTP: ₹158.05)
+2026-10-08 12:39:52,645 [INFO] [10s check] Trailing stop moved to ₹152.80 for open NIFTY26O1322300PE (LTP: ₹158.80)
+2026-10-08 12:40:12,786 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322300PE (PUT) @ ₹152.20 (TRAILING_STOP) | Entry: ₹152.15 | SL: ₹152.80
+2026-10-08 12:40:12,925 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322300PE on NFO @ ~152.20 (Exit LTP: 152.20)
+2026-10-08 12:40:14,010 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹3.25 (+0.05 pts on 65 qty)
+2026-10-08 12:52:35,899 [INFO] FVG PUT rejection signal detected, but ADX is 19.82 (< 20). Skipping entry (trend filter not met).
+2026-10-08 12:56:36,521 [INFO] FVG PUT rejection signal detected, but ADX is 18.35 (< 20). Skipping entry (trend filter not met).
+2026-10-08 13:00:37,219 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322250PE on NFO @ ~138.20 (Spot: 22257.40, SL: 132.2, Target: 148.2)
+2026-10-08 13:00:38,294 [INFO] Entered NIFTY26O1322250PE (PUT) 1 lot(s) (65 qty) @ ₹138.20 | SL=₹132.20 Target=₹148.20 | Spot: 22257.40 | ADX: 24.10 (FVG bearish 22267.25-22278.50)
+2026-10-08 13:01:18,574 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322250PE (PUT) @ ₹129.25 (STOP_LOSS) | Entry: ₹138.20 | SL: ₹132.20
+2026-10-08 13:01:18,709 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322250PE on NFO @ ~129.25 (Exit LTP: 129.25)
+2026-10-08 13:01:19,786 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-581.75 (-8.95 pts on 65 qty)
+2026-10-08 13:01:39,909 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:02:40,065 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:03:40,204 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:04:40,356 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:05:40,491 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:06:40,667 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:07:40,806 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:08:40,956 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:09:41,106 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:10:41,272 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:11:41,408 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:12:41,553 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:13:41,714 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:14:41,865 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:15:42,033 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:16:42,172 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:17:42,336 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:18:42,553 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:19:42,703 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:20:42,827 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:21:42,943 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 13:22:59,747 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-08 13:22:59,747 [INFO] DRY_RUN = True
+2026-10-08 13:22:59,747 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-08 13:23:04,748 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-08 13:23:04,748 [INFO] DRY_RUN = True
+2026-10-08 13:23:04,748 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-08 13:59:09,407 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 130 x NIFTY26O1322250PE on NFO @ ~141.15 (Spot: 22237.05, SL: 136.4, Target: 149.15)
+2026-10-08 13:59:10,491 [INFO] Entered NIFTY26O1322250PE (PUT) 2 lot(s) (130 qty) @ ₹141.15 | SL=₹136.40 Target=₹149.15 | Spot: 22237.05 | ADX: 14.12 (FVG bearish 22238.35-22241.10)
+2026-10-08 13:59:20,555 [INFO] [10s check] Trailing stop moved to ₹136.85 for open NIFTY26O1322250PE (LTP: ₹141.60)
+2026-10-08 14:00:10,875 [INFO] [10s check] Exiting ALL 130 qty of NIFTY26O1322250PE (PUT) @ ₹135.75 (STOP_LOSS) | Entry: ₹141.15 | SL: ₹136.85
+2026-10-08 14:00:10,994 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 130 x NIFTY26O1322250PE on NFO @ ~135.75 (Exit LTP: 135.75)
+2026-10-08 14:00:12,279 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-702.00 (-5.40 pts on 130 qty)
+2026-10-08 14:05:13,063 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 130 x NIFTY26O1322200PE on NFO @ ~129.50 (Spot: 22211.10, SL: 121.5, Target: 137.5)
+2026-10-08 14:05:14,052 [INFO] Entered NIFTY26O1322200PE (PUT) 2 lot(s) (130 qty) @ ₹129.50 | SL=₹121.50 Target=₹137.50 | Spot: 22211.10 | ADX: 21.86 (FVG bearish 22213.10-22222.45)
+2026-10-08 14:06:04,401 [INFO] [10s check] Exiting ALL 130 qty of NIFTY26O1322200PE (PUT) @ ₹121.25 (STOP_LOSS) | Entry: ₹129.50 | SL: ₹121.50
+2026-10-08 14:06:04,527 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 130 x NIFTY26O1322200PE on NFO @ ~121.25 (Exit LTP: 121.25)
+2026-10-08 14:06:06,067 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-1072.50 (-8.25 pts on 130 qty)
+2026-10-08 14:06:16,178 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:07:16,304 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:08:16,417 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:09:16,519 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:10:16,633 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:11:16,783 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:12:17,405 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:13:17,531 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:14:17,649 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:15:17,791 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:16:17,932 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:17:18,067 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:18:18,206 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:19:18,338 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:20:18,498 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:21:18,665 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:22:18,838 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:23:18,975 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:24:19,132 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:25:19,269 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:26:19,427 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:27:19,588 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:28:19,728 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:29:19,868 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:30:20,021 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:31:20,165 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:32:20,323 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:33:20,444 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:34:20,603 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:35:20,749 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:36:20,921 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:37:21,074 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:38:21,214 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:39:21,381 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:40:21,562 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:41:21,721 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:42:21,895 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:43:22,071 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:44:22,218 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:45:22,377 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:46:22,519 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:47:22,682 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:48:22,857 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:49:23,011 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:50:23,179 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:51:23,348 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:52:23,506 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:53:23,650 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:54:23,811 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:55:23,946 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:56:24,109 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:57:24,281 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:58:24,438 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 14:59:24,607 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-08 15:00:24,769 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:01:24,922 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:02:25,096 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:03:25,269 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:04:25,404 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:05:25,546 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:06:25,699 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:07:25,852 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:08:25,993 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:09:26,145 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:10:26,307 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:11:26,458 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:12:26,621 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:13:26,785 [INFO] Not trading right now: Outside configured trading hours
+2026-10-08 15:14:26,927 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 09:32:00,850 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-09 09:32:00,851 [INFO] DRY_RUN = True
+2026-10-09 09:32:00,851 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-09 09:39:01,810 [INFO] FVG CALL rejection signal detected, but ADX is 29.19 (< 18). Skipping entry (trend filter not met).
+2026-10-09 09:42:02,107 [INFO] FVG CALL rejection signal detected, but ADX is 33.63 (< 18). Skipping entry (trend filter not met).
+2026-10-09 09:43:02,204 [INFO] FVG CALL rejection signal detected, but ADX is 33.63 (< 18). Skipping entry (trend filter not met).
+2026-10-09 09:53:03,263 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 130 x NIFTY26O1322450PE on NFO @ ~123.15 (Spot: 22440.20, SL: 119.85, Target: 133.15)
+2026-10-09 09:53:05,069 [INFO] Entered NIFTY26O1322450PE (PUT) 2 lot(s) (130 qty) @ ₹123.15 | SL=₹119.85 Target=₹133.15 | Spot: 22440.20 | ADX: 43.02 (FVG bullish 22452.00-22453.30)
+2026-10-09 09:53:15,134 [INFO] [10s check] Trailing stop moved to ₹121.55 for open NIFTY26O1322450PE (LTP: ₹124.85)
+2026-10-09 09:53:25,185 [INFO] [10s check] Exiting ALL 130 qty of NIFTY26O1322450PE (PUT) @ ₹118.50 (STOP_LOSS) | Entry: ₹123.15 | SL: ₹121.55
+2026-10-09 09:53:25,288 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 130 x NIFTY26O1322450PE on NFO @ ~118.50 (Exit LTP: 118.50)
+2026-10-09 09:53:26,240 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-604.50 (-4.65 pts on 130 qty)
+2026-10-09 10:15:08,495 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 130 x NIFTY26O1322500PE on NFO @ ~125.75 (Spot: 22479.95, SL: 117.75, Target: 135.75)
+2026-10-09 10:15:09,418 [INFO] Entered NIFTY26O1322500PE (PUT) 2 lot(s) (130 qty) @ ₹125.75 | SL=₹117.75 Target=₹135.75 | Spot: 22479.95 | ADX: 34.63 (FVG bearish 22480.75-22488.30)
+2026-10-09 10:15:19,479 [INFO] [10s check] Trailing stop moved to ₹121.60 for open NIFTY26O1322500PE (LTP: ₹129.60)
+2026-10-09 10:15:29,541 [INFO] [10s check] Trailing stop moved to ₹122.00 for open NIFTY26O1322500PE (LTP: ₹130.00)
+2026-10-09 10:15:39,599 [INFO] [10s check] Trailing stop moved to ₹123.15 for open NIFTY26O1322500PE (LTP: ₹131.15)
+2026-10-09 10:16:29,948 [INFO] [10s check] Trailing stop moved to ₹123.90 for open NIFTY26O1322500PE (LTP: ₹131.90)
+2026-10-09 10:16:40,015 [INFO] [10s check] Trailing stop moved to ₹124.90 for open NIFTY26O1322500PE (LTP: ₹132.90)
+2026-10-09 10:17:50,529 [INFO] [10s check] Trailing stop moved to ₹125.85 for open NIFTY26O1322500PE (LTP: ₹133.85)
+2026-10-09 10:18:00,650 [INFO] [10s check] TARGET achieved @ ₹136.50 (Target: ₹135.75)! Partial exit: Sold 1 lot (65 qty). Remaining: 1 lot(s) (65 qty) with trailing SL=₹125.85 and NO further target.
+2026-10-09 10:18:00,764 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322500PE on NFO @ ~136.50 (Exit LTP: 136.50)
+2026-10-09 10:18:01,770 [INFO] Partial Target P&L: ₹698.75 (+10.75 pts on 65 qty)
+2026-10-09 10:18:01,770 [INFO] [10s check] Trailing stop moved to ₹128.50 for remaining NIFTY26O1322500PE (LTP: ₹136.50)
+2026-10-09 10:18:52,153 [INFO] [10s check] Trailing stop moved to ₹129.50 for open NIFTY26O1322500PE (LTP: ₹137.50)
+2026-10-09 10:22:43,796 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322500PE (PUT) @ ₹127.25 (TRAILING_STOP) | Entry: ₹125.75 | SL: ₹129.50
+2026-10-09 10:22:43,896 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322500PE on NFO @ ~127.25 (Exit LTP: 127.25)
+2026-10-09 10:22:45,167 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹97.50 (+1.50 pts on 65 qty)
+2026-10-09 10:29:15,846 [INFO] FVG CALL rejection signal detected, but ADX is 30.00 (< 18). Skipping entry (trend filter not met).
+2026-10-09 10:36:16,666 [INFO] FVG PUT rejection signal detected, but ADX is 29.11 (< 18). Skipping entry (trend filter not met).
+2026-10-09 11:01:19,540 [INFO] FVG CALL rejection signal detected, but ADX is 19.73 (< 18). Skipping entry (trend filter not met).
+2026-10-09 11:17:21,505 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 130 x NIFTY26O1322500PE on NFO @ ~112.75 (Spot: 22499.65, SL: 104.85, Target: 122.75)
+2026-10-09 11:17:24,063 [INFO] Entered NIFTY26O1322500PE (PUT) 2 lot(s) (130 qty) @ ₹112.75 | SL=₹104.85 Target=₹122.75 | Spot: 22499.65 | ADX: 11.35 (FVG bearish 22499.70-22505.60)
+2026-10-09 11:17:44,208 [INFO] [10s check] Trailing stop moved to ₹105.75 for open NIFTY26O1322500PE (LTP: ₹113.65)
+2026-10-09 11:19:24,992 [INFO] [10s check] Exiting ALL 130 qty of NIFTY26O1322500PE (PUT) @ ₹104.75 (STOP_LOSS) | Entry: ₹112.75 | SL: ₹105.75
+2026-10-09 11:19:25,125 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 130 x NIFTY26O1322500PE on NFO @ ~104.75 (Exit LTP: 104.75)
+2026-10-09 11:19:26,226 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-1040.00 (-8.00 pts on 130 qty)
+2026-10-09 11:22:26,646 [INFO] FVG CALL rejection signal detected, but ADX is 19.63 (< 18). Skipping entry (trend filter not met).
+2026-10-09 13:14:42,320 [INFO] FVG PUT rejection signal detected, but ADX is 20.95 (< 18). Skipping entry (trend filter not met).
+2026-10-09 13:35:45,482 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 130 x NIFTY26O1322500PE on NFO @ ~107.70 (Spot: 22503.20, SL: 104.85, Target: 117.7)
+2026-10-09 13:35:46,583 [INFO] Entered NIFTY26O1322500PE (PUT) 2 lot(s) (130 qty) @ ₹107.70 | SL=₹104.85 Target=₹117.70 | Spot: 22503.20 | ADX: 17.55 (FVG bearish 22507.00-22507.85)
+2026-10-09 13:35:56,655 [INFO] [10s check] Trailing stop moved to ₹106.00 for open NIFTY26O1322500PE (LTP: ₹108.85)
+2026-10-09 13:36:16,795 [INFO] [10s check] Trailing stop moved to ₹106.25 for open NIFTY26O1322500PE (LTP: ₹109.10)
+2026-10-09 13:36:36,947 [INFO] [10s check] Exiting ALL 130 qty of NIFTY26O1322500PE (PUT) @ ₹106.00 (STOP_LOSS) | Entry: ₹107.70 | SL: ₹106.25
+2026-10-09 13:36:37,077 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 130 x NIFTY26O1322500PE on NFO @ ~106.00 (Exit LTP: 106.00)
+2026-10-09 13:36:38,110 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-221.00 (-1.70 pts on 130 qty)
+2026-10-09 13:36:48,217 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:37:48,371 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:38:48,522 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:39:48,672 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:40:48,808 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:41:48,976 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:42:49,132 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:43:49,293 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:44:49,423 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:45:49,565 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:46:49,698 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:47:49,879 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:48:50,034 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:49:50,209 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:50:50,348 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:51:50,491 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:52:50,645 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:53:50,812 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:54:50,947 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:55:51,079 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:56:51,200 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:57:51,342 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:58:51,479 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 13:59:51,610 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 14:00:51,790 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 14:01:51,929 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 14:02:52,056 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 14:03:52,190 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 14:04:52,319 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 14:05:52,430 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-09 14:07:01,011 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-09 14:07:01,011 [INFO] DRY_RUN = True
+2026-10-09 14:07:01,011 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-09 14:23:04,117 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26O1322550CE on NFO @ ~138.55 (Spot: 22572.75, SL: 130.55, Target: 148.55)
+2026-10-09 14:23:05,211 [INFO] Entered NIFTY26O1322550CE (CALL) 1 lot(s) (65 qty) @ ₹138.55 | SL=₹130.55 Target=₹148.55 | Spot: 22572.75 | ADX: 35.13 (FVG bullish 22560.20-22571.05)
+2026-10-09 14:24:56,104 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322550CE (CALL) @ ₹130.55 (STOP_LOSS) | Entry: ₹138.55 | SL: ₹130.55
+2026-10-09 14:24:56,301 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26O1322550CE on NFO @ ~130.45 (Exit LTP: 130.45)
+2026-10-09 14:24:57,243 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-520.00 (-8.00 pts on 65 qty)
+2026-10-09 15:00:12,242 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:01:12,376 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:02:12,512 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:03:12,639 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:04:12,764 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:05:12,928 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:06:13,053 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:07:13,185 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:08:13,316 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:09:13,461 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:10:13,591 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:11:13,732 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:12:13,863 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:13:14,008 [INFO] Not trading right now: Outside configured trading hours
+2026-10-09 15:14:14,163 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 09:09:01,484 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-12 09:09:01,484 [INFO] DRY_RUN = True
+2026-10-12 09:09:01,484 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-12 09:09:02,133 [ERROR] Error in main loop: from date cannot be after to date
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 249, in main
+    candles = fetch_today_candles(kite, signal_token)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 57, in fetch_today_candles
+    data = kite.historical_data(instrument_token, market_open, now, config.FVG_INTERVAL)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 683, in historical_data
+    data = self._get("market.historical",
+                     url_args={"instrument_token": instrument_token, "interval": interval},
+    ...<5 lines>...
+                         "oi": 1 if oi else 0
+                     })
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 912, in _get
+    return self._request(route, "GET", url_args=url_args, params=params, is_json=is_json)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 988, in _request
+    raise exp(data["message"], code=r.status_code)
+kiteconnect.exceptions.InputException: from date cannot be after to date
+2026-10-12 09:10:02,222 [ERROR] Error in main loop: from date cannot be after to date
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 249, in main
+    candles = fetch_today_candles(kite, signal_token)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 57, in fetch_today_candles
+    data = kite.historical_data(instrument_token, market_open, now, config.FVG_INTERVAL)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 683, in historical_data
+    data = self._get("market.historical",
+                     url_args={"instrument_token": instrument_token, "interval": interval},
+    ...<5 lines>...
+                         "oi": 1 if oi else 0
+                     })
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 912, in _get
+    return self._request(route, "GET", url_args=url_args, params=params, is_json=is_json)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 988, in _request
+    raise exp(data["message"], code=r.status_code)
+kiteconnect.exceptions.InputException: from date cannot be after to date
+2026-10-12 09:11:02,303 [ERROR] Error in main loop: from date cannot be after to date
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 249, in main
+    candles = fetch_today_candles(kite, signal_token)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 57, in fetch_today_candles
+    data = kite.historical_data(instrument_token, market_open, now, config.FVG_INTERVAL)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 683, in historical_data
+    data = self._get("market.historical",
+                     url_args={"instrument_token": instrument_token, "interval": interval},
+    ...<5 lines>...
+                         "oi": 1 if oi else 0
+                     })
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 912, in _get
+    return self._request(route, "GET", url_args=url_args, params=params, is_json=is_json)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 988, in _request
+    raise exp(data["message"], code=r.status_code)
+kiteconnect.exceptions.InputException: from date cannot be after to date
+2026-10-12 09:12:02,389 [ERROR] Error in main loop: from date cannot be after to date
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 249, in main
+    candles = fetch_today_candles(kite, signal_token)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 57, in fetch_today_candles
+    data = kite.historical_data(instrument_token, market_open, now, config.FVG_INTERVAL)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 683, in historical_data
+    data = self._get("market.historical",
+                     url_args={"instrument_token": instrument_token, "interval": interval},
+    ...<5 lines>...
+                         "oi": 1 if oi else 0
+                     })
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 912, in _get
+    return self._request(route, "GET", url_args=url_args, params=params, is_json=is_json)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 988, in _request
+    raise exp(data["message"], code=r.status_code)
+kiteconnect.exceptions.InputException: from date cannot be after to date
+2026-10-12 09:13:02,477 [ERROR] Error in main loop: from date cannot be after to date
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 249, in main
+    candles = fetch_today_candles(kite, signal_token)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 57, in fetch_today_candles
+    data = kite.historical_data(instrument_token, market_open, now, config.FVG_INTERVAL)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 683, in historical_data
+    data = self._get("market.historical",
+                     url_args={"instrument_token": instrument_token, "interval": interval},
+    ...<5 lines>...
+                         "oi": 1 if oi else 0
+                     })
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 912, in _get
+    return self._request(route, "GET", url_args=url_args, params=params, is_json=is_json)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 988, in _request
+    raise exp(data["message"], code=r.status_code)
+kiteconnect.exceptions.InputException: from date cannot be after to date
+2026-10-12 09:14:02,558 [ERROR] Error in main loop: from date cannot be after to date
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 249, in main
+    candles = fetch_today_candles(kite, signal_token)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 57, in fetch_today_candles
+    data = kite.historical_data(instrument_token, market_open, now, config.FVG_INTERVAL)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 683, in historical_data
+    data = self._get("market.historical",
+                     url_args={"instrument_token": instrument_token, "interval": interval},
+    ...<5 lines>...
+                         "oi": 1 if oi else 0
+                     })
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 912, in _get
+    return self._request(route, "GET", url_args=url_args, params=params, is_json=is_json)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/kiteconnect/connect.py", line 988, in _request
+    raise exp(data["message"], code=r.status_code)
+kiteconnect.exceptions.InputException: from date cannot be after to date
+2026-10-12 09:16:00,539 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-12 09:16:00,540 [INFO] DRY_RUN = True
+2026-10-12 09:16:00,540 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-12 09:18:00,946 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 09:19:01,029 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 09:24:01,565 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322550PE on NFO @ ~107.05 (Spot: 22525.15, SL: 99.05, Target: 117.05)
+2026-10-12 09:24:02,681 [INFO] Entered NIFTY26O1322550PE (PUT) 1 lot(s) (65 qty) @ ₹107.05 | SL=₹99.05 Target=₹117.05 | Spot: 22525.15 | ADX: 34.40 (FVG bearish 22562.75-22580.05)
+2026-10-12 09:24:12,741 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322550PE (PUT) @ ₹93.45 (STOP_LOSS) | Entry: ₹107.05 | SL: ₹99.05
+2026-10-12 09:24:12,838 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322550PE on NFO @ ~93.45 (Exit LTP: 93.45)
+2026-10-12 09:24:13,762 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-884.00 (-13.60 pts on 65 qty)
+2026-10-12 09:39:05,161 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322500PE on NFO @ ~81.55 (Spot: 22524.15, SL: 78.65, Target: 91.55)
+2026-10-12 09:39:06,095 [INFO] Entered NIFTY26O1322500PE (PUT) 1 lot(s) (65 qty) @ ₹81.55 | SL=₹78.65 Target=₹91.55 | Spot: 22524.15 | ADX: 40.14 (FVG bearish 22532.95-22533.85)
+2026-10-12 09:39:16,171 [INFO] [10s check] Trailing stop moved to ₹82.25 for open NIFTY26O1322500PE (LTP: ₹85.15)
+2026-10-12 09:39:26,234 [INFO] [10s check] Trailing stop moved to ₹83.65 for open NIFTY26O1322500PE (LTP: ₹86.55)
+2026-10-12 09:39:36,289 [INFO] [10s check] Trailing stop moved to ₹84.35 for open NIFTY26O1322500PE (LTP: ₹87.25)
+2026-10-12 09:40:16,599 [INFO] [10s check] Trailing stop moved to ₹84.90 for open NIFTY26O1322500PE (LTP: ₹87.80)
+2026-10-12 09:40:26,673 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322500PE (PUT) @ ₹82.90 (TRAILING_STOP) | Entry: ₹81.55 | SL: ₹84.90
+2026-10-12 09:40:26,776 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322500PE on NFO @ ~82.90 (Exit LTP: 82.90)
+2026-10-12 09:40:27,671 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹87.75 (+1.35 pts on 65 qty)
+2026-10-12 09:41:07,851 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26O1322550CE on NFO @ ~84.20 (Spot: 22526.40, SL: 76.3, Target: 94.2)
+2026-10-12 09:41:08,739 [INFO] Entered NIFTY26O1322550CE (CALL) 1 lot(s) (65 qty) @ ₹84.20 | SL=₹76.30 Target=₹94.20 | Spot: 22526.40 | ADX: 41.86 (FVG bearish 22516.85-22522.75)
+2026-10-12 09:41:18,794 [INFO] [10s check] Trailing stop moved to ₹78.45 for open NIFTY26O1322550CE (LTP: ₹86.35)
+2026-10-12 09:41:28,867 [INFO] [10s check] Trailing stop moved to ₹78.55 for open NIFTY26O1322550CE (LTP: ₹86.45)
+2026-10-12 09:41:59,068 [INFO] [10s check] Trailing stop moved to ₹78.95 for open NIFTY26O1322550CE (LTP: ₹86.85)
+2026-10-12 09:42:09,147 [INFO] [10s check] Trailing stop moved to ₹81.30 for open NIFTY26O1322550CE (LTP: ₹89.20)
+2026-10-12 09:44:20,150 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322550CE (CALL) @ ₹80.55 (STOP_LOSS) | Entry: ₹84.20 | SL: ₹81.30
+2026-10-12 09:44:20,255 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26O1322550CE on NFO @ ~80.55 (Exit LTP: 80.55)
+2026-10-12 09:44:21,225 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-237.25 (-3.65 pts on 65 qty)
+2026-10-12 09:45:11,317 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:46:11,404 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:47:11,509 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:48:11,591 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:49:11,695 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:50:11,775 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:51:11,855 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:52:11,943 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:53:12,030 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:54:12,127 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:55:12,243 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:56:12,337 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:57:12,420 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:58:12,528 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 09:59:12,642 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:00:12,739 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:01:12,829 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:02:12,935 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:03:13,026 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:04:13,121 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:05:13,219 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:06:13,321 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:07:13,424 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:08:13,525 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:09:13,618 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:10:13,728 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:11:13,820 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:12:13,904 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:13:13,993 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:14:14,101 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:15:14,193 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:16:14,281 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:17:14,369 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:18:14,448 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:19:14,539 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:20:14,674 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:21:14,779 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:22:14,870 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:23:14,980 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:24:15,085 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:25:15,180 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:26:15,284 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:27:15,412 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:28:15,534 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:29:15,626 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:30:15,719 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:31:15,825 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:32:15,941 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:33:16,047 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:34:16,148 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:35:16,259 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:36:16,357 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:37:16,449 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:38:16,561 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:39:16,642 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:40:16,780 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:41:16,912 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:42:17,036 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:43:17,144 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:44:17,282 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:45:17,398 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:46:17,530 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:47:17,640 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:48:17,796 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:49:17,907 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:50:18,073 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:51:18,190 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:52:18,273 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:53:18,387 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:54:18,474 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:55:18,574 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:56:18,697 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:57:18,795 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:58:18,894 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 10:59:19,007 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:00:19,123 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:01:19,234 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:02:19,358 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:03:19,459 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:04:19,545 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:05:19,652 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:06:19,759 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:07:19,874 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:08:19,984 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:09:20,087 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:10:20,202 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:11:20,318 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:12:20,441 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:13:20,543 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:14:20,658 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:15:20,758 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:16:20,868 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:17:20,983 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:18:21,086 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:19:21,200 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:20:21,295 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:21:21,415 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:22:21,551 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:23:21,673 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:24:21,772 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:25:21,866 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:26:21,971 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:27:22,082 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:28:22,215 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:29:22,335 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:30:22,449 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:31:22,540 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:32:22,650 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:33:22,751 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:34:22,838 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:35:22,942 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:36:23,035 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:37:23,157 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:38:23,252 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:39:23,374 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:40:23,501 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:41:23,639 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:42:23,741 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:43:23,866 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:44:23,966 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:45:24,073 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:46:24,166 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:47:24,261 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:48:24,419 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:49:24,515 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:50:24,648 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:51:24,783 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:52:24,914 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:53:25,048 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:54:25,163 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:55:25,286 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:56:25,465 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:57:25,583 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:58:25,687 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 11:59:25,799 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:00:25,904 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:01:26,012 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:02:26,141 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:03:26,263 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:04:26,370 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:05:26,484 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:06:26,585 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:07:26,687 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:08:26,815 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:09:26,924 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:10:27,030 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:11:27,132 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:12:27,229 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:13:27,346 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:14:27,474 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:15:27,586 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:16:27,690 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:17:27,818 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:18:27,939 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:19:28,058 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:20:28,178 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:21:28,295 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:22:28,424 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:23:28,551 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:24:28,683 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:25:28,806 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:26:28,917 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:27:29,042 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:28:29,174 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:29:29,292 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:30:29,409 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:31:29,518 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:32:29,639 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:33:29,776 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:34:29,908 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:35:30,068 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:36:30,205 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:37:30,333 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:38:30,450 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:39:30,580 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:40:30,716 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:41:30,825 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:42:30,954 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:43:31,078 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:44:31,198 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:45:31,318 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:46:31,427 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:47:31,544 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:48:31,650 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:49:31,769 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:50:31,885 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:51:31,997 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:52:32,133 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:53:32,270 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:54:32,416 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:55:32,545 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:56:32,674 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:57:32,818 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:58:32,957 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 12:59:33,099 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:00:33,231 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:01:33,376 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:02:33,500 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:03:33,628 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:04:33,781 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:05:33,919 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:06:34,065 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:07:34,196 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:08:34,328 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:09:34,454 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:10:34,585 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:11:34,727 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:12:34,865 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:13:34,989 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:14:35,138 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:15:35,264 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:16:35,397 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:17:35,531 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:18:35,671 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:19:35,795 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:20:35,914 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:21:36,070 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:22:36,202 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:23:36,330 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:24:36,473 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:25:36,588 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:26:36,741 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:27:36,859 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:28:37,005 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:29:37,142 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:30:37,266 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:31:37,417 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:32:37,569 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:33:37,702 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:34:37,846 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:35:37,980 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:36:38,114 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:37:38,248 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:38:38,368 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:39:38,531 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:40:38,681 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:41:38,816 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:42:38,950 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:43:39,114 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:44:39,263 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:45:39,386 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:46:39,556 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:47:39,667 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:48:39,781 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:49:39,910 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:50:40,043 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:51:40,213 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:52:40,324 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:53:40,453 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:54:40,586 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:55:40,694 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:56:40,811 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:57:40,928 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:58:41,032 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 13:59:41,162 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:00:41,288 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:01:41,398 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:02:41,542 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:03:41,699 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:04:41,841 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:05:41,970 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:06:42,102 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:07:42,210 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:08:42,345 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:09:42,477 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:10:42,620 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:11:42,731 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:12:42,844 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:13:43,117 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:14:43,229 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:15:43,361 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:16:43,473 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:17:43,603 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:18:43,741 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:19:43,871 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:20:43,989 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:21:44,102 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:22:44,214 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:23:44,338 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:24:44,456 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:25:44,597 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:26:44,708 [INFO] Not trading right now: Daily loss limit of Rs.1000 breached
+2026-10-12 14:36:00,748 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-12 14:36:00,749 [INFO] DRY_RUN = True
+2026-10-12 14:36:00,749 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-12 14:37:02,516 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322350PE on NFO @ ~87.85 (Spot: 22329.40, SL: 83.7, Target: 97.85)
+2026-10-12 14:37:03,682 [INFO] Entered NIFTY26O1322350PE (PUT) 1 lot(s) (65 qty) @ ₹87.85 | SL=₹83.70 Target=₹97.85 | Spot: 22329.40 | ADX: 36.63 (FVG bearish 22331.30-22333.45)
+2026-10-12 14:37:13,748 [INFO] [10s check] Trailing stop moved to ₹85.00 for open NIFTY26O1322350PE (LTP: ₹89.15)
+2026-10-12 14:37:43,929 [INFO] [10s check] Trailing stop moved to ₹85.55 for open NIFTY26O1322350PE (LTP: ₹89.70)
+2026-10-12 14:37:53,988 [INFO] [10s check] Trailing stop moved to ₹86.80 for open NIFTY26O1322350PE (LTP: ₹90.95)
+2026-10-12 14:38:04,049 [INFO] [10s check] Trailing stop moved to ₹87.35 for open NIFTY26O1322350PE (LTP: ₹91.50)
+2026-10-12 14:38:54,456 [INFO] [10s check] Trailing stop moved to ₹87.60 for open NIFTY26O1322350PE (LTP: ₹91.75)
+2026-10-12 14:39:24,748 [INFO] [10s check] Trailing stop moved to ₹87.75 for open NIFTY26O1322350PE (LTP: ₹91.90)
+2026-10-12 14:39:44,847 [INFO] [10s check] Trailing stop moved to ₹87.80 for open NIFTY26O1322350PE (LTP: ₹91.95)
+2026-10-12 14:40:04,970 [INFO] [10s check] Trailing stop moved to ₹89.95 for open NIFTY26O1322350PE (LTP: ₹94.10)
+2026-10-12 14:40:25,179 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322350PE (PUT) @ ₹89.15 (TRAILING_STOP) | Entry: ₹87.85 | SL: ₹89.95
+2026-10-12 14:40:25,371 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322350PE on NFO @ ~89.15 (Exit LTP: 89.15)
+2026-10-12 14:40:29,545 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹84.50 (+1.30 pts on 65 qty)
+2026-10-12 14:48:10,591 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322300PE on NFO @ ~66.35 (Spot: 22318.10, SL: 64.15, Target: 76.35)
+2026-10-12 14:48:11,662 [INFO] Entered NIFTY26O1322300PE (PUT) 1 lot(s) (65 qty) @ ₹66.35 | SL=₹64.15 Target=₹76.35 | Spot: 22318.10 | ADX: 33.10 (FVG bearish 22320.00-22320.20)
+2026-10-12 14:49:12,063 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322300PE (PUT) @ ₹64.15 (STOP_LOSS) | Entry: ₹66.35 | SL: ₹64.15
+2026-10-12 14:49:12,207 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322300PE on NFO @ ~64.15 (Exit LTP: 64.15)
+2026-10-12 14:49:13,187 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-143.00 (-2.20 pts on 65 qty)
+2026-10-12 15:00:14,696 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:01:14,801 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:02:14,913 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:03:15,051 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:04:15,167 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:05:15,276 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:06:15,408 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:07:15,517 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:08:15,681 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:09:15,801 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:10:15,925 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:11:16,041 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:12:16,166 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:13:16,298 [INFO] Not trading right now: Outside configured trading hours
+2026-10-12 15:14:16,422 [INFO] Not trading right now: Outside configured trading hours

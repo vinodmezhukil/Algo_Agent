@@ -25,6 +25,8 @@ price closes fully through it in the opposite direction, since a
 fully-filled gap no longer represents unfilled imbalance.
 """
 
+import numpy as np
+import pandas as pd
 import config
 from fvg import detect_fvgs, classify_day_fvgs
 
@@ -228,3 +230,49 @@ def update_trailing_stop(position: dict, price: float) -> float:
                     position['stop_loss'] = new_stop
 
     return position['stop_loss']
+
+
+def compute_adx(df: pd.DataFrame, period: int = 14) -> pd.Series:
+    """
+    Computes Wilder's Average Directional Index (ADX) on a candle DataFrame.
+    Expects columns: 'high', 'low', 'close'.
+    Returns a pandas Series of ADX values aligned with df's index.
+    """
+    if df is None or len(df) < 2:
+        return pd.Series(0.0, index=df.index if df is not None else None)
+
+    high = df['high']
+    low = df['low']
+    close = df['close']
+
+    # True Range (TR)
+    tr1 = high - low
+    tr2 = (high - close.shift(1)).abs()
+    tr3 = (low - close.shift(1)).abs()
+    tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
+
+    # Directional Movement (+DM / -DM)
+    up_move = high.diff()
+    down_move = -low.diff()
+
+    plus_dm = np.where((up_move > down_move) & (up_move > 0), up_move, 0.0)
+    minus_dm = np.where((down_move > up_move) & (down_move > 0), down_move, 0.0)
+
+    # Wilder's smoothing (alpha = 1 / period)
+    alpha = 1.0 / period
+    atr = pd.Series(tr).ewm(alpha=alpha, adjust=False).mean()
+    plus_dm_smooth = pd.Series(plus_dm, index=df.index).ewm(alpha=alpha, adjust=False).mean()
+    minus_dm_smooth = pd.Series(minus_dm, index=df.index).ewm(alpha=alpha, adjust=False).mean()
+
+    atr_safe = atr.replace(0, np.nan)
+    pdi = 100 * (plus_dm_smooth / atr_safe)
+    mdi = 100 * (minus_dm_smooth / atr_safe)
+
+    di_sum = pdi + mdi
+    di_diff = (pdi - mdi).abs()
+
+    dx = 100 * (di_diff / di_sum.replace(0, np.nan))
+    dx = dx.fillna(0.0)
+
+    adx = dx.ewm(alpha=alpha, adjust=False).mean()
+    return adx.fillna(0.0)
