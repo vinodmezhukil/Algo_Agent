@@ -65,8 +65,8 @@ TRAILING_STOP_ENABLED = True
 # ---- Strategy v3 parameters: FVG rejection system ----
 FVG_INTERVAL = "minute"     # 1-minute candles for signal detection on spot
 FVG_SL_BUFFER_POINTS = 2    # SL buffer in option points beyond FVG risk
-FVG_TARGET_POINTS = 50      # target in option points (premium)
-FVG_MAX_SL_POINTS = 15      # hard cap: option SL distance from entry never exceeds this
+FVG_TARGET_POINTS = 15      # target in option points (premium)
+FVG_MAX_SL_POINTS = 10      # hard cap: option SL distance from entry never exceeds this
 FVG_TRAILING_STOP_ENABLED = True   # ratchet the option SL as option premium moves favorably
 FVG_ADX_ENABLED = False      # require ADX >= ADX_THRESHOLD before entering FVG trades
 FVG_ADX_THRESHOLD = 18      # minimum ADX value (>= 18) required to confirm trend strength
@@ -74,10 +74,11 @@ FVG_ADX_PERIOD = 14         # period for ADX calculation
 
 # ---- Risk management ----
 MAX_DAILY_LOSS_RS = 1000        # stop trading for the day if breached
-MAX_TRADES_PER_DAY = 20
+MAX_DAILY_TARGET_RS = 3000        # stop trading for the day if achieved
+MAX_TRADES_PER_DAY = 6
 TRADING_START = "09:20"          # avoid the first few volatile minutes
 TRADING_END = "15:00"            # stop opening new positions before close
-SQUARE_OFF_TIME = "15:15"        # force-close any open position
+SQUARE_OFF_TIME = "15:05"        # force-close any open position
 
 # ---- Kill switch ----
 # Touch this file (e.g. `touch KILL_SWITCH`) to halt the agent immediately.

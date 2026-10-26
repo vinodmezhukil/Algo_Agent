@@ -76,49 +76,56 @@ class DayFVGState:
         return classify_day_fvgs(self.active_fvgs())
 
 
-def check_entry(candle, tracked_fvgs: dict, require_full_body: bool = True):
+def check_entry(candle, tracked_fvgs, require_full_body: bool = True):
     """
     candle: dict-like with 'open', 'high', 'low', 'close'
-    tracked_fvgs: {'high': fvg_or_None, 'low': fvg_or_None, 'middle': fvg_or_None}
+    tracked_fvgs: list of FVG dicts (from detect_fvgs / active_fvgs) OR
+                  dict of {'high': fvg_or_None, 'low': fvg_or_None, 'middle': fvg_or_None}.
 
     Returns (side, fvg) if a rejection entry triggers, else (None, None).
-    side is "CALL" or "PUT". Checks day-high, day-low, day-middle in
-    that order and takes the first valid, not-yet-traded signal.
+    side is "CALL" or "PUT".
+
+    When tracked_fvgs is a list, checks active unmitigated, not-yet-traded
+    FVGs (most recent first) and triggers entry on rejection:
+      - Bullish FVG rejection UP -> CALL
+      - Bearish FVG rejection DOWN -> PUT
 
     require_full_body controls how strict the "rejection" test is:
-
-    - False (wick-touch mode): only the candle's shadow needs to dip
-      into the zone before the close breaks out the other side —
-      candle['low'] <= top and candle['close'] > top for a CALL. A
-      candle with a long wick and a tiny real body can trigger this.
-
-    - True (full candle-body rejection, the default): the candle's
-      OPEN must also be on/inside the zone, so the entire real body
-      — not just a shadow — crosses the level. This filters out the
-      wick-only pokes that made the wick-touch version fire ~26
-      times/day, and is intended to only catch candles that actually
-      close decisively through the level with body conviction.
+      - False (wick-touch mode): candle shadow dips into zone before close breaks out.
+      - True (full candle-body rejection): candle open must be on/inside the zone,
+        and close decisively outside it.
     """
-    for label in ('high', 'low', 'middle'):
-        f = tracked_fvgs.get(label)
-        if f is None or f['traded']:
+    if isinstance(tracked_fvgs, dict):
+        if any(k in tracked_fvgs for k in ('high', 'low', 'middle')):
+            candidates = [tracked_fvgs.get(k) for k in ('high', 'low', 'middle') if tracked_fvgs.get(k) is not None]
+        else:
+            candidates = [v for v in tracked_fvgs.values() if v is not None]
+    elif isinstance(tracked_fvgs, list):
+        # Most recently formed active FVG checked first
+        candidates = list(reversed(tracked_fvgs))
+    else:
+        candidates = []
+
+    for f in candidates:
+        if f is None or f.get('traded', False) or f.get('mitigated', False):
             continue
 
-        top, bottom = f['top'], f['bottom']
+        top, bottom = float(f['top']), float(f['bottom'])
+        f_dir = f.get('direction')
 
         if require_full_body:
             # Rejection UP: candle opened at/below the top, closed above it (full body crosses)
-            if candle['open'] <= top and candle['close'] > top:
+            if (f_dir in ('bullish', None)) and candle['open'] <= top and candle['close'] > top:
                 return "CALL", f
             # Rejection DOWN: candle opened at/above the bottom, closed below it (full body crosses)
-            if candle['open'] >= bottom and candle['close'] < bottom:
+            if (f_dir in ('bearish', None)) and candle['open'] >= bottom and candle['close'] < bottom:
                 return "PUT", f
         else:
             # Rejection UP through the top -> CALL (wick-touch allowed)
-            if candle['low'] <= top and candle['close'] > top:
+            if (f_dir in ('bullish', None)) and candle['low'] <= top and candle['close'] > top:
                 return "CALL", f
             # Rejection DOWN through the bottom -> PUT (wick-touch allowed)
-            if candle['high'] >= bottom and candle['close'] < bottom:
+            if (f_dir in ('bearish', None)) and candle['high'] >= bottom and candle['close'] < bottom:
                 return "PUT", f
 
     return None, None

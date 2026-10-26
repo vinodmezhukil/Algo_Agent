@@ -29,6 +29,8 @@ def past_square_off_time() -> bool:
 def daily_loss_breached(realized_pnl_today: float) -> bool:
     return realized_pnl_today <= -abs(config.MAX_DAILY_LOSS_RS)
 
+def daily_target_achieved(realized_pnl_today: float) -> bool:
+    return realized_pnl_today >= abs(config.MAX_DAILY_TARGET_RS)
 
 def trade_count_exceeded(trades_today: int) -> bool:
     return trades_today >= config.MAX_TRADES_PER_DAY
@@ -42,6 +44,8 @@ def can_open_new_position(realized_pnl_today: float, trades_today: int) -> tuple
         return False, "Outside configured trading hours"
     if daily_loss_breached(realized_pnl_today):
         return False, f"Daily loss limit of Rs.{config.MAX_DAILY_LOSS_RS} breached"
+    if daily_target_achieved(realized_pnl_today):
+        return False, f"Daily Target of Rs.{config.MAX_DAILY_TARGET_RS} achieved"
     if trade_count_exceeded(trades_today):
         return False, f"Max trades per day ({config.MAX_TRADES_PER_DAY}) reached"
     return True, ""

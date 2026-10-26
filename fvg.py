@@ -24,26 +24,46 @@ def detect_fvgs(df: pd.DataFrame) -> list[dict]:
     fvgs = []
     highs = df['high'].values
     lows = df['low'].values
-    times = df['date'].values if 'date' in df.columns else df.index.values
+    times = df['date'].astype(str).values if 'date' in df.columns else [str(x) for x in df.index.values]
+    has_close = 'close' in df.columns
+    closes = df['close'].values if has_close else None
 
     for i in range(2, len(df)):
         # Bullish FVG: gap up, candle i-2 high below candle i low
         if highs[i - 2] < lows[i]:
+            top = float(lows[i])
+            bottom = float(highs[i - 2])
+            mitigated = False
+            if has_close:
+                for k in range(i + 1, len(df)):
+                    if closes[k] < bottom:
+                        mitigated = True
+                        break
             fvgs.append({
                 'formed_idx': i,
                 'formed_time': times[i],
                 'direction': 'bullish',
-                'top': lows[i],
-                'bottom': highs[i - 2],
+                'top': top,
+                'bottom': bottom,
+                'mitigated': mitigated,
             })
         # Bearish FVG: gap down, candle i-2 low above candle i high
         elif lows[i - 2] > highs[i]:
+            top = float(lows[i - 2])
+            bottom = float(highs[i])
+            mitigated = False
+            if has_close:
+                for k in range(i + 1, len(df)):
+                    if closes[k] > top:
+                        mitigated = True
+                        break
             fvgs.append({
                 'formed_idx': i,
                 'formed_time': times[i],
                 'direction': 'bearish',
-                'top': lows[i - 2],
-                'bottom': highs[i],
+                'top': top,
+                'bottom': bottom,
+                'mitigated': mitigated,
             })
     return fvgs
 

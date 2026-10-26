@@ -1774,3 +1774,1283 @@ kiteconnect.exceptions.InputException: from date cannot be after to date
 2026-10-12 15:12:16,166 [INFO] Not trading right now: Outside configured trading hours
 2026-10-12 15:13:16,298 [INFO] Not trading right now: Outside configured trading hours
 2026-10-12 15:14:16,422 [INFO] Not trading right now: Outside configured trading hours
+2026-10-13 09:30:00,848 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-13 09:30:00,849 [INFO] DRY_RUN = True
+2026-10-13 09:30:00,849 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-13 09:34:01,607 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26O1322500CE on NFO @ ~57.40 (Spot: 22479.55, SL: 49.3, Target: 107.4)
+2026-10-13 09:34:02,936 [INFO] Entered NIFTY26O1322500CE (CALL) 1 lot(s) (65 qty) @ ₹57.40 | SL=₹49.30 Target=₹107.40 | Spot: 22479.55 | ADX: 46.57 (FVG bullish 22470.35-22476.45)
+2026-10-13 09:34:13,014 [INFO] [10s check] Trailing stop moved to ₹53.30 for open NIFTY26O1322500CE (LTP: ₹61.40)
+2026-10-13 09:34:23,068 [INFO] [10s check] Trailing stop moved to ₹56.70 for open NIFTY26O1322500CE (LTP: ₹64.80)
+2026-10-13 09:37:14,208 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322500CE (CALL) @ ₹55.90 (STOP_LOSS) | Entry: ₹57.40 | SL: ₹56.70
+2026-10-13 09:37:14,327 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26O1322500CE on NFO @ ~56.55 (Exit LTP: 56.55)
+2026-10-13 09:37:15,351 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-97.50 (-1.50 pts on 65 qty)
+2026-10-13 09:42:05,896 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26O1322550CE on NFO @ ~56.95 (Spot: 22537.10, SL: 45.3, Target: 106.95)
+2026-10-13 09:42:07,692 [INFO] Entered NIFTY26O1322550CE (CALL) 1 lot(s) (65 qty) @ ₹56.95 | SL=₹45.30 Target=₹106.95 | Spot: 22537.10 | ADX: 51.34 (FVG bullish 22520.65-22530.30)
+2026-10-13 09:42:57,977 [INFO] [10s check] Trailing stop moved to ₹45.50 for open NIFTY26O1322550CE (LTP: ₹57.15)
+2026-10-13 09:43:08,034 [INFO] [10s check] Trailing stop moved to ₹47.50 for open NIFTY26O1322550CE (LTP: ₹59.15)
+2026-10-13 09:43:18,156 [INFO] [10s check] Trailing stop moved to ₹48.60 for open NIFTY26O1322550CE (LTP: ₹60.25)
+2026-10-13 09:45:18,962 [INFO] [10s check] Trailing stop moved to ₹50.00 for open NIFTY26O1322550CE (LTP: ₹61.65)
+2026-10-13 09:45:39,073 [INFO] [10s check] Trailing stop moved to ₹50.50 for open NIFTY26O1322550CE (LTP: ₹62.15)
+2026-10-13 09:45:49,131 [INFO] [10s check] Trailing stop moved to ₹53.20 for open NIFTY26O1322550CE (LTP: ₹64.85)
+2026-10-13 09:46:09,256 [INFO] [10s check] Trailing stop moved to ₹54.65 for open NIFTY26O1322550CE (LTP: ₹66.30)
+2026-10-13 09:46:59,620 [INFO] [10s check] Trailing stop moved to ₹56.15 for open NIFTY26O1322550CE (LTP: ₹67.80)
+2026-10-13 09:47:09,674 [INFO] [10s check] Trailing stop moved to ₹57.20 for open NIFTY26O1322550CE (LTP: ₹68.85)
+2026-10-13 09:47:29,853 [INFO] [10s check] Trailing stop moved to ₹58.05 for open NIFTY26O1322550CE (LTP: ₹69.70)
+2026-10-13 09:47:39,915 [INFO] [10s check] Trailing stop moved to ₹58.70 for open NIFTY26O1322550CE (LTP: ₹70.35)
+2026-10-13 09:48:10,095 [INFO] [10s check] Trailing stop moved to ₹60.85 for open NIFTY26O1322550CE (LTP: ₹72.50)
+2026-10-13 09:48:40,318 [INFO] [10s check] Trailing stop moved to ₹60.95 for open NIFTY26O1322550CE (LTP: ₹72.60)
+2026-10-13 09:48:50,384 [INFO] [10s check] Trailing stop moved to ₹61.00 for open NIFTY26O1322550CE (LTP: ₹72.65)
+2026-10-13 09:55:02,993 [INFO] [10s check] Trailing stop moved to ₹62.55 for open NIFTY26O1322550CE (LTP: ₹74.20)
+2026-10-13 09:55:13,052 [INFO] [10s check] Trailing stop moved to ₹65.90 for open NIFTY26O1322550CE (LTP: ₹77.55)
+2026-10-13 09:55:23,173 [INFO] [10s check] Trailing stop moved to ₹68.00 for open NIFTY26O1322550CE (LTP: ₹79.65)
+2026-10-13 09:57:03,817 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322550CE (CALL) @ ₹67.75 (TRAILING_STOP) | Entry: ₹56.95 | SL: ₹68.00
+2026-10-13 09:57:03,924 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26O1322550CE on NFO @ ~67.75 (Exit LTP: 67.75)
+2026-10-13 09:57:05,136 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹702.00 (+10.80 pts on 65 qty)
+2026-10-13 10:09:17,169 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26O1322550CE on NFO @ ~71.95 (Spot: 22569.15, SL: 61.3, Target: 121.95)
+2026-10-13 10:09:18,452 [INFO] Entered NIFTY26O1322550CE (CALL) 1 lot(s) (65 qty) @ ₹71.95 | SL=₹61.30 Target=₹121.95 | Spot: 22569.15 | ADX: 49.00 (FVG bullish 22556.90-22565.55)
+2026-10-13 10:09:28,533 [INFO] [10s check] Trailing stop moved to ₹61.90 for open NIFTY26O1322550CE (LTP: ₹72.55)
+2026-10-13 10:18:22,278 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322550CE (CALL) @ ₹59.45 (STOP_LOSS) | Entry: ₹71.95 | SL: ₹61.90
+2026-10-13 10:18:22,395 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26O1322550CE on NFO @ ~60.65 (Exit LTP: 60.65)
+2026-10-13 10:18:23,325 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-812.50 (-12.50 pts on 65 qty)
+2026-10-13 13:54:00,915 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-13 13:54:00,916 [INFO] DRY_RUN = True
+2026-10-13 13:54:00,916 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-13 13:56:01,730 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26O1322550CE on NFO @ ~37.25 (Spot: 22554.95, SL: 29.85, Target: 87.25)
+2026-10-13 13:56:02,648 [INFO] Entered NIFTY26O1322550CE (CALL) 1 lot(s) (65 qty) @ ₹37.25 | SL=₹29.85 Target=₹87.25 | Spot: 22554.95 | ADX: 22.70 (FVG bullish 22548.85-22554.25)
+2026-10-13 13:56:32,860 [INFO] [10s check] Trailing stop moved to ₹30.30 for open NIFTY26O1322550CE (LTP: ₹37.70)
+2026-10-13 14:01:04,746 [INFO] [10s check] Trailing stop moved to ₹30.35 for open NIFTY26O1322550CE (LTP: ₹37.75)
+2026-10-13 14:01:24,955 [INFO] [10s check] Trailing stop moved to ₹30.75 for open NIFTY26O1322550CE (LTP: ₹38.15)
+2026-10-13 14:03:05,640 [INFO] [10s check] Trailing stop moved to ₹33.80 for open NIFTY26O1322550CE (LTP: ₹41.20)
+2026-10-13 14:03:15,851 [INFO] [10s check] Trailing stop moved to ₹38.20 for open NIFTY26O1322550CE (LTP: ₹45.60)
+2026-10-13 14:03:46,015 [INFO] [10s check] Trailing stop moved to ₹38.35 for open NIFTY26O1322550CE (LTP: ₹45.75)
+2026-10-13 14:04:06,170 [INFO] [10s check] Trailing stop moved to ₹40.60 for open NIFTY26O1322550CE (LTP: ₹48.00)
+2026-10-13 14:04:36,428 [INFO] [10s check] Trailing stop moved to ₹42.45 for open NIFTY26O1322550CE (LTP: ₹49.85)
+2026-10-13 14:06:47,337 [INFO] [10s check] Trailing stop moved to ₹44.15 for open NIFTY26O1322550CE (LTP: ₹51.55)
+2026-10-13 14:07:17,591 [INFO] [10s check] Trailing stop moved to ₹47.00 for open NIFTY26O1322550CE (LTP: ₹54.40)
+2026-10-13 14:07:47,760 [INFO] [10s check] Trailing stop moved to ₹47.15 for open NIFTY26O1322550CE (LTP: ₹54.55)
+2026-10-13 14:08:07,861 [INFO] [10s check] Trailing stop moved to ₹47.40 for open NIFTY26O1322550CE (LTP: ₹54.80)
+2026-10-13 14:08:18,003 [INFO] [10s check] Trailing stop moved to ₹48.50 for open NIFTY26O1322550CE (LTP: ₹55.90)
+2026-10-13 14:09:08,286 [INFO] [10s check] Trailing stop moved to ₹48.65 for open NIFTY26O1322550CE (LTP: ₹56.05)
+2026-10-13 14:10:28,946 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322550CE (CALL) @ ₹47.45 (TRAILING_STOP) | Entry: ₹37.25 | SL: ₹48.65
+2026-10-13 14:10:29,038 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26O1322550CE on NFO @ ~47.40 (Exit LTP: 47.40)
+2026-10-13 14:10:30,097 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹663.00 (+10.20 pts on 65 qty)
+2026-10-13 14:16:10,823 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322600PE on NFO @ ~35.90 (Spot: 22575.05, SL: 28.0, Target: 85.9)
+2026-10-13 14:16:11,812 [INFO] Entered NIFTY26O1322600PE (PUT) 1 lot(s) (65 qty) @ ₹35.90 | SL=₹28.00 Target=₹85.90 | Spot: 22575.05 | ADX: 38.24 (FVG bearish 22576.20-22582.10)
+2026-10-13 14:16:21,883 [INFO] [10s check] Trailing stop moved to ₹28.30 for open NIFTY26O1322600PE (LTP: ₹36.20)
+2026-10-13 14:19:43,313 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1322600PE (PUT) @ ₹23.25 (STOP_LOSS) | Entry: ₹35.90 | SL: ₹28.30
+2026-10-13 14:19:43,413 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1322600PE on NFO @ ~22.25 (Exit LTP: 22.25)
+2026-10-13 14:19:44,395 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-822.25 (-12.65 pts on 65 qty)
+2026-10-13 14:23:14,919 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1322600PE on NFO @ ~26.85 (Spot: 22588.60, SL: 18.75, Target: 76.85)
+2026-10-13 14:23:16,434 [INFO] Entered NIFTY26O1322600PE (PUT) 1 lot(s) (65 qty) @ ₹26.85 | SL=₹18.75 Target=₹76.85 | Spot: 22588.60 | ADX: 40.59 (FVG bearish 22589.40-22595.50)
+2026-10-13 14:23:26,497 [INFO] [10s check] Trailing stop moved to ₹19.40 for open NIFTY26O1322600PE (LTP: ₹27.50)
+2026-10-16 09:30:02,176 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 09:30:02,176 [INFO] DRY_RUN = True
+2026-10-16 09:30:02,176 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 09:30:02,346 [ERROR] Error in main loop: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 270, in main
+    tracked_fvg = state.find_detect_fvgs()
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/strategy_v3.py", line 79, in find_detect_fvgs
+    return detect_fvgs(self.active_fvgs())
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/fvg.py", line 25, in detect_fvgs
+    highs = df['high'].values
+            ~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-10-16 09:31:02,449 [ERROR] Error in main loop: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 270, in main
+    tracked_fvg = state.find_detect_fvgs()
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/strategy_v3.py", line 79, in find_detect_fvgs
+    return detect_fvgs(df_day)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/fvg.py", line 25, in detect_fvgs
+    highs = df['high'].values
+            ~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-10-16 09:32:02,541 [ERROR] Error in main loop: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 270, in main
+    tracked_fvg = state.find_detect_fvgs()
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/strategy_v3.py", line 79, in find_detect_fvgs
+    return detect_fvgs(df_day)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/fvg.py", line 25, in detect_fvgs
+    highs = df['high'].values
+            ~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-10-16 09:33:02,634 [ERROR] Error in main loop: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 270, in main
+    tracked_fvg = state.find_detect_fvgs()
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/strategy_v3.py", line 79, in find_detect_fvgs
+    return detect_fvgs(df_day)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/fvg.py", line 25, in detect_fvgs
+    highs = df['high'].values
+            ~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-10-16 09:34:02,720 [ERROR] Error in main loop: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 270, in main
+    tracked_fvg = state.find_detect_fvgs()
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/strategy_v3.py", line 79, in find_detect_fvgs
+    return detect_fvgs(df_day)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/fvg.py", line 25, in detect_fvgs
+    highs = df['high'].values
+            ~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-10-16 09:35:02,811 [ERROR] Error in main loop: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 270, in main
+    tracked_fvg = state.find_detect_fvgs()
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/strategy_v3.py", line 79, in find_detect_fvgs
+    return detect_fvgs(df_day)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/fvg.py", line 25, in detect_fvgs
+    highs = df['high'].values
+            ~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-10-16 09:36:02,978 [ERROR] Error in main loop: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 270, in main
+    tracked_fvg = state.find_detect_fvgs()
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/strategy_v3.py", line 79, in find_detect_fvgs
+    return detect_fvgs(df_day)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/fvg.py", line 25, in detect_fvgs
+    highs = df['high'].values
+            ~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-10-16 09:37:03,066 [ERROR] Error in main loop: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 270, in main
+    tracked_fvg = state.find_detect_fvgs()
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/strategy_v3.py", line 79, in find_detect_fvgs
+    return detect_fvgs(df_day)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/fvg.py", line 25, in detect_fvgs
+    highs = df['high'].values
+            ~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-10-16 09:38:03,164 [ERROR] Error in main loop: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 270, in main
+    tracked_fvg = state.find_detect_fvgs()
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/strategy_v3.py", line 79, in find_detect_fvgs
+    return detect_fvgs(df_day)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/fvg.py", line 25, in detect_fvgs
+    highs = df['high'].values
+            ~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-10-16 09:39:03,254 [ERROR] Error in main loop: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 270, in main
+    tracked_fvg = state.find_detect_fvgs()
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/strategy_v3.py", line 79, in find_detect_fvgs
+    return detect_fvgs(df_day)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/fvg.py", line 25, in detect_fvgs
+    highs = df['high'].values
+            ~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-10-16 09:40:03,337 [ERROR] Error in main loop: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 270, in main
+    tracked_fvg = state.find_detect_fvgs()
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/strategy_v3.py", line 79, in find_detect_fvgs
+    return detect_fvgs(df_day)
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/fvg.py", line 25, in detect_fvgs
+    highs = df['high'].values
+            ~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-10-16 09:42:07,690 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 09:42:07,691 [INFO] DRY_RUN = True
+2026-10-16 09:42:07,691 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 09:51:08,827 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1922950PE on NFO @ ~122.60 (Spot: 22965.35, SL: 107.6, Target: 172.6)
+2026-10-16 09:51:10,625 [INFO] Entered NIFTY26O1922950PE (PUT) 1 lot(s) (65 qty) @ ₹122.60 | SL=₹107.60 Target=₹172.60 | Spot: 22965.35 | ADX: 19.51 (FVG bearish 22967.00-22988.50)
+2026-10-16 09:51:20,693 [INFO] [10s check] Trailing stop moved to ₹108.95 for open NIFTY26O1922950PE (LTP: ₹123.95)
+2026-10-16 09:52:00,900 [INFO] [10s check] Trailing stop moved to ₹109.00 for open NIFTY26O1922950PE (LTP: ₹124.00)
+2026-10-16 09:52:10,948 [INFO] [10s check] Trailing stop moved to ₹109.15 for open NIFTY26O1922950PE (LTP: ₹124.15)
+2026-10-16 09:52:41,161 [INFO] [10s check] Trailing stop moved to ₹109.45 for open NIFTY26O1922950PE (LTP: ₹124.45)
+2026-10-16 09:54:31,892 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26O1922950PE (PUT) @ ₹108.95 (STOP_LOSS) | Entry: ₹122.60 | SL: ₹109.45
+2026-10-16 09:54:31,992 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1922950PE on NFO @ ~108.60 (Exit LTP: 108.60)
+2026-10-16 09:54:32,934 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-887.25 (-13.65 pts on 65 qty)
+2026-10-16 12:14:01,128 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 12:14:01,128 [INFO] DRY_RUN = True
+2026-10-16 12:14:01,128 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 12:15:01,399 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 12:15:01,399 [INFO] DRY_RUN = True
+2026-10-16 12:15:01,400 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 12:27:06,691 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 12:27:06,692 [INFO] DRY_RUN = True
+2026-10-16 12:27:06,692 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 12:28:42,452 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 12:28:42,452 [INFO] DRY_RUN = True
+2026-10-16 12:28:42,452 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 12:33:36,630 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 12:33:36,630 [INFO] DRY_RUN = True
+2026-10-16 12:33:36,630 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 12:36:12,840 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 12:36:12,840 [INFO] DRY_RUN = True
+2026-10-16 12:36:12,840 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 12:37:00,944 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 12:37:00,945 [INFO] DRY_RUN = True
+2026-10-16 12:37:00,945 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 12:40:02,369 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26O1923150PE on NFO @ ~114.20 (Spot: 23134.30, SL: 107.55, Target: 129.2)
+2026-10-16 12:40:03,386 [INFO] Entered NIFTY26O1923150PE (PUT) @ ₹114.20 | SL=₹107.55 Target=₹129.20 | Spot: 23134.30 (FVG bearish 23136.55-23141.20)
+2026-10-16 12:40:13,439 [INFO] [10s check] Trailing stop moved to ₹109.05 for open NIFTY26O1923150PE (LTP: ₹115.70)
+2026-10-16 12:40:23,493 [INFO] [10s check] Trailing stop moved to ₹109.15 for open NIFTY26O1923150PE (LTP: ₹115.80)
+2026-10-16 12:40:33,548 [INFO] [10s check] Trailing stop moved to ₹109.35 for open NIFTY26O1923150PE (LTP: ₹116.00)
+2026-10-16 12:40:53,664 [INFO] [10s check] Trailing stop moved to ₹110.40 for open NIFTY26O1923150PE (LTP: ₹117.05)
+2026-10-16 12:41:13,855 [INFO] [10s check] Trailing stop moved to ₹111.10 for open NIFTY26O1923150PE (LTP: ₹117.75)
+2026-10-16 12:41:33,961 [INFO] [10s check] Trailing stop moved to ₹111.40 for open NIFTY26O1923150PE (LTP: ₹118.05)
+2026-10-16 12:44:55,578 [INFO] [10s check] Trailing stop moved to ₹112.20 for open NIFTY26O1923150PE (LTP: ₹118.85)
+2026-10-16 12:48:57,365 [INFO] [10s check] Exiting NIFTY26O1923150PE (PUT) @ ₹111.10 (STOP_LOSS) | Entry: ₹114.20
+2026-10-16 12:48:57,474 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26O1923150PE on NFO @ ~111.10 (Spot: 0.00, SL: None, Target: None)
+2026-10-16 12:48:58,471 [INFO] Trade closed. P&L: ₹-201.50 (-3.10 pts)
+2026-10-16 13:53:55,236 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 13:53:55,236 [INFO] DRY_RUN = True
+2026-10-16 13:53:55,236 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 13:53:55,634 [ERROR] Error in main loop: Object of type datetime64 is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 216, in main
+    print("detect_fvgs", json.dumps(detect_fvgs(candles), indent=4), dt.datetime.now().strftime("%H:%M:%S"))
+                         ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type datetime64 is not JSON serializable
+2026-10-16 13:54:43,856 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 13:54:43,856 [INFO] DRY_RUN = True
+2026-10-16 13:54:43,856 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 13:54:44,072 [ERROR] Error in main loop: Object of type datetime64 is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 217, in main
+    print("detect_fvgs", json.dumps(detect_fvgs(candles), indent=4), dt.datetime.now().strftime("%H:%M:%S"))
+                         ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type datetime64 is not JSON serializable
+2026-10-16 13:55:28,974 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 13:55:28,974 [INFO] DRY_RUN = True
+2026-10-16 13:55:28,975 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 14:09:31,711 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 14:09:31,712 [INFO] DRY_RUN = True
+2026-10-16 14:09:31,712 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 14:10:10,382 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 14:10:10,382 [INFO] DRY_RUN = True
+2026-10-16 14:10:10,382 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 14:12:42,836 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 14:12:42,836 [INFO] DRY_RUN = True
+2026-10-16 14:12:42,836 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 14:28:59,227 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 14:28:59,227 [INFO] DRY_RUN = True
+2026-10-16 14:28:59,227 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 14:30:00,583 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 14:30:00,583 [INFO] DRY_RUN = True
+2026-10-16 14:30:00,583 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 14:51:51,617 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 14:51:51,617 [INFO] DRY_RUN = True
+2026-10-16 14:51:51,617 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 14:51:57,255 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 14:51:57,255 [INFO] DRY_RUN = True
+2026-10-16 14:51:57,255 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 14:52:01,359 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-16 14:52:01,359 [INFO] DRY_RUN = True
+2026-10-16 14:52:01,359 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-16 15:00:02,962 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:01:03,116 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:02:03,474 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:03:04,137 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:04:04,386 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:05:04,522 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:06:04,674 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:07:04,800 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:08:04,934 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:09:05,062 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:10:05,201 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:11:05,326 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:12:05,449 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:13:05,580 [INFO] Not trading right now: Outside configured trading hours
+2026-10-16 15:14:05,719 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 11:17:04,715 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-21 11:17:04,715 [INFO] DRY_RUN = True
+2026-10-21 11:17:04,715 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-21 11:20:05,289 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22900PE on NFO @ ~157.45 (Spot: 22910.00, SL: 143.8, Target: 207.45)
+2026-10-21 11:20:06,408 [INFO] Entered NIFTY26OCT22900PE (PUT) 1 lot(s) (65 qty) @ ₹157.45 | SL=₹143.80 Target=₹207.45 | Spot: 22910.00 | ADX: 17.82 (FVG bearish 22918.85-22930.50)
+2026-10-21 11:20:16,458 [INFO] [10s check] Trailing stop moved to ₹149.75 for open NIFTY26OCT22900PE (LTP: ₹163.40)
+2026-10-21 11:22:37,427 [INFO] [10s check] Trailing stop moved to ₹150.00 for open NIFTY26OCT22900PE (LTP: ₹163.65)
+2026-10-21 11:22:47,484 [INFO] [10s check] Trailing stop moved to ₹151.95 for open NIFTY26OCT22900PE (LTP: ₹165.60)
+2026-10-21 11:23:57,962 [INFO] [10s check] Trailing stop moved to ₹154.80 for open NIFTY26OCT22900PE (LTP: ₹168.45)
+2026-10-21 11:24:28,209 [INFO] [10s check] Trailing stop moved to ₹156.95 for open NIFTY26OCT22900PE (LTP: ₹170.60)
+2026-10-21 11:24:38,257 [INFO] [10s check] Trailing stop moved to ₹162.35 for open NIFTY26OCT22900PE (LTP: ₹176.00)
+2026-10-21 11:24:48,314 [INFO] [10s check] Trailing stop moved to ₹163.10 for open NIFTY26OCT22900PE (LTP: ₹176.75)
+2026-10-21 11:28:50,311 [INFO] [10s check] Trailing stop moved to ₹163.60 for open NIFTY26OCT22900PE (LTP: ₹177.25)
+2026-10-21 11:29:40,682 [INFO] [10s check] Trailing stop moved to ₹163.65 for open NIFTY26OCT22900PE (LTP: ₹177.30)
+2026-10-21 11:31:31,497 [INFO] [10s check] Trailing stop moved to ₹165.65 for open NIFTY26OCT22900PE (LTP: ₹179.30)
+2026-10-21 11:33:32,409 [INFO] [10s check] Trailing stop moved to ₹166.15 for open NIFTY26OCT22900PE (LTP: ₹179.80)
+2026-10-21 11:33:42,473 [INFO] [10s check] Trailing stop moved to ₹167.20 for open NIFTY26OCT22900PE (LTP: ₹180.85)
+2026-10-21 11:34:02,589 [INFO] [10s check] Trailing stop moved to ₹169.05 for open NIFTY26OCT22900PE (LTP: ₹182.70)
+2026-10-21 11:34:12,652 [INFO] [10s check] Trailing stop moved to ₹172.05 for open NIFTY26OCT22900PE (LTP: ₹185.70)
+2026-10-21 11:34:22,802 [INFO] [10s check] Trailing stop moved to ₹176.35 for open NIFTY26OCT22900PE (LTP: ₹190.00)
+2026-10-21 11:36:43,836 [INFO] [10s check] Trailing stop moved to ₹180.30 for open NIFTY26OCT22900PE (LTP: ₹193.95)
+2026-10-21 11:38:54,812 [INFO] [10s check] Trailing stop moved to ₹181.15 for open NIFTY26OCT22900PE (LTP: ₹194.80)
+2026-10-21 11:39:14,949 [INFO] [10s check] Trailing stop moved to ₹182.15 for open NIFTY26OCT22900PE (LTP: ₹195.80)
+2026-10-21 11:39:25,115 [INFO] [10s check] Trailing stop moved to ₹185.00 for open NIFTY26OCT22900PE (LTP: ₹198.65)
+2026-10-21 11:40:05,390 [INFO] [10s check] Trailing stop moved to ₹186.35 for open NIFTY26OCT22900PE (LTP: ₹200.00)
+2026-10-21 11:40:25,602 [INFO] [10s check] Trailing stop moved to ₹188.75 for open NIFTY26OCT22900PE (LTP: ₹202.40)
+2026-10-21 11:40:35,677 [INFO] [10s check] Trailing stop moved to ₹192.40 for open NIFTY26OCT22900PE (LTP: ₹206.05)
+2026-10-21 11:40:45,733 [INFO] [10s check] TARGET achieved @ ₹208.05 (Target: ₹207.45)! Full exit: Sold 65 qty of NIFTY26OCT22900PE (PUT) | Entry: ₹157.45
+2026-10-21 11:40:45,851 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22900PE on NFO @ ~208.05 (Exit LTP: 208.05)
+2026-10-21 11:40:46,739 [INFO] Trade closed (TARGET). Realized P&L: ₹3289.00 (+50.60 pts on 65 qty)
+2026-10-21 11:45:17,319 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22850PE on NFO @ ~183.30 (Spot: 22828.55, SL: 172.15, Target: 233.3)
+2026-10-21 11:45:18,295 [INFO] Entered NIFTY26OCT22850PE (PUT) 1 lot(s) (65 qty) @ ₹183.30 | SL=₹172.15 Target=₹233.30 | Spot: 22828.55 | ADX: 51.04 (FVG bearish 22830.25-22839.40)
+2026-10-21 11:45:28,348 [INFO] [10s check] Trailing stop moved to ₹173.30 for open NIFTY26OCT22850PE (LTP: ₹184.45)
+2026-10-21 11:45:48,463 [INFO] [10s check] Trailing stop moved to ₹173.40 for open NIFTY26OCT22850PE (LTP: ₹184.55)
+2026-10-21 11:45:58,516 [INFO] [10s check] Trailing stop moved to ₹175.60 for open NIFTY26OCT22850PE (LTP: ₹186.75)
+2026-10-21 11:46:08,574 [INFO] [10s check] Trailing stop moved to ₹176.60 for open NIFTY26OCT22850PE (LTP: ₹187.75)
+2026-10-21 11:47:09,010 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22850PE (PUT) @ ₹175.15 (STOP_LOSS) | Entry: ₹183.30 | SL: ₹176.60
+2026-10-21 11:47:09,125 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22850PE on NFO @ ~175.15 (Exit LTP: 175.15)
+2026-10-21 11:47:10,059 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-529.75 (-8.15 pts on 65 qty)
+2026-10-21 11:49:20,434 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22850PE on NFO @ ~185.00 (Spot: 22826.70, SL: 181.2, Target: 235.0)
+2026-10-21 11:49:21,479 [INFO] Entered NIFTY26OCT22850PE (PUT) 1 lot(s) (65 qty) @ ₹185.00 | SL=₹181.20 Target=₹235.00 | Spot: 22826.70 | ADX: 48.00 (FVG bearish 22832.45-22834.25)
+2026-10-21 11:50:52,138 [INFO] [10s check] Trailing stop moved to ₹181.95 for open NIFTY26OCT22850PE (LTP: ₹185.75)
+2026-10-21 11:51:32,450 [INFO] [10s check] Trailing stop moved to ₹183.55 for open NIFTY26OCT22850PE (LTP: ₹187.35)
+2026-10-21 11:51:52,585 [INFO] [10s check] Trailing stop moved to ₹183.65 for open NIFTY26OCT22850PE (LTP: ₹187.45)
+2026-10-21 11:52:53,069 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22850PE (PUT) @ ₹180.90 (STOP_LOSS) | Entry: ₹185.00 | SL: ₹183.65
+2026-10-21 11:52:53,178 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22850PE on NFO @ ~181.65 (Exit LTP: 181.65)
+2026-10-21 11:52:54,212 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-266.50 (-4.10 pts on 65 qty)
+2026-10-21 11:56:24,667 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22850PE on NFO @ ~177.90 (Spot: 22827.70, SL: 175.7, Target: 227.9)
+2026-10-21 11:56:25,703 [INFO] Entered NIFTY26OCT22850PE (PUT) 1 lot(s) (65 qty) @ ₹177.90 | SL=₹175.70 Target=₹227.90 | Spot: 22827.70 | ADX: 44.53 (FVG bearish 22829.20-22829.40)
+2026-10-21 11:56:35,757 [INFO] [10s check] Trailing stop moved to ₹181.30 for open NIFTY26OCT22850PE (LTP: ₹183.50)
+2026-10-21 11:56:45,827 [INFO] [10s check] Trailing stop moved to ₹183.95 for open NIFTY26OCT22850PE (LTP: ₹186.15)
+2026-10-21 11:56:55,886 [INFO] [10s check] Trailing stop moved to ₹185.75 for open NIFTY26OCT22850PE (LTP: ₹187.95)
+2026-10-21 11:57:26,079 [INFO] [10s check] Trailing stop moved to ₹188.40 for open NIFTY26OCT22850PE (LTP: ₹190.60)
+2026-10-21 11:57:36,287 [INFO] [10s check] Trailing stop moved to ₹189.25 for open NIFTY26OCT22850PE (LTP: ₹191.45)
+2026-10-21 11:57:46,338 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22850PE (PUT) @ ₹186.50 (TRAILING_STOP) | Entry: ₹177.90 | SL: ₹189.25
+2026-10-21 11:57:46,450 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22850PE on NFO @ ~186.50 (Exit LTP: 186.50)
+2026-10-21 11:57:47,571 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹559.00 (+8.60 pts on 65 qty)
+2026-10-21 11:59:07,816 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-21 11:59:07,816 [INFO] DRY_RUN = True
+2026-10-21 11:59:07,816 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-21 12:06:08,953 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22800PE on NFO @ ~166.45 (Spot: 22800.20, SL: 159.6, Target: 181.45)
+2026-10-21 12:06:09,964 [INFO] Entered NIFTY26OCT22800PE (PUT) 1 lot(s) (65 qty) @ ₹166.45 | SL=₹159.60 Target=₹181.45 | Spot: 22800.20 | ADX: 39.80 (FVG bearish 22802.15-22807.00)
+2026-10-21 12:07:20,392 [INFO] [10s check] Trailing stop moved to ₹161.85 for open NIFTY26OCT22800PE (LTP: ₹168.70)
+2026-10-21 12:09:11,122 [INFO] [10s check] Trailing stop moved to ₹162.90 for open NIFTY26OCT22800PE (LTP: ₹169.75)
+2026-10-21 12:09:31,306 [INFO] [10s check] Trailing stop moved to ₹164.80 for open NIFTY26OCT22800PE (LTP: ₹171.65)
+2026-10-21 12:09:41,365 [INFO] [10s check] Trailing stop moved to ₹166.50 for open NIFTY26OCT22800PE (LTP: ₹173.35)
+2026-10-21 12:09:51,420 [INFO] [10s check] Trailing stop moved to ₹167.15 for open NIFTY26OCT22800PE (LTP: ₹174.00)
+2026-10-21 12:10:01,565 [INFO] [10s check] Trailing stop moved to ₹168.40 for open NIFTY26OCT22800PE (LTP: ₹175.25)
+2026-10-21 12:10:51,926 [INFO] [10s check] Trailing stop moved to ₹169.35 for open NIFTY26OCT22800PE (LTP: ₹176.20)
+2026-10-21 12:11:22,149 [INFO] [10s check] Trailing stop moved to ₹171.80 for open NIFTY26OCT22800PE (LTP: ₹178.65)
+2026-10-21 12:11:42,250 [INFO] [10s check] Trailing stop moved to ₹172.00 for open NIFTY26OCT22800PE (LTP: ₹178.85)
+2026-10-21 12:11:52,305 [INFO] [10s check] Trailing stop moved to ₹173.35 for open NIFTY26OCT22800PE (LTP: ₹180.20)
+2026-10-21 12:12:02,358 [INFO] [10s check] TARGET achieved @ ₹182.85 (Target: ₹181.45)! Full exit: Sold 65 qty of NIFTY26OCT22800PE (PUT) | Entry: ₹166.45
+2026-10-21 12:12:02,486 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22800PE on NFO @ ~182.85 (Exit LTP: 182.85)
+2026-10-21 12:12:03,480 [INFO] Trade closed (TARGET). Realized P&L: ₹1066.00 (+16.40 pts on 65 qty)
+2026-10-21 12:15:13,985 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22750PE on NFO @ ~171.35 (Spot: 22742.00, SL: 161.35, Target: 186.35)
+2026-10-21 12:15:14,877 [INFO] Entered NIFTY26OCT22750PE (PUT) 1 lot(s) (65 qty) @ ₹171.35 | SL=₹161.35 Target=₹186.35 | Spot: 22742.00 | ADX: 45.05 (FVG bearish 22746.00-22757.25)
+2026-10-21 12:15:24,946 [INFO] [10s check] Trailing stop moved to ₹162.70 for open NIFTY26OCT22750PE (LTP: ₹172.70)
+2026-10-21 12:15:34,999 [INFO] [10s check] Trailing stop moved to ₹163.05 for open NIFTY26OCT22750PE (LTP: ₹173.05)
+2026-10-21 12:15:55,124 [INFO] [10s check] Trailing stop moved to ₹166.50 for open NIFTY26OCT22750PE (LTP: ₹176.50)
+2026-10-21 12:16:05,213 [INFO] [10s check] Trailing stop moved to ₹175.00 for open NIFTY26OCT22750PE (LTP: ₹185.00)
+2026-10-21 12:16:45,518 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22750PE (PUT) @ ₹173.25 (TRAILING_STOP) | Entry: ₹171.35 | SL: ₹175.00
+2026-10-21 12:16:45,629 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22750PE on NFO @ ~173.25 (Exit LTP: 173.25)
+2026-10-21 12:16:46,568 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹123.50 (+1.90 pts on 65 qty)
+2026-10-21 12:19:16,927 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22750PE on NFO @ ~184.35 (Spot: 22728.95, SL: 181.45, Target: 199.35)
+2026-10-21 12:19:17,888 [INFO] Entered NIFTY26OCT22750PE (PUT) 1 lot(s) (65 qty) @ ₹184.35 | SL=₹181.45 Target=₹199.35 | Spot: 22728.95 | ADX: 50.29 (FVG bearish 22737.60-22738.50)
+2026-10-21 12:19:27,939 [INFO] [10s check] Trailing stop moved to ₹183.35 for open NIFTY26OCT22750PE (LTP: ₹186.25)
+2026-10-21 12:19:38,005 [INFO] [10s check] Trailing stop moved to ₹183.95 for open NIFTY26OCT22750PE (LTP: ₹186.85)
+2026-10-21 12:20:08,172 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22750PE (PUT) @ ₹182.85 (STOP_LOSS) | Entry: ₹184.35 | SL: ₹183.95
+2026-10-21 12:20:08,275 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22750PE on NFO @ ~182.85 (Exit LTP: 182.85)
+2026-10-21 12:20:09,247 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-97.50 (-1.50 pts on 65 qty)
+2026-10-21 12:28:20,374 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~168.35 (Spot: 22722.90, SL: 163.05, Target: 183.35)
+2026-10-21 12:28:21,283 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹168.35 | SL=₹163.05 Target=₹183.35 | Spot: 22722.90 | ADX: 58.12 (FVG bearish 22723.95-22727.25)
+2026-10-21 12:29:31,741 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700PE (PUT) @ ₹162.80 (STOP_LOSS) | Entry: ₹168.35 | SL: ₹163.05
+2026-10-21 12:29:31,855 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~162.80 (Exit LTP: 162.80)
+2026-10-21 12:29:32,843 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-360.75 (-5.55 pts on 65 qty)
+2026-10-21 12:37:23,925 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22750PE on NFO @ ~178.45 (Spot: 22750.30, SL: 175.75, Target: 193.45)
+2026-10-21 12:37:24,851 [INFO] Entered NIFTY26OCT22750PE (PUT) 1 lot(s) (65 qty) @ ₹178.45 | SL=₹175.75 Target=₹193.45 | Spot: 22750.30 | ADX: 34.70 (FVG bearish 22752.80-22753.50)
+2026-10-21 12:37:44,952 [INFO] [10s check] Trailing stop moved to ₹177.65 for open NIFTY26OCT22750PE (LTP: ₹180.35)
+2026-10-21 12:37:55,006 [INFO] [10s check] Trailing stop moved to ₹178.55 for open NIFTY26OCT22750PE (LTP: ₹181.25)
+2026-10-21 12:38:05,071 [INFO] [10s check] Trailing stop moved to ₹180.30 for open NIFTY26OCT22750PE (LTP: ₹183.00)
+2026-10-21 12:38:25,178 [INFO] [10s check] Trailing stop moved to ₹181.10 for open NIFTY26OCT22750PE (LTP: ₹183.80)
+2026-10-21 12:38:35,326 [INFO] [10s check] Trailing stop moved to ₹181.80 for open NIFTY26OCT22750PE (LTP: ₹184.50)
+2026-10-21 12:38:55,435 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22750PE (PUT) @ ₹181.50 (TRAILING_STOP) | Entry: ₹178.45 | SL: ₹181.80
+2026-10-21 12:38:55,532 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22750PE on NFO @ ~181.50 (Exit LTP: 181.50)
+2026-10-21 12:38:56,444 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹198.25 (+3.05 pts on 65 qty)
+2026-10-21 12:39:26,596 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22750PE on NFO @ ~178.50 (Spot: 22744.70, SL: 173.95, Target: 193.5)
+2026-10-21 12:39:27,539 [INFO] Entered NIFTY26OCT22750PE (PUT) 1 lot(s) (65 qty) @ ₹178.50 | SL=₹173.95 Target=₹193.50 | Spot: 22744.70 | ADX: 32.28 (FVG bearish 22745.40-22747.95)
+2026-10-21 12:39:47,653 [INFO] [10s check] Trailing stop moved to ₹176.40 for open NIFTY26OCT22750PE (LTP: ₹180.95)
+2026-10-21 12:41:28,261 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22750PE (PUT) @ ₹176.40 (STOP_LOSS) | Entry: ₹178.50 | SL: ₹176.40
+2026-10-21 12:41:28,371 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22750PE on NFO @ ~176.40 (Exit LTP: 176.40)
+2026-10-21 12:41:29,629 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-136.50 (-2.10 pts on 65 qty)
+2026-10-21 12:44:30,095 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22750CE on NFO @ ~176.05 (Spot: 22737.75, SL: 166.05, Target: 191.05)
+2026-10-21 12:44:31,753 [INFO] Entered NIFTY26OCT22750CE (CALL) 1 lot(s) (65 qty) @ ₹176.05 | SL=₹166.05 Target=₹191.05 | Spot: 22737.75 | ADX: 23.58 (FVG bullish 22728.00-22737.55)
+2026-10-21 12:44:41,806 [INFO] [10s check] Trailing stop moved to ₹166.45 for open NIFTY26OCT22750CE (LTP: ₹176.45)
+2026-10-21 12:44:51,873 [INFO] [10s check] Trailing stop moved to ₹167.40 for open NIFTY26OCT22750CE (LTP: ₹177.40)
+2026-10-21 12:45:01,930 [INFO] [10s check] Trailing stop moved to ₹167.50 for open NIFTY26OCT22750CE (LTP: ₹177.50)
+2026-10-21 12:45:11,993 [INFO] [10s check] Trailing stop moved to ₹169.35 for open NIFTY26OCT22750CE (LTP: ₹179.35)
+2026-10-21 12:45:32,108 [INFO] [10s check] Trailing stop moved to ₹169.75 for open NIFTY26OCT22750CE (LTP: ₹179.75)
+2026-10-21 12:46:22,499 [INFO] [10s check] Trailing stop moved to ₹170.15 for open NIFTY26OCT22750CE (LTP: ₹180.15)
+2026-10-21 12:46:42,701 [INFO] [10s check] Trailing stop moved to ₹171.15 for open NIFTY26OCT22750CE (LTP: ₹181.15)
+2026-10-21 12:48:43,575 [INFO] [10s check] Trailing stop moved to ₹171.70 for open NIFTY26OCT22750CE (LTP: ₹181.70)
+2026-10-21 12:49:23,806 [INFO] [10s check] Trailing stop moved to ₹172.50 for open NIFTY26OCT22750CE (LTP: ₹182.50)
+2026-10-21 12:49:44,011 [INFO] [10s check] Trailing stop moved to ₹174.00 for open NIFTY26OCT22750CE (LTP: ₹184.00)
+2026-10-21 12:49:54,066 [INFO] [10s check] Trailing stop moved to ₹174.20 for open NIFTY26OCT22750CE (LTP: ₹184.20)
+2026-10-21 12:50:04,124 [INFO] [10s check] Trailing stop moved to ₹174.45 for open NIFTY26OCT22750CE (LTP: ₹184.45)
+2026-10-21 12:50:14,172 [INFO] [10s check] Trailing stop moved to ₹176.30 for open NIFTY26OCT22750CE (LTP: ₹186.30)
+2026-10-21 12:55:36,408 [INFO] [10s check] Trailing stop moved to ₹178.10 for open NIFTY26OCT22750CE (LTP: ₹188.10)
+2026-10-21 12:56:06,700 [INFO] [10s check] TARGET achieved @ ₹191.15 (Target: ₹191.05)! Full exit: Sold 65 qty of NIFTY26OCT22750CE (CALL) | Entry: ₹176.05
+2026-10-21 12:56:06,799 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22750CE on NFO @ ~191.15 (Exit LTP: 191.15)
+2026-10-21 12:56:07,784 [INFO] Trade closed (TARGET). Realized P&L: ₹981.50 (+15.10 pts on 65 qty)
+2026-10-21 12:57:38,069 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22750PE on NFO @ ~162.60 (Spot: 22771.75, SL: 154.9, Target: 177.6)
+2026-10-21 12:57:39,015 [INFO] Entered NIFTY26OCT22750PE (PUT) 1 lot(s) (65 qty) @ ₹162.60 | SL=₹154.90 Target=₹177.60 | Spot: 22771.75 | ADX: 18.44 (FVG bearish 22774.20-22779.90)
+2026-10-21 12:58:49,480 [INFO] [10s check] Trailing stop moved to ₹157.10 for open NIFTY26OCT22750PE (LTP: ₹164.80)
+2026-10-21 12:58:59,536 [INFO] [10s check] Trailing stop moved to ₹161.50 for open NIFTY26OCT22750PE (LTP: ₹169.20)
+2026-10-21 12:59:19,648 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22750PE (PUT) @ ₹160.00 (STOP_LOSS) | Entry: ₹162.60 | SL: ₹161.50
+2026-10-21 12:59:19,755 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22750PE on NFO @ ~160.00 (Exit LTP: 160.00)
+2026-10-21 12:59:20,664 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-169.00 (-2.60 pts on 65 qty)
+2026-10-21 12:59:40,819 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22750CE on NFO @ ~195.90 (Spot: 22770.75, SL: 185.9, Target: 210.9)
+2026-10-21 12:59:41,869 [INFO] Entered NIFTY26OCT22750CE (CALL) 1 lot(s) (65 qty) @ ₹195.90 | SL=₹185.90 Target=₹210.90 | Spot: 22770.75 | ADX: 19.69 (FVG bullish 22755.55-22767.10)
+2026-10-21 13:00:01,988 [INFO] [10s check] Trailing stop moved to ₹188.95 for open NIFTY26OCT22750CE (LTP: ₹198.95)
+2026-10-21 13:00:32,155 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22750CE (CALL) @ ₹185.25 (STOP_LOSS) | Entry: ₹195.90 | SL: ₹188.95
+2026-10-21 13:00:32,266 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22750CE on NFO @ ~185.25 (Exit LTP: 185.25)
+2026-10-21 13:00:33,201 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-692.25 (-10.65 pts on 65 qty)
+2026-10-21 13:02:43,582 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22750PE on NFO @ ~177.55 (Spot: 22738.55, SL: 173.45, Target: 192.55)
+2026-10-21 13:02:44,806 [INFO] Entered NIFTY26OCT22750PE (PUT) 1 lot(s) (65 qty) @ ₹177.55 | SL=₹173.45 Target=₹192.55 | Spot: 22738.55 | ADX: 16.97 (FVG bearish 22744.40-22746.50)
+2026-10-21 13:02:54,860 [INFO] [10s check] Trailing stop moved to ₹175.15 for open NIFTY26OCT22750PE (LTP: ₹179.25)
+2026-10-21 13:03:04,912 [INFO] [10s check] Trailing stop moved to ₹178.60 for open NIFTY26OCT22750PE (LTP: ₹182.70)
+2026-10-21 13:03:14,960 [INFO] [10s check] Trailing stop moved to ₹178.80 for open NIFTY26OCT22750PE (LTP: ₹182.90)
+2026-10-21 13:03:25,016 [INFO] [10s check] Trailing stop moved to ₹180.30 for open NIFTY26OCT22750PE (LTP: ₹184.40)
+2026-10-21 13:04:05,312 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22750PE (PUT) @ ₹180.25 (TRAILING_STOP) | Entry: ₹177.55 | SL: ₹180.30
+2026-10-21 13:04:05,406 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22750PE on NFO @ ~180.25 (Exit LTP: 180.25)
+2026-10-21 13:04:09,855 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹175.50 (+2.70 pts on 65 qty)
+2026-10-21 13:09:50,680 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22750PE on NFO @ ~178.85 (Spot: 22739.95, SL: 174.35, Target: 193.85)
+2026-10-21 13:09:51,848 [INFO] Entered NIFTY26OCT22750PE (PUT) 1 lot(s) (65 qty) @ ₹178.85 | SL=₹174.35 Target=₹193.85 | Spot: 22739.95 | ADX: 13.60 (FVG bearish 22741.45-22743.95)
+2026-10-21 13:10:01,897 [INFO] [10s check] Trailing stop moved to ₹176.40 for open NIFTY26OCT22750PE (LTP: ₹180.90)
+2026-10-21 13:10:11,952 [INFO] [10s check] Trailing stop moved to ₹176.50 for open NIFTY26OCT22750PE (LTP: ₹181.00)
+2026-10-21 13:11:32,464 [INFO] [10s check] Trailing stop moved to ₹179.00 for open NIFTY26OCT22750PE (LTP: ₹183.50)
+2026-10-21 13:11:42,519 [INFO] [10s check] Trailing stop moved to ₹180.00 for open NIFTY26OCT22750PE (LTP: ₹184.50)
+2026-10-21 13:11:52,574 [INFO] [10s check] Trailing stop moved to ₹181.35 for open NIFTY26OCT22750PE (LTP: ₹185.85)
+2026-10-21 13:12:12,764 [INFO] [10s check] Trailing stop moved to ₹182.25 for open NIFTY26OCT22750PE (LTP: ₹186.75)
+2026-10-21 13:13:03,145 [INFO] [10s check] Trailing stop moved to ₹182.80 for open NIFTY26OCT22750PE (LTP: ₹187.30)
+2026-10-21 13:13:33,314 [INFO] [10s check] Trailing stop moved to ₹183.00 for open NIFTY26OCT22750PE (LTP: ₹187.50)
+2026-10-21 13:13:53,425 [INFO] [10s check] Trailing stop moved to ₹183.65 for open NIFTY26OCT22750PE (LTP: ₹188.15)
+2026-10-21 13:14:23,671 [INFO] [10s check] TARGET achieved @ ₹194.25 (Target: ₹193.85)! Full exit: Sold 65 qty of NIFTY26OCT22750PE (PUT) | Entry: ₹178.85
+2026-10-21 13:14:23,775 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22750PE on NFO @ ~194.25 (Exit LTP: 194.25)
+2026-10-21 13:14:31,125 [INFO] Trade closed (TARGET). Realized P&L: ₹1001.00 (+15.40 pts on 65 qty)
+2026-10-21 13:46:05,220 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~171.20 (Spot: 22693.30, SL: 161.95, Target: 186.2)
+2026-10-21 13:46:06,178 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹171.20 | SL=₹161.95 Target=₹186.20 | Spot: 22693.30 | ADX: 15.11 (FVG bearish 22695.60-22702.85)
+2026-10-21 13:46:16,248 [INFO] [10s check] Trailing stop moved to ₹162.75 for open NIFTY26OCT22700PE (LTP: ₹172.00)
+2026-10-21 13:46:46,405 [INFO] [10s check] Trailing stop moved to ₹165.90 for open NIFTY26OCT22700PE (LTP: ₹175.15)
+2026-10-21 13:46:56,460 [INFO] [10s check] Trailing stop moved to ₹166.00 for open NIFTY26OCT22700PE (LTP: ₹175.25)
+2026-10-21 13:47:16,647 [INFO] [10s check] Trailing stop moved to ₹167.00 for open NIFTY26OCT22700PE (LTP: ₹176.25)
+2026-10-21 13:47:36,770 [INFO] [10s check] Trailing stop moved to ₹168.40 for open NIFTY26OCT22700PE (LTP: ₹177.65)
+2026-10-21 13:48:17,078 [INFO] [10s check] Trailing stop moved to ₹169.50 for open NIFTY26OCT22700PE (LTP: ₹178.75)
+2026-10-21 13:48:27,145 [INFO] [10s check] Trailing stop moved to ₹170.45 for open NIFTY26OCT22700PE (LTP: ₹179.70)
+2026-10-21 13:48:37,198 [INFO] [10s check] Trailing stop moved to ₹171.10 for open NIFTY26OCT22700PE (LTP: ₹180.35)
+2026-10-21 13:49:27,551 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700PE (PUT) @ ₹170.90 (STOP_LOSS) | Entry: ₹171.20 | SL: ₹171.10
+2026-10-21 13:49:27,661 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~170.90 (Exit LTP: 170.90)
+2026-10-21 13:49:28,620 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-19.50 (-0.30 pts on 65 qty)
+2026-10-21 13:52:09,050 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~171.90 (Spot: 22686.25, SL: 168.75, Target: 186.9)
+2026-10-21 13:52:09,966 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹171.90 | SL=₹168.75 Target=₹186.90 | Spot: 22686.25 | ADX: 21.47 (FVG bearish 22687.45-22688.60)
+2026-10-21 13:52:20,026 [INFO] [10s check] Trailing stop moved to ₹170.60 for open NIFTY26OCT22700PE (LTP: ₹173.75)
+2026-10-21 13:53:00,233 [INFO] [10s check] Trailing stop moved to ₹171.65 for open NIFTY26OCT22700PE (LTP: ₹174.80)
+2026-10-21 13:53:10,289 [INFO] [10s check] Trailing stop moved to ₹173.30 for open NIFTY26OCT22700PE (LTP: ₹176.45)
+2026-10-21 13:53:50,597 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700PE (PUT) @ ₹172.15 (TRAILING_STOP) | Entry: ₹171.90 | SL: ₹173.30
+2026-10-21 13:53:50,691 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~172.15 (Exit LTP: 172.15)
+2026-10-21 13:53:51,639 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹16.25 (+0.25 pts on 65 qty)
+2026-10-21 14:07:13,592 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~158.45 (Spot: 22704.80, SL: 154.25, Target: 173.45)
+2026-10-21 14:07:14,764 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹158.45 | SL=₹154.25 Target=₹173.45 | Spot: 22704.80 | ADX: 15.28 (FVG bearish 22706.40-22708.60)
+2026-10-21 14:07:24,820 [INFO] [10s check] Trailing stop moved to ₹154.80 for open NIFTY26OCT22700PE (LTP: ₹159.00)
+2026-10-21 14:07:34,875 [INFO] [10s check] Trailing stop moved to ₹156.20 for open NIFTY26OCT22700PE (LTP: ₹160.40)
+2026-10-21 14:07:44,930 [INFO] [10s check] Trailing stop moved to ₹158.60 for open NIFTY26OCT22700PE (LTP: ₹162.80)
+2026-10-21 14:08:05,032 [INFO] [10s check] Trailing stop moved to ₹161.30 for open NIFTY26OCT22700PE (LTP: ₹165.50)
+2026-10-21 14:08:15,085 [INFO] [10s check] Trailing stop moved to ₹162.20 for open NIFTY26OCT22700PE (LTP: ₹166.40)
+2026-10-21 14:09:05,452 [INFO] [10s check] Trailing stop moved to ₹163.30 for open NIFTY26OCT22700PE (LTP: ₹167.50)
+2026-10-21 14:09:35,713 [INFO] [10s check] Trailing stop moved to ₹164.00 for open NIFTY26OCT22700PE (LTP: ₹168.20)
+2026-10-21 14:09:45,767 [INFO] [10s check] Trailing stop moved to ₹164.60 for open NIFTY26OCT22700PE (LTP: ₹168.80)
+2026-10-21 14:09:55,823 [INFO] [10s check] Trailing stop moved to ₹167.60 for open NIFTY26OCT22700PE (LTP: ₹171.80)
+2026-10-21 14:11:06,304 [INFO] [10s check] Trailing stop moved to ₹169.00 for open NIFTY26OCT22700PE (LTP: ₹173.20)
+2026-10-21 14:12:16,827 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700PE (PUT) @ ₹166.55 (TRAILING_STOP) | Entry: ₹158.45 | SL: ₹169.00
+2026-10-21 14:12:16,929 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~166.55 (Exit LTP: 166.55)
+2026-10-21 14:12:17,910 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹526.50 (+8.10 pts on 65 qty)
+2026-10-21 14:20:19,236 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22650PE on NFO @ ~149.85 (Spot: 22673.10, SL: 146.0, Target: 164.85)
+2026-10-21 14:20:20,215 [INFO] Entered NIFTY26OCT22650PE (PUT) 1 lot(s) (65 qty) @ ₹149.85 | SL=₹146.00 Target=₹164.85 | Spot: 22673.10 | ADX: 16.13 (FVG bearish 22675.50-22677.35)
+2026-10-21 14:20:50,374 [INFO] [10s check] Trailing stop moved to ₹146.70 for open NIFTY26OCT22650PE (LTP: ₹150.55)
+2026-10-21 14:21:20,550 [INFO] [10s check] Trailing stop moved to ₹148.00 for open NIFTY26OCT22650PE (LTP: ₹151.85)
+2026-10-21 14:21:30,714 [INFO] [10s check] Trailing stop moved to ₹149.50 for open NIFTY26OCT22650PE (LTP: ₹153.35)
+2026-10-21 14:21:40,768 [INFO] [10s check] Trailing stop moved to ₹150.90 for open NIFTY26OCT22650PE (LTP: ₹154.75)
+2026-10-21 14:23:11,356 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22650PE (PUT) @ ₹149.95 (TRAILING_STOP) | Entry: ₹149.85 | SL: ₹150.90
+2026-10-21 14:23:11,472 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22650PE on NFO @ ~149.95 (Exit LTP: 149.95)
+2026-10-21 14:23:12,435 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹6.50 (+0.10 pts on 65 qty)
+2026-10-21 14:24:22,748 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22650PE on NFO @ ~152.35 (Spot: 22668.65, SL: 149.3, Target: 167.35)
+2026-10-21 14:24:23,683 [INFO] Entered NIFTY26OCT22650PE (PUT) 1 lot(s) (65 qty) @ ₹152.35 | SL=₹149.30 Target=₹167.35 | Spot: 22668.65 | ADX: 19.77 (FVG bearish 22670.40-22671.45)
+2026-10-21 14:24:33,741 [INFO] [10s check] Trailing stop moved to ₹150.30 for open NIFTY26OCT22650PE (LTP: ₹153.35)
+2026-10-21 14:25:34,193 [INFO] [10s check] Trailing stop moved to ₹150.60 for open NIFTY26OCT22650PE (LTP: ₹153.65)
+2026-10-21 14:26:04,374 [INFO] [10s check] Trailing stop moved to ₹152.85 for open NIFTY26OCT22650PE (LTP: ₹155.90)
+2026-10-21 14:26:44,689 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22650PE (PUT) @ ₹152.35 (STOP_LOSS) | Entry: ₹152.35 | SL: ₹152.85
+2026-10-21 14:26:44,793 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22650PE on NFO @ ~152.35 (Exit LTP: 152.35)
+2026-10-21 14:26:45,826 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹0.00 (+0.00 pts on 65 qty)
+2026-10-21 14:39:27,621 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~174.25 (Spot: 22677.15, SL: 164.8, Target: 189.25)
+2026-10-21 14:39:28,559 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹174.25 | SL=₹164.80 Target=₹189.25 | Spot: 22677.15 | ADX: 13.99 (FVG bearish 22680.55-22688.00)
+2026-10-21 14:39:38,619 [INFO] [10s check] Trailing stop moved to ₹166.35 for open NIFTY26OCT22700PE (LTP: ₹175.80)
+2026-10-21 14:41:19,290 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700PE (PUT) @ ₹165.60 (STOP_LOSS) | Entry: ₹174.25 | SL: ₹166.35
+2026-10-21 14:41:19,409 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~165.60 (Exit LTP: 165.60)
+2026-10-21 14:41:20,382 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-562.25 (-8.65 pts on 65 qty)
+2026-10-21 14:43:30,793 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~175.00 (Spot: 22675.10, SL: 168.35, Target: 190.0)
+2026-10-21 14:43:31,696 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹175.00 | SL=₹168.35 Target=₹190.00 | Spot: 22675.10 | ADX: 12.04 (FVG bearish 22680.30-22684.95)
+2026-10-21 14:44:52,279 [INFO] [10s check] Trailing stop moved to ₹168.65 for open NIFTY26OCT22700PE (LTP: ₹175.30)
+2026-10-21 14:45:12,392 [INFO] [10s check] Trailing stop moved to ₹168.75 for open NIFTY26OCT22700PE (LTP: ₹175.40)
+2026-10-21 14:45:22,452 [INFO] [10s check] Trailing stop moved to ₹169.00 for open NIFTY26OCT22700PE (LTP: ₹175.65)
+2026-10-21 14:45:32,523 [INFO] [10s check] Trailing stop moved to ₹169.80 for open NIFTY26OCT22700PE (LTP: ₹176.45)
+2026-10-21 14:46:02,825 [INFO] [10s check] Trailing stop moved to ₹171.00 for open NIFTY26OCT22700PE (LTP: ₹177.65)
+2026-10-21 14:46:12,899 [INFO] [10s check] Trailing stop moved to ₹172.20 for open NIFTY26OCT22700PE (LTP: ₹178.85)
+2026-10-21 14:46:43,167 [INFO] [10s check] Trailing stop moved to ₹173.90 for open NIFTY26OCT22700PE (LTP: ₹180.55)
+2026-10-21 14:46:53,224 [INFO] [10s check] Trailing stop moved to ₹175.05 for open NIFTY26OCT22700PE (LTP: ₹181.70)
+2026-10-21 14:47:03,279 [INFO] [10s check] Trailing stop moved to ₹175.85 for open NIFTY26OCT22700PE (LTP: ₹182.50)
+2026-10-21 14:47:13,353 [INFO] [10s check] Trailing stop moved to ₹178.20 for open NIFTY26OCT22700PE (LTP: ₹184.85)
+2026-10-21 14:47:33,459 [INFO] [10s check] Trailing stop moved to ₹179.70 for open NIFTY26OCT22700PE (LTP: ₹186.35)
+2026-10-21 14:48:13,798 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700PE (PUT) @ ₹178.00 (TRAILING_STOP) | Entry: ₹175.00 | SL: ₹179.70
+2026-10-21 14:48:13,896 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~178.00 (Exit LTP: 178.00)
+2026-10-21 14:48:14,796 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹195.00 (+3.00 pts on 65 qty)
+2026-10-21 14:50:35,211 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22650PE on NFO @ ~157.25 (Spot: 22657.40, SL: 147.25, Target: 172.25)
+2026-10-21 14:50:36,543 [INFO] Entered NIFTY26OCT22650PE (PUT) 1 lot(s) (65 qty) @ ₹157.25 | SL=₹147.25 Target=₹172.25 | Spot: 22657.40 | ADX: 16.26 (FVG bearish 22661.25-22669.40)
+2026-10-21 14:52:07,157 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22650PE (PUT) @ ₹146.85 (STOP_LOSS) | Entry: ₹157.25 | SL: ₹147.25
+2026-10-21 14:52:07,261 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22650PE on NFO @ ~146.85 (Exit LTP: 146.85)
+2026-10-21 14:52:08,396 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-676.00 (-10.40 pts on 65 qty)
+2026-10-21 15:00:39,555 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:01:39,703 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:02:39,826 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:03:39,946 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:04:40,080 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:05:40,217 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:06:40,372 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:07:40,498 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:08:40,613 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:09:40,752 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:10:40,869 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:11:41,006 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:12:41,137 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:13:41,268 [INFO] Not trading right now: Outside configured trading hours
+2026-10-21 15:14:41,395 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 09:32:06,175 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-22 09:32:06,175 [INFO] DRY_RUN = True
+2026-10-22 09:32:06,176 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-22 09:33:06,507 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22600PE on NFO @ ~178.55 (Spot: 22582.95, SL: 169.25, Target: 193.55)
+2026-10-22 09:33:08,018 [INFO] Entered NIFTY26OCT22600PE (PUT) 1 lot(s) (65 qty) @ ₹178.55 | SL=₹169.25 Target=₹193.55 | Spot: 22582.95 | ADX: 25.71 (FVG bearish 22586.15-22593.45)
+2026-10-22 09:34:28,564 [INFO] [10s check] Trailing stop moved to ₹174.45 for open NIFTY26OCT22600PE (LTP: ₹183.75)
+2026-10-22 09:34:38,633 [INFO] [10s check] Trailing stop moved to ₹176.90 for open NIFTY26OCT22600PE (LTP: ₹186.20)
+2026-10-22 09:34:48,699 [INFO] [10s check] Trailing stop moved to ₹177.30 for open NIFTY26OCT22600PE (LTP: ₹186.60)
+2026-10-22 09:35:39,052 [INFO] [10s check] Trailing stop moved to ₹178.95 for open NIFTY26OCT22600PE (LTP: ₹188.25)
+2026-10-22 09:35:59,168 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22600PE (PUT) @ ₹178.90 (TRAILING_STOP) | Entry: ₹178.55 | SL: ₹178.95
+2026-10-22 09:35:59,265 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22600PE on NFO @ ~178.90 (Exit LTP: 178.90)
+2026-10-22 09:36:00,150 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹22.75 (+0.35 pts on 65 qty)
+2026-10-22 09:40:10,638 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22650CE on NFO @ ~174.50 (Spot: 22630.90, SL: 164.5, Target: 189.5)
+2026-10-22 09:40:11,524 [INFO] Entered NIFTY26OCT22650CE (CALL) 1 lot(s) (65 qty) @ ₹174.50 | SL=₹164.50 Target=₹189.50 | Spot: 22630.90 | ADX: 22.29 (FVG bullish 22604.40-22626.50)
+2026-10-22 09:40:21,580 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22650CE (CALL) @ ₹163.80 (STOP_LOSS) | Entry: ₹174.50 | SL: ₹164.50
+2026-10-22 09:40:21,684 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22650CE on NFO @ ~163.80 (Exit LTP: 163.80)
+2026-10-22 09:40:22,594 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-695.50 (-10.70 pts on 65 qty)
+2026-10-22 10:04:14,954 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22600CE on NFO @ ~176.05 (Spot: 22595.15, SL: 167.6, Target: 191.05)
+2026-10-22 10:04:15,963 [INFO] Entered NIFTY26OCT22600CE (CALL) 1 lot(s) (65 qty) @ ₹176.05 | SL=₹167.60 Target=₹191.05 | Spot: 22595.15 | ADX: 25.80 (FVG bullish 22584.35-22590.80)
+2026-10-22 10:05:56,600 [INFO] [10s check] Trailing stop moved to ₹168.40 for open NIFTY26OCT22600CE (LTP: ₹176.85)
+2026-10-22 10:06:06,652 [INFO] [10s check] Trailing stop moved to ₹171.00 for open NIFTY26OCT22600CE (LTP: ₹179.45)
+2026-10-22 10:07:47,368 [INFO] [10s check] Trailing stop moved to ₹174.85 for open NIFTY26OCT22600CE (LTP: ₹183.30)
+2026-10-22 10:07:57,421 [INFO] [10s check] Trailing stop moved to ₹177.85 for open NIFTY26OCT22600CE (LTP: ₹186.30)
+2026-10-22 10:08:17,548 [INFO] [10s check] Trailing stop moved to ₹181.15 for open NIFTY26OCT22600CE (LTP: ₹189.60)
+2026-10-22 10:08:27,672 [INFO] [10s check] TARGET achieved @ ₹191.10 (Target: ₹191.05)! Full exit: Sold 65 qty of NIFTY26OCT22600CE (CALL) | Entry: ₹176.05
+2026-10-22 10:08:27,787 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22600CE on NFO @ ~191.10 (Exit LTP: 191.10)
+2026-10-22 10:08:29,219 [INFO] Trade closed (TARGET). Realized P&L: ₹978.25 (+15.05 pts on 65 qty)
+2026-10-22 10:11:19,557 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22650CE on NFO @ ~162.55 (Spot: 22634.75, SL: 159.35, Target: 177.55)
+2026-10-22 10:11:20,579 [INFO] Entered NIFTY26OCT22650CE (CALL) 1 lot(s) (65 qty) @ ₹162.55 | SL=₹159.35 Target=₹177.55 | Spot: 22634.75 | ADX: 19.43 (FVG bullish 22631.35-22632.55)
+2026-10-22 10:11:30,640 [INFO] [10s check] Trailing stop moved to ₹161.35 for open NIFTY26OCT22650CE (LTP: ₹164.55)
+2026-10-22 10:11:40,688 [INFO] [10s check] Trailing stop moved to ₹165.50 for open NIFTY26OCT22650CE (LTP: ₹168.70)
+2026-10-22 10:12:20,891 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22650CE (CALL) @ ₹164.75 (TRAILING_STOP) | Entry: ₹162.55 | SL: ₹165.50
+2026-10-22 10:12:20,994 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22650CE on NFO @ ~164.75 (Exit LTP: 164.75)
+2026-10-22 10:12:21,829 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹143.00 (+2.20 pts on 65 qty)
+2026-10-22 10:27:23,376 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22700CE on NFO @ ~184.95 (Spot: 22723.10, SL: 174.95, Target: 199.95)
+2026-10-22 10:27:39,045 [INFO] Entered NIFTY26OCT22700CE (CALL) 1 lot(s) (65 qty) @ ₹184.95 | SL=₹174.95 Target=₹199.95 | Spot: 22723.10 | ADX: 33.57 (FVG bullish 22686.30-22719.60)
+2026-10-22 10:27:59,168 [INFO] [10s check] Trailing stop moved to ₹177.25 for open NIFTY26OCT22700CE (LTP: ₹187.25)
+2026-10-22 10:28:09,220 [INFO] [10s check] Trailing stop moved to ₹182.30 for open NIFTY26OCT22700CE (LTP: ₹192.30)
+2026-10-22 10:29:29,719 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700CE (CALL) @ ₹181.35 (STOP_LOSS) | Entry: ₹184.95 | SL: ₹182.30
+2026-10-22 10:29:29,826 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22700CE on NFO @ ~181.35 (Exit LTP: 181.35)
+2026-10-22 10:29:30,790 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-234.00 (-3.60 pts on 65 qty)
+2026-10-22 10:32:49,115 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-22 10:32:49,115 [INFO] DRY_RUN = True
+2026-10-22 10:32:49,116 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-22 10:32:49,258 [ERROR] Error in main loop: type object 'datetime.date' has no attribute 'second'
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 249, in main
+    if dt.date.second <= 1 and dt.date.minute % config.POLL_SECONDS == 0:
+       ^^^^^^^^^^^^^^
+AttributeError: type object 'datetime.date' has no attribute 'second'
+2026-10-22 10:32:59,264 [ERROR] Error in main loop: type object 'datetime.date' has no attribute 'second'
+Traceback (most recent call last):
+  File "/Users/vinod/Documents/Vinod/Project/Algotrading/algo-ac/Algo_cl/main_v3.py", line 249, in main
+    if dt.date.second <= 1 and dt.date.minute % config.POLL_SECONDS == 0:
+       ^^^^^^^^^^^^^^
+AttributeError: type object 'datetime.date' has no attribute 'second'
+2026-10-22 10:38:48,481 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-22 10:38:48,481 [INFO] DRY_RUN = True
+2026-10-22 10:38:48,481 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-22 10:40:13,650 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-22 10:40:13,650 [INFO] DRY_RUN = True
+2026-10-22 10:40:13,650 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-22 10:43:26,062 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-22 10:43:26,062 [INFO] DRY_RUN = True
+2026-10-22 10:43:26,062 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-22 11:06:03,396 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-22 11:06:03,396 [INFO] DRY_RUN = True
+2026-10-22 11:06:03,396 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-22 11:10:04,618 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-22 11:10:04,618 [INFO] DRY_RUN = True
+2026-10-22 11:10:04,618 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-22 11:10:41,832 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-22 11:10:41,833 [INFO] DRY_RUN = True
+2026-10-22 11:10:41,833 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-22 11:24:43,514 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22750PE on NFO @ ~143.70 (Spot: 22759.95, SL: 139.6, Target: 158.7)
+2026-10-22 11:24:44,401 [INFO] Entered NIFTY26OCT22750PE (PUT) 1 lot(s) (65 qty) @ ₹143.70 | SL=₹139.60 Target=₹158.70 | Spot: 22759.95 | ADX: 19.25 (FVG bearish 22762.85-22764.95)
+2026-10-22 11:24:54,471 [INFO] [10s check] Trailing stop moved to ₹143.05 for open NIFTY26OCT22750PE (LTP: ₹147.15)
+2026-10-22 11:25:54,885 [INFO] [10s check] Trailing stop moved to ₹143.65 for open NIFTY26OCT22750PE (LTP: ₹147.75)
+2026-10-22 11:26:04,953 [INFO] [10s check] Trailing stop moved to ₹147.55 for open NIFTY26OCT22750PE (LTP: ₹151.65)
+2026-10-22 11:26:25,061 [INFO] [10s check] Trailing stop moved to ₹148.45 for open NIFTY26OCT22750PE (LTP: ₹152.55)
+2026-10-22 11:26:45,193 [INFO] [10s check] Trailing stop moved to ₹151.00 for open NIFTY26OCT22750PE (LTP: ₹155.10)
+2026-10-22 11:27:15,457 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22750PE (PUT) @ ₹147.90 (TRAILING_STOP) | Entry: ₹143.70 | SL: ₹151.00
+2026-10-22 11:27:15,564 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22750PE on NFO @ ~147.90 (Exit LTP: 147.90)
+2026-10-22 11:27:16,472 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹273.00 (+4.20 pts on 65 qty)
+2026-10-22 11:27:46,623 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22750CE on NFO @ ~165.70 (Spot: 22752.85, SL: 159.9, Target: 180.7)
+2026-10-22 11:27:47,638 [INFO] Entered NIFTY26OCT22750CE (CALL) 1 lot(s) (65 qty) @ ₹165.70 | SL=₹159.90 Target=₹180.70 | Spot: 22752.85 | ADX: 16.86 (FVG bullish 22732.85-22736.65)
+2026-10-22 11:27:57,689 [INFO] [10s check] Trailing stop moved to ₹161.80 for open NIFTY26OCT22750CE (LTP: ₹167.60)
+2026-10-22 11:28:27,846 [INFO] [10s check] Trailing stop moved to ₹163.10 for open NIFTY26OCT22750CE (LTP: ₹168.90)
+2026-10-22 11:29:48,396 [INFO] [10s check] Trailing stop moved to ₹166.55 for open NIFTY26OCT22750CE (LTP: ₹172.35)
+2026-10-22 11:31:09,034 [INFO] [10s check] Trailing stop moved to ₹167.55 for open NIFTY26OCT22750CE (LTP: ₹173.35)
+2026-10-22 11:31:39,226 [INFO] [10s check] Trailing stop moved to ₹167.95 for open NIFTY26OCT22750CE (LTP: ₹173.75)
+2026-10-22 11:32:09,485 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22750CE (CALL) @ ₹167.35 (TRAILING_STOP) | Entry: ₹165.70 | SL: ₹167.95
+2026-10-22 11:32:09,593 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22750CE on NFO @ ~167.35 (Exit LTP: 167.35)
+2026-10-22 11:32:10,630 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹107.25 (+1.65 pts on 65 qty)
+2026-10-22 11:37:51,416 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~137.50 (Spot: 22715.65, SL: 127.5, Target: 152.5)
+2026-10-22 11:37:52,452 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹137.50 | SL=₹127.50 Target=₹152.50 | Spot: 22715.65 | ADX: 19.24 (FVG bearish 22723.80-22731.80)
+2026-10-22 11:38:02,517 [INFO] [10s check] Trailing stop moved to ₹127.70 for open NIFTY26OCT22700PE (LTP: ₹137.70)
+2026-10-22 11:41:44,001 [INFO] [10s check] Trailing stop moved to ₹127.80 for open NIFTY26OCT22700PE (LTP: ₹137.80)
+2026-10-22 11:41:54,066 [INFO] [10s check] Trailing stop moved to ₹128.55 for open NIFTY26OCT22700PE (LTP: ₹138.55)
+2026-10-22 11:42:14,256 [INFO] [10s check] Trailing stop moved to ₹131.50 for open NIFTY26OCT22700PE (LTP: ₹141.50)
+2026-10-22 11:42:44,452 [INFO] [10s check] Trailing stop moved to ₹134.60 for open NIFTY26OCT22700PE (LTP: ₹144.60)
+2026-10-22 11:42:54,505 [INFO] [10s check] Trailing stop moved to ₹138.20 for open NIFTY26OCT22700PE (LTP: ₹148.20)
+2026-10-22 11:43:14,681 [INFO] [10s check] Trailing stop moved to ₹140.85 for open NIFTY26OCT22700PE (LTP: ₹150.85)
+2026-10-22 11:43:24,747 [INFO] [10s check] TARGET achieved @ ₹155.55 (Target: ₹152.50)! Full exit: Sold 65 qty of NIFTY26OCT22700PE (PUT) | Entry: ₹137.50
+2026-10-22 11:43:24,845 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~155.55 (Exit LTP: 155.55)
+2026-10-22 11:43:25,763 [INFO] Trade closed (TARGET). Realized P&L: ₹1173.25 (+18.05 pts on 65 qty)
+2026-10-22 11:50:56,670 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22600CE on NFO @ ~178.10 (Spot: 22624.70, SL: 170.6, Target: 193.1)
+2026-10-22 11:50:57,606 [INFO] Entered NIFTY26OCT22600CE (CALL) 1 lot(s) (65 qty) @ ₹178.10 | SL=₹170.60 Target=₹193.10 | Spot: 22624.70 | ADX: 40.00 (FVG bullish 22615.30-22620.80)
+2026-10-22 11:51:07,669 [INFO] [10s check] Trailing stop moved to ₹172.90 for open NIFTY26OCT22600CE (LTP: ₹180.40)
+2026-10-22 11:51:17,729 [INFO] [10s check] Trailing stop moved to ₹176.10 for open NIFTY26OCT22600CE (LTP: ₹183.60)
+2026-10-22 11:51:37,848 [INFO] [10s check] Trailing stop moved to ₹178.45 for open NIFTY26OCT22600CE (LTP: ₹185.95)
+2026-10-22 11:51:57,963 [INFO] [10s check] Trailing stop moved to ₹178.70 for open NIFTY26OCT22600CE (LTP: ₹186.20)
+2026-10-22 11:52:18,162 [INFO] [10s check] Trailing stop moved to ₹180.20 for open NIFTY26OCT22600CE (LTP: ₹187.70)
+2026-10-22 11:53:58,800 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22600CE (CALL) @ ₹179.55 (TRAILING_STOP) | Entry: ₹178.10 | SL: ₹180.20
+2026-10-22 11:53:58,904 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22600CE on NFO @ ~179.55 (Exit LTP: 179.55)
+2026-10-22 11:53:59,820 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹94.25 (+1.45 pts on 65 qty)
+2026-10-22 11:57:00,460 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22650PE on NFO @ ~160.65 (Spot: 22636.40, SL: 150.65, Target: 175.65)
+2026-10-22 11:57:01,373 [INFO] Entered NIFTY26OCT22650PE (PUT) 1 lot(s) (65 qty) @ ₹160.65 | SL=₹150.65 Target=₹175.65 | Spot: 22636.40 | ADX: 41.64 (FVG bearish 22640.60-22654.45)
+2026-10-22 11:57:21,483 [INFO] [10s check] Trailing stop moved to ₹151.20 for open NIFTY26OCT22650PE (LTP: ₹161.20)
+2026-10-22 11:57:31,527 [INFO] [10s check] Trailing stop moved to ₹153.10 for open NIFTY26OCT22650PE (LTP: ₹163.10)
+2026-10-22 11:57:41,578 [INFO] [10s check] Trailing stop moved to ₹154.30 for open NIFTY26OCT22650PE (LTP: ₹164.30)
+2026-10-22 12:00:53,622 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22650PE (PUT) @ ₹153.10 (STOP_LOSS) | Entry: ₹160.65 | SL: ₹154.30
+2026-10-22 12:00:53,743 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22650PE on NFO @ ~153.10 (Exit LTP: 153.10)
+2026-10-22 12:00:54,786 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-490.75 (-7.55 pts on 65 qty)
+2026-10-22 12:03:05,170 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22650PE on NFO @ ~160.50 (Spot: 22627.90, SL: 152.2, Target: 175.5)
+2026-10-22 12:03:06,093 [INFO] Entered NIFTY26OCT22650PE (PUT) 1 lot(s) (65 qty) @ ₹160.50 | SL=₹152.20 Target=₹175.50 | Spot: 22627.90 | ADX: 35.87 (FVG bearish 22628.20-22634.50)
+2026-10-22 12:03:46,332 [INFO] [10s check] Trailing stop moved to ₹153.40 for open NIFTY26OCT22650PE (LTP: ₹161.70)
+2026-10-22 12:04:26,620 [INFO] [10s check] Trailing stop moved to ₹158.30 for open NIFTY26OCT22650PE (LTP: ₹166.60)
+2026-10-22 12:04:56,801 [INFO] [10s check] Trailing stop moved to ₹159.65 for open NIFTY26OCT22650PE (LTP: ₹167.95)
+2026-10-22 12:05:06,867 [INFO] [10s check] Trailing stop moved to ₹160.00 for open NIFTY26OCT22650PE (LTP: ₹168.30)
+2026-10-22 12:05:37,094 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22650PE (PUT) @ ₹159.95 (STOP_LOSS) | Entry: ₹160.50 | SL: ₹160.00
+2026-10-22 12:05:37,199 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22650PE on NFO @ ~159.55 (Exit LTP: 159.55)
+2026-10-22 12:05:38,567 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-35.75 (-0.55 pts on 65 qty)
+2026-10-22 12:17:09,986 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22600PE on NFO @ ~147.20 (Spot: 22603.75, SL: 137.2, Target: 162.2)
+2026-10-22 12:17:10,919 [INFO] Entered NIFTY26OCT22600PE (PUT) 1 lot(s) (65 qty) @ ₹147.20 | SL=₹137.20 Target=₹162.20 | Spot: 22603.75 | ADX: 40.73 (FVG bearish 22603.85-22617.45)
+2026-10-22 12:17:20,964 [INFO] [10s check] Trailing stop moved to ₹138.20 for open NIFTY26OCT22600PE (LTP: ₹148.20)
+2026-10-22 12:17:31,028 [INFO] [10s check] Trailing stop moved to ₹138.30 for open NIFTY26OCT22600PE (LTP: ₹148.30)
+2026-10-22 12:18:31,447 [INFO] [10s check] Trailing stop moved to ₹139.95 for open NIFTY26OCT22600PE (LTP: ₹149.95)
+2026-10-22 12:18:41,522 [INFO] [10s check] Trailing stop moved to ₹141.85 for open NIFTY26OCT22600PE (LTP: ₹151.85)
+2026-10-22 12:18:51,583 [INFO] [10s check] Trailing stop moved to ₹145.15 for open NIFTY26OCT22600PE (LTP: ₹155.15)
+2026-10-22 12:20:02,091 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22600PE (PUT) @ ₹144.00 (STOP_LOSS) | Entry: ₹147.20 | SL: ₹145.15
+2026-10-22 12:20:02,207 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22600PE on NFO @ ~143.65 (Exit LTP: 143.65)
+2026-10-22 12:20:03,134 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-208.00 (-3.20 pts on 65 qty)
+2026-10-22 12:22:13,460 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22600PE on NFO @ ~149.55 (Spot: 22596.00, SL: 144.8, Target: 164.55)
+2026-10-22 12:22:14,396 [INFO] Entered NIFTY26OCT22600PE (PUT) 1 lot(s) (65 qty) @ ₹149.55 | SL=₹144.80 Target=₹164.55 | Spot: 22596.00 | ADX: 44.38 (FVG bearish 22596.95-22599.70)
+2026-10-22 12:22:24,456 [INFO] [10s check] Trailing stop moved to ₹145.40 for open NIFTY26OCT22600PE (LTP: ₹150.15)
+2026-10-22 12:22:34,509 [INFO] [10s check] Trailing stop moved to ₹146.00 for open NIFTY26OCT22600PE (LTP: ₹150.75)
+2026-10-22 12:22:44,561 [INFO] [10s check] Trailing stop moved to ₹146.30 for open NIFTY26OCT22600PE (LTP: ₹151.05)
+2026-10-22 12:23:34,906 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22600PE (PUT) @ ₹144.50 (STOP_LOSS) | Entry: ₹149.55 | SL: ₹146.30
+2026-10-22 12:23:35,013 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22600PE on NFO @ ~144.50 (Exit LTP: 144.50)
+2026-10-22 12:23:35,908 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-328.25 (-5.05 pts on 65 qty)
+2026-10-22 12:26:16,274 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22600CE on NFO @ ~178.55 (Spot: 22615.60, SL: 168.55, Target: 193.55)
+2026-10-22 12:26:17,234 [INFO] Entered NIFTY26OCT22600CE (CALL) 1 lot(s) (65 qty) @ ₹178.55 | SL=₹168.55 Target=₹193.55 | Spot: 22615.60 | ADX: 40.84 (FVG bullish 22598.70-22609.70)
+2026-10-22 12:26:27,286 [INFO] [10s check] Trailing stop moved to ₹170.25 for open NIFTY26OCT22600CE (LTP: ₹180.25)
+2026-10-22 12:27:17,577 [INFO] [10s check] Trailing stop moved to ₹170.95 for open NIFTY26OCT22600CE (LTP: ₹180.95)
+2026-10-22 12:27:27,719 [INFO] [10s check] Trailing stop moved to ₹172.45 for open NIFTY26OCT22600CE (LTP: ₹182.45)
+2026-10-22 12:27:37,777 [INFO] [10s check] Trailing stop moved to ₹174.05 for open NIFTY26OCT22600CE (LTP: ₹184.05)
+2026-10-22 12:27:47,837 [INFO] [10s check] Trailing stop moved to ₹177.55 for open NIFTY26OCT22600CE (LTP: ₹187.55)
+2026-10-22 12:27:57,887 [INFO] [10s check] Trailing stop moved to ₹183.25 for open NIFTY26OCT22600CE (LTP: ₹193.25)
+2026-10-22 12:29:48,753 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22600CE (CALL) @ ₹182.85 (TRAILING_STOP) | Entry: ₹178.55 | SL: ₹183.25
+2026-10-22 12:29:48,863 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22600CE on NFO @ ~182.85 (Exit LTP: 182.85)
+2026-10-22 12:29:49,751 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹279.50 (+4.30 pts on 65 qty)
+2026-10-22 12:34:20,432 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22650PE on NFO @ ~151.25 (Spot: 22627.60, SL: 141.25, Target: 166.25)
+2026-10-22 12:34:21,967 [INFO] Entered NIFTY26OCT22650PE (PUT) 1 lot(s) (65 qty) @ ₹151.25 | SL=₹141.25 Target=₹166.25 | Spot: 22627.60 | ADX: 28.24 (FVG bearish 22628.75-22637.95)
+2026-10-22 12:34:42,082 [INFO] [10s check] Trailing stop moved to ₹141.30 for open NIFTY26OCT22650PE (LTP: ₹151.30)
+2026-10-22 12:36:12,771 [INFO] [10s check] Trailing stop moved to ₹141.80 for open NIFTY26OCT22650PE (LTP: ₹151.80)
+2026-10-22 12:36:43,014 [INFO] [10s check] Trailing stop moved to ₹145.40 for open NIFTY26OCT22650PE (LTP: ₹155.40)
+2026-10-22 12:36:53,073 [INFO] [10s check] Trailing stop moved to ₹146.90 for open NIFTY26OCT22650PE (LTP: ₹156.90)
+2026-10-22 12:37:23,270 [INFO] [10s check] Trailing stop moved to ₹147.20 for open NIFTY26OCT22650PE (LTP: ₹157.20)
+2026-10-22 12:37:53,563 [INFO] [10s check] Trailing stop moved to ₹148.60 for open NIFTY26OCT22650PE (LTP: ₹158.60)
+2026-10-22 12:38:53,992 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22650PE (PUT) @ ₹147.50 (STOP_LOSS) | Entry: ₹151.25 | SL: ₹148.60
+2026-10-22 12:38:54,099 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22650PE on NFO @ ~147.50 (Exit LTP: 147.50)
+2026-10-22 12:38:55,264 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-243.75 (-3.75 pts on 65 qty)
+2026-10-22 12:39:25,434 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22650CE on NFO @ ~162.35 (Spot: 22633.25, SL: 152.35, Target: 177.35)
+2026-10-22 12:39:27,102 [INFO] Entered NIFTY26OCT22650CE (CALL) 1 lot(s) (65 qty) @ ₹162.35 | SL=₹152.35 Target=₹177.35 | Spot: 22633.25 | ADX: 21.68 (FVG bullish 22624.90-22633.10)
+2026-10-22 12:40:47,631 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22650CE (CALL) @ ₹148.40 (STOP_LOSS) | Entry: ₹162.35 | SL: ₹152.35
+2026-10-22 12:40:47,742 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22650CE on NFO @ ~147.70 (Exit LTP: 147.70)
+2026-10-22 12:40:48,723 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-906.75 (-13.95 pts on 65 qty)
+2026-10-22 12:49:29,888 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22650CE on NFO @ ~169.60 (Spot: 22652.30, SL: 159.6, Target: 184.6)
+2026-10-22 12:49:35,039 [INFO] Entered NIFTY26OCT22650CE (CALL) 1 lot(s) (65 qty) @ ₹169.60 | SL=₹159.60 Target=₹184.60 | Spot: 22652.30 | ADX: 14.65 (FVG bullish 22631.75-22646.20)
+2026-10-22 12:51:25,796 [INFO] [10s check] Trailing stop moved to ₹161.00 for open NIFTY26OCT22650CE (LTP: ₹171.00)
+2026-10-22 12:51:35,865 [INFO] [10s check] Trailing stop moved to ₹162.75 for open NIFTY26OCT22650CE (LTP: ₹172.75)
+2026-10-22 12:51:46,011 [INFO] [10s check] Trailing stop moved to ₹163.65 for open NIFTY26OCT22650CE (LTP: ₹173.65)
+2026-10-22 12:52:06,143 [INFO] [10s check] Trailing stop moved to ₹172.65 for open NIFTY26OCT22650CE (LTP: ₹182.65)
+2026-10-22 12:52:16,211 [INFO] [10s check] TARGET achieved @ ₹186.85 (Target: ₹184.60)! Full exit: Sold 65 qty of NIFTY26OCT22650CE (CALL) | Entry: ₹169.60
+2026-10-22 12:52:16,336 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22650CE on NFO @ ~186.85 (Exit LTP: 186.85)
+2026-10-22 12:52:17,269 [INFO] Trade closed (TARGET). Realized P&L: ₹1121.25 (+17.25 pts on 65 qty)
+2026-10-22 12:59:38,276 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~132.60 (Spot: 22710.80, SL: 123.65, Target: 147.6)
+2026-10-22 12:59:39,286 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹132.60 | SL=₹123.65 Target=₹147.60 | Spot: 22710.80 | ADX: 30.45 (FVG bearish 22720.90-22727.85)
+2026-10-22 12:59:49,365 [INFO] [10s check] Trailing stop moved to ₹124.20 for open NIFTY26OCT22700PE (LTP: ₹133.15)
+2026-10-22 13:00:29,632 [INFO] [10s check] Trailing stop moved to ₹124.25 for open NIFTY26OCT22700PE (LTP: ₹133.20)
+2026-10-22 13:02:10,418 [INFO] [10s check] Trailing stop moved to ₹127.05 for open NIFTY26OCT22700PE (LTP: ₹136.00)
+2026-10-22 13:02:30,537 [INFO] [10s check] Trailing stop moved to ₹127.40 for open NIFTY26OCT22700PE (LTP: ₹136.35)
+2026-10-22 13:02:50,754 [INFO] [10s check] Trailing stop moved to ₹128.00 for open NIFTY26OCT22700PE (LTP: ₹136.95)
+2026-10-22 13:03:00,825 [INFO] [10s check] Trailing stop moved to ₹128.15 for open NIFTY26OCT22700PE (LTP: ₹137.10)
+2026-10-22 13:03:10,896 [INFO] [10s check] Trailing stop moved to ₹129.25 for open NIFTY26OCT22700PE (LTP: ₹138.20)
+2026-10-22 13:03:20,941 [INFO] [10s check] Trailing stop moved to ₹131.20 for open NIFTY26OCT22700PE (LTP: ₹140.15)
+2026-10-22 13:03:30,999 [INFO] [10s check] Trailing stop moved to ₹132.80 for open NIFTY26OCT22700PE (LTP: ₹141.75)
+2026-10-22 13:03:41,067 [INFO] [10s check] Trailing stop moved to ₹135.30 for open NIFTY26OCT22700PE (LTP: ₹144.25)
+2026-10-22 13:06:32,362 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700PE (PUT) @ ₹134.05 (TRAILING_STOP) | Entry: ₹132.60 | SL: ₹135.30
+2026-10-22 13:06:32,477 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~134.05 (Exit LTP: 134.05)
+2026-10-22 13:06:33,367 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹94.25 (+1.45 pts on 65 qty)
+2026-10-22 13:12:44,329 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22700CE on NFO @ ~161.10 (Spot: 22688.75, SL: 151.1, Target: 176.1)
+2026-10-22 13:12:45,269 [INFO] Entered NIFTY26OCT22700CE (CALL) 1 lot(s) (65 qty) @ ₹161.10 | SL=₹151.10 Target=₹176.10 | Spot: 22688.75 | ADX: 20.63 (FVG bullish 22661.15-22685.85)
+2026-10-22 13:15:56,628 [INFO] [10s check] Trailing stop moved to ₹154.35 for open NIFTY26OCT22700CE (LTP: ₹164.35)
+2026-10-22 13:16:36,864 [INFO] [10s check] Trailing stop moved to ₹156.60 for open NIFTY26OCT22700CE (LTP: ₹166.60)
+2026-10-22 13:16:57,078 [INFO] [10s check] Trailing stop moved to ₹160.60 for open NIFTY26OCT22700CE (LTP: ₹170.60)
+2026-10-22 13:17:17,205 [INFO] [10s check] Trailing stop moved to ₹161.55 for open NIFTY26OCT22700CE (LTP: ₹171.55)
+2026-10-22 13:17:47,382 [INFO] [10s check] Trailing stop moved to ₹162.05 for open NIFTY26OCT22700CE (LTP: ₹172.05)
+2026-10-22 13:18:47,809 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700CE (CALL) @ ₹158.60 (STOP_LOSS) | Entry: ₹161.10 | SL: ₹162.05
+2026-10-22 13:18:47,914 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22700CE on NFO @ ~158.60 (Exit LTP: 158.60)
+2026-10-22 13:18:48,914 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-162.50 (-2.50 pts on 65 qty)
+2026-10-22 13:18:49,045 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~143.75 (Spot: 22682.75, SL: 133.75, Target: 158.75)
+2026-10-22 13:18:49,991 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹143.75 | SL=₹133.75 Target=₹158.75 | Spot: 22682.75 | ADX: 16.35 (FVG bearish 22696.05-22707.50)
+2026-10-22 13:19:00,046 [INFO] [10s check] Trailing stop moved to ₹134.45 for open NIFTY26OCT22700PE (LTP: ₹144.45)
+2026-10-22 13:19:10,100 [INFO] [10s check] Trailing stop moved to ₹134.80 for open NIFTY26OCT22700PE (LTP: ₹144.80)
+2026-10-22 13:19:30,233 [INFO] [10s check] Trailing stop moved to ₹136.00 for open NIFTY26OCT22700PE (LTP: ₹146.00)
+2026-10-22 13:19:40,300 [INFO] [10s check] Trailing stop moved to ₹138.45 for open NIFTY26OCT22700PE (LTP: ₹148.45)
+2026-10-22 13:19:50,354 [INFO] [10s check] Trailing stop moved to ₹140.60 for open NIFTY26OCT22700PE (LTP: ₹150.60)
+2026-10-22 13:20:00,489 [INFO] [10s check] Trailing stop moved to ₹141.85 for open NIFTY26OCT22700PE (LTP: ₹151.85)
+2026-10-22 13:20:10,545 [INFO] [10s check] Trailing stop moved to ₹142.90 for open NIFTY26OCT22700PE (LTP: ₹152.90)
+2026-10-22 13:20:20,597 [INFO] [10s check] Trailing stop moved to ₹146.55 for open NIFTY26OCT22700PE (LTP: ₹156.55)
+2026-10-22 13:20:50,779 [INFO] [10s check] TARGET achieved @ ₹159.75 (Target: ₹158.75)! Full exit: Sold 65 qty of NIFTY26OCT22700PE (PUT) | Entry: ₹143.75
+2026-10-22 13:20:50,879 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~159.75 (Exit LTP: 159.75)
+2026-10-22 13:20:51,758 [INFO] Trade closed (TARGET). Realized P&L: ₹1040.00 (+16.00 pts on 65 qty)
+2026-10-22 13:32:53,545 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22650PE on NFO @ ~145.90 (Spot: 22630.45, SL: 135.9, Target: 160.9)
+2026-10-22 13:32:54,464 [INFO] Entered NIFTY26OCT22650PE (PUT) 1 lot(s) (65 qty) @ ₹145.90 | SL=₹135.90 Target=₹160.90 | Spot: 22630.45 | ADX: 22.12 (FVG bearish 22633.70-22642.35)
+2026-10-22 13:33:14,594 [INFO] [10s check] Trailing stop moved to ₹138.65 for open NIFTY26OCT22650PE (LTP: ₹148.65)
+2026-10-22 13:33:24,653 [INFO] [10s check] Trailing stop moved to ₹141.40 for open NIFTY26OCT22650PE (LTP: ₹151.40)
+2026-10-22 13:34:04,968 [INFO] [10s check] Trailing stop moved to ₹142.30 for open NIFTY26OCT22650PE (LTP: ₹152.30)
+2026-10-22 13:35:25,577 [INFO] [10s check] Trailing stop moved to ₹142.50 for open NIFTY26OCT22650PE (LTP: ₹152.50)
+2026-10-22 13:35:45,697 [INFO] [10s check] Trailing stop moved to ₹142.95 for open NIFTY26OCT22650PE (LTP: ₹152.95)
+2026-10-22 13:37:26,508 [INFO] [10s check] Trailing stop moved to ₹146.35 for open NIFTY26OCT22650PE (LTP: ₹156.35)
+2026-10-22 13:37:36,561 [INFO] [10s check] Trailing stop moved to ₹147.75 for open NIFTY26OCT22650PE (LTP: ₹157.75)
+2026-10-22 13:37:56,679 [INFO] [10s check] Trailing stop moved to ₹149.80 for open NIFTY26OCT22650PE (LTP: ₹159.80)
+2026-10-22 13:38:17,068 [INFO] [10s check] Trailing stop moved to ₹150.50 for open NIFTY26OCT22650PE (LTP: ₹160.50)
+2026-10-22 13:41:58,694 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22650PE (PUT) @ ₹150.50 (TRAILING_STOP) | Entry: ₹145.90 | SL: ₹150.50
+2026-10-22 13:41:58,795 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22650PE on NFO @ ~150.50 (Exit LTP: 150.50)
+2026-10-22 13:41:59,728 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹299.00 (+4.60 pts on 65 qty)
+2026-10-22 13:41:59,900 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22600PE on NFO @ ~126.55 (Spot: 22609.90, SL: 117.7, Target: 141.55)
+2026-10-22 13:42:00,802 [INFO] Entered NIFTY26OCT22600PE (PUT) 1 lot(s) (65 qty) @ ₹126.55 | SL=₹117.70 Target=₹141.55 | Spot: 22609.90 | ADX: 21.50 (FVG bearish 22612.15-22619.00)
+2026-10-22 13:42:20,923 [INFO] [10s check] Trailing stop moved to ₹118.45 for open NIFTY26OCT22600PE (LTP: ₹127.30)
+2026-10-22 13:42:30,980 [INFO] [10s check] Trailing stop moved to ₹120.25 for open NIFTY26OCT22600PE (LTP: ₹129.10)
+2026-10-22 13:42:41,041 [INFO] [10s check] Trailing stop moved to ₹121.50 for open NIFTY26OCT22600PE (LTP: ₹130.35)
+2026-10-22 13:42:51,088 [INFO] [10s check] Trailing stop moved to ₹124.15 for open NIFTY26OCT22600PE (LTP: ₹133.00)
+2026-10-22 13:44:51,961 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22600PE (PUT) @ ₹123.75 (STOP_LOSS) | Entry: ₹126.55 | SL: ₹124.15
+2026-10-22 13:44:52,058 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22600PE on NFO @ ~123.75 (Exit LTP: 123.75)
+2026-10-22 13:44:52,983 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-182.00 (-2.80 pts on 65 qty)
+2026-10-22 14:17:07,066 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22600PE on NFO @ ~116.80 (Spot: 22622.80, SL: 114.55, Target: 131.8)
+2026-10-22 14:17:08,031 [INFO] Entered NIFTY26OCT22600PE (PUT) 1 lot(s) (65 qty) @ ₹116.80 | SL=₹114.55 Target=₹131.80 | Spot: 22622.80 | ADX: 9.77 (FVG bearish 22628.20-22628.45)
+2026-10-22 14:17:58,312 [INFO] [10s check] Trailing stop moved to ₹114.95 for open NIFTY26OCT22600PE (LTP: ₹117.20)
+2026-10-22 14:18:28,565 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22600PE (PUT) @ ₹114.65 (STOP_LOSS) | Entry: ₹116.80 | SL: ₹114.95
+2026-10-22 14:18:28,678 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22600PE on NFO @ ~114.65 (Exit LTP: 114.65)
+2026-10-22 14:18:29,634 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-139.75 (-2.15 pts on 65 qty)
+2026-10-22 14:19:09,791 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22650CE on NFO @ ~163.35 (Spot: 22632.70, SL: 156.45, Target: 178.35)
+2026-10-22 14:19:10,740 [INFO] Entered NIFTY26OCT22650CE (CALL) 1 lot(s) (65 qty) @ ₹163.35 | SL=₹156.45 Target=₹178.35 | Spot: 22632.70 | ADX: 10.13 (FVG bullish 22627.40-22632.30)
+2026-10-22 14:19:20,792 [INFO] [10s check] Trailing stop moved to ₹157.00 for open NIFTY26OCT22650CE (LTP: ₹163.90)
+2026-10-22 14:20:11,130 [INFO] [10s check] Trailing stop moved to ₹158.55 for open NIFTY26OCT22650CE (LTP: ₹165.45)
+2026-10-22 14:20:21,281 [INFO] [10s check] Trailing stop moved to ₹160.85 for open NIFTY26OCT22650CE (LTP: ₹167.75)
+2026-10-22 14:22:01,964 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22650CE (CALL) @ ₹158.05 (STOP_LOSS) | Entry: ₹163.35 | SL: ₹160.85
+2026-10-22 14:22:02,072 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22650CE on NFO @ ~158.05 (Exit LTP: 158.05)
+2026-10-22 14:22:03,038 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-344.50 (-5.30 pts on 65 qty)
+2026-10-22 14:36:15,120 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22650PE on NFO @ ~121.65 (Spot: 22659.45, SL: 111.65, Target: 136.65)
+2026-10-22 14:36:16,120 [INFO] Entered NIFTY26OCT22650PE (PUT) 1 lot(s) (65 qty) @ ₹121.65 | SL=₹111.65 Target=₹136.65 | Spot: 22659.45 | ADX: 26.69 (FVG bearish 22659.75-22674.60)
+2026-10-22 14:36:26,171 [INFO] [10s check] Trailing stop moved to ₹113.45 for open NIFTY26OCT22650PE (LTP: ₹123.45)
+2026-10-22 14:36:36,244 [INFO] [10s check] Trailing stop moved to ₹114.10 for open NIFTY26OCT22650PE (LTP: ₹124.10)
+2026-10-22 14:38:27,231 [INFO] [10s check] Trailing stop moved to ₹114.85 for open NIFTY26OCT22650PE (LTP: ₹124.85)
+2026-10-22 14:38:37,286 [INFO] [10s check] Trailing stop moved to ₹115.55 for open NIFTY26OCT22650PE (LTP: ₹125.55)
+2026-10-22 14:38:57,415 [INFO] [10s check] Trailing stop moved to ₹115.80 for open NIFTY26OCT22650PE (LTP: ₹125.80)
+2026-10-22 14:39:07,518 [INFO] [10s check] Trailing stop moved to ₹117.15 for open NIFTY26OCT22650PE (LTP: ₹127.15)
+2026-10-22 14:39:17,575 [INFO] [10s check] Trailing stop moved to ₹117.80 for open NIFTY26OCT22650PE (LTP: ₹127.80)
+2026-10-22 14:39:47,854 [INFO] [10s check] Trailing stop moved to ₹118.95 for open NIFTY26OCT22650PE (LTP: ₹128.95)
+2026-10-22 14:41:08,463 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22650PE (PUT) @ ₹116.55 (STOP_LOSS) | Entry: ₹121.65 | SL: ₹118.95
+2026-10-22 14:41:08,601 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22650PE on NFO @ ~116.55 (Exit LTP: 116.55)
+2026-10-22 14:41:09,544 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-331.50 (-5.10 pts on 65 qty)
+2026-10-22 14:41:19,639 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:42:19,785 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:43:19,918 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:44:20,031 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:45:20,162 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:46:20,279 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:47:20,402 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:48:20,536 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:49:20,642 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:50:20,761 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:51:20,880 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:52:21,018 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:53:21,146 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:54:21,280 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:55:21,409 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:56:21,589 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:57:21,725 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:58:21,858 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 14:59:21,979 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-22 15:00:22,119 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:01:22,249 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:02:22,358 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:03:22,485 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:04:22,633 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:05:22,774 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:06:22,915 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:07:23,026 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:08:23,170 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:09:23,308 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:10:23,427 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:11:23,573 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:12:23,711 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:13:23,824 [INFO] Not trading right now: Outside configured trading hours
+2026-10-22 15:14:23,958 [INFO] Not trading right now: Outside configured trading hours
+2026-10-23 09:17:01,280 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-23 09:17:01,281 [INFO] DRY_RUN = True
+2026-10-23 09:17:01,281 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-23 09:18:01,573 [INFO] Not trading right now: Outside configured trading hours
+2026-10-23 09:19:01,656 [INFO] Not trading right now: Outside configured trading hours
+2026-10-23 09:29:02,729 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~122.25 (Spot: 22721.15, SL: 112.25, Target: 137.25)
+2026-10-23 09:29:04,384 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹122.25 | SL=₹112.25 Target=₹137.25 | Spot: 22721.15 | ADX: 19.84 (FVG bearish 22745.35-22769.80)
+2026-10-23 09:29:54,662 [INFO] [10s check] Trailing stop moved to ₹112.50 for open NIFTY26OCT22700PE (LTP: ₹122.50)
+2026-10-23 09:30:14,819 [INFO] [10s check] Trailing stop moved to ₹113.40 for open NIFTY26OCT22700PE (LTP: ₹123.40)
+2026-10-23 09:30:24,866 [INFO] [10s check] Trailing stop moved to ₹115.10 for open NIFTY26OCT22700PE (LTP: ₹125.10)
+2026-10-23 09:30:34,914 [INFO] [10s check] Trailing stop moved to ₹115.30 for open NIFTY26OCT22700PE (LTP: ₹125.30)
+2026-10-23 09:30:44,968 [INFO] [10s check] Trailing stop moved to ₹118.10 for open NIFTY26OCT22700PE (LTP: ₹128.10)
+2026-10-23 09:31:25,207 [INFO] [10s check] Trailing stop moved to ₹121.30 for open NIFTY26OCT22700PE (LTP: ₹131.30)
+2026-10-23 09:31:35,254 [INFO] [10s check] Trailing stop moved to ₹125.40 for open NIFTY26OCT22700PE (LTP: ₹135.40)
+2026-10-23 09:33:15,879 [INFO] [10s check] TARGET achieved @ ₹139.65 (Target: ₹137.25)! Full exit: Sold 65 qty of NIFTY26OCT22700PE (PUT) | Entry: ₹122.25
+2026-10-23 09:33:15,975 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~139.65 (Exit LTP: 139.65)
+2026-10-23 09:33:17,140 [INFO] Trade closed (TARGET). Realized P&L: ₹1131.00 (+17.40 pts on 65 qty)
+2026-10-23 09:45:08,272 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~134.05 (Spot: 22691.05, SL: 124.05, Target: 149.05)
+2026-10-23 09:45:09,298 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹134.05 | SL=₹124.05 Target=₹149.05 | Spot: 22691.05 | ADX: 20.53 (FVG bearish 22691.20-22702.35)
+2026-10-23 09:45:39,465 [INFO] [10s check] Trailing stop moved to ₹126.00 for open NIFTY26OCT22700PE (LTP: ₹136.00)
+2026-10-23 09:45:49,513 [INFO] [10s check] Trailing stop moved to ₹134.30 for open NIFTY26OCT22700PE (LTP: ₹144.30)
+2026-10-23 09:46:59,904 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700PE (PUT) @ ₹133.75 (STOP_LOSS) | Entry: ₹134.05 | SL: ₹134.30
+2026-10-23 09:47:00,018 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~133.75 (Exit LTP: 133.75)
+2026-10-23 09:47:00,905 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-19.50 (-0.30 pts on 65 qty)
+2026-10-23 09:49:11,235 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~143.40 (Spot: 22675.30, SL: 133.55, Target: 158.4)
+2026-10-23 09:49:12,141 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹143.40 | SL=₹133.55 Target=₹158.40 | Spot: 22675.30 | ADX: 18.63 (FVG bearish 22675.60-22683.45)
+2026-10-23 09:49:22,196 [INFO] [10s check] Trailing stop moved to ₹137.80 for open NIFTY26OCT22700PE (LTP: ₹147.65)
+2026-10-23 09:49:42,314 [INFO] [10s check] Trailing stop moved to ₹138.85 for open NIFTY26OCT22700PE (LTP: ₹148.70)
+2026-10-23 09:50:12,461 [INFO] [10s check] Trailing stop moved to ₹142.65 for open NIFTY26OCT22700PE (LTP: ₹152.50)
+2026-10-23 09:51:43,017 [INFO] [10s check] Trailing stop moved to ₹145.30 for open NIFTY26OCT22700PE (LTP: ₹155.15)
+2026-10-23 09:52:03,111 [INFO] [10s check] TARGET achieved @ ₹159.40 (Target: ₹158.40)! Full exit: Sold 65 qty of NIFTY26OCT22700PE (PUT) | Entry: ₹143.40
+2026-10-23 09:52:03,200 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~159.40 (Exit LTP: 159.40)
+2026-10-23 09:52:08,018 [INFO] Trade closed (TARGET). Realized P&L: ₹1040.00 (+16.00 pts on 65 qty)
+2026-10-23 09:52:18,122 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22650PE on NFO @ ~133.30 (Spot: 22642.55, SL: 123.4, Target: 148.3)
+2026-10-23 09:52:19,025 [INFO] Entered NIFTY26OCT22650PE (PUT) 1 lot(s) (65 qty) @ ₹133.30 | SL=₹123.40 Target=₹148.30 | Spot: 22642.55 | ADX: 21.75 (FVG bearish 22644.10-22652.00)
+2026-10-23 09:52:29,071 [INFO] [10s check] Trailing stop moved to ₹127.25 for open NIFTY26OCT22650PE (LTP: ₹137.15)
+2026-10-23 09:52:39,121 [INFO] [10s check] Trailing stop moved to ₹130.45 for open NIFTY26OCT22650PE (LTP: ₹140.35)
+2026-10-23 09:55:50,535 [INFO] [10s check] Trailing stop moved to ₹132.45 for open NIFTY26OCT22650PE (LTP: ₹142.35)
+2026-10-23 09:58:11,430 [INFO] [10s check] Trailing stop moved to ₹136.75 for open NIFTY26OCT22650PE (LTP: ₹146.65)
+2026-10-23 09:58:21,489 [INFO] [10s check] TARGET achieved @ ₹149.60 (Target: ₹148.30)! Full exit: Sold 65 qty of NIFTY26OCT22650PE (PUT) | Entry: ₹133.30
+2026-10-23 09:58:21,589 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22650PE on NFO @ ~149.60 (Exit LTP: 149.60)
+2026-10-23 09:58:22,562 [INFO] Trade closed (TARGET). Realized P&L: ₹1059.50 (+16.30 pts on 65 qty)
+2026-10-23 09:59:23,062 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22600PE on NFO @ ~128.30 (Spot: 22611.95, SL: 118.3, Target: 143.3)
+2026-10-23 09:59:23,982 [INFO] Entered NIFTY26OCT22600PE (PUT) 1 lot(s) (65 qty) @ ₹128.30 | SL=₹118.30 Target=₹143.30 | Spot: 22611.95 | ADX: 25.58 (FVG bearish 22615.50-22626.35)
+2026-10-23 09:59:34,030 [INFO] [10s check] Trailing stop moved to ₹120.70 for open NIFTY26OCT22600PE (LTP: ₹130.70)
+2026-10-23 10:00:14,233 [INFO] [10s check] Trailing stop moved to ₹126.95 for open NIFTY26OCT22600PE (LTP: ₹136.95)
+2026-10-23 10:01:34,778 [INFO] [10s check] Trailing stop moved to ₹127.00 for open NIFTY26OCT22600PE (LTP: ₹137.00)
+2026-10-23 10:02:04,932 [INFO] [10s check] Trailing stop moved to ₹127.30 for open NIFTY26OCT22600PE (LTP: ₹137.30)
+2026-10-23 10:02:14,988 [INFO] [10s check] Trailing stop moved to ₹128.75 for open NIFTY26OCT22600PE (LTP: ₹138.75)
+2026-10-23 10:02:55,307 [INFO] [10s check] TARGET achieved @ ₹143.45 (Target: ₹143.30)! Full exit: Sold 65 qty of NIFTY26OCT22600PE (PUT) | Entry: ₹128.30
+2026-10-23 10:02:55,424 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22600PE on NFO @ ~143.45 (Exit LTP: 143.45)
+2026-10-23 10:02:56,310 [INFO] Trade closed (TARGET). Realized P&L: ₹984.75 (+15.15 pts on 65 qty)
+2026-10-23 10:04:26,531 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22550PE on NFO @ ~129.20 (Spot: 22557.35, SL: 121.55, Target: 144.2)
+2026-10-23 10:04:27,536 [INFO] Entered NIFTY26OCT22550PE (PUT) 1 lot(s) (65 qty) @ ₹129.20 | SL=₹121.55 Target=₹144.20 | Spot: 22557.35 | ADX: 34.04 (FVG bearish 22567.55-22573.20)
+2026-10-23 10:04:57,694 [INFO] [10s check] Trailing stop moved to ₹121.80 for open NIFTY26OCT22550PE (LTP: ₹129.45)
+2026-10-23 10:05:48,054 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22550PE (PUT) @ ₹120.45 (STOP_LOSS) | Entry: ₹129.20 | SL: ₹121.80
+2026-10-23 10:05:48,168 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22550PE on NFO @ ~120.45 (Exit LTP: 120.45)
+2026-10-23 10:05:49,151 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-568.75 (-8.75 pts on 65 qty)
+2026-10-23 10:06:29,294 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22550PE on NFO @ ~128.30 (Spot: 22565.95, SL: 122.55, Target: 143.3)
+2026-10-23 10:06:30,257 [INFO] Entered NIFTY26OCT22550PE (PUT) 1 lot(s) (65 qty) @ ₹128.30 | SL=₹122.55 Target=₹143.30 | Spot: 22565.95 | ADX: 35.17 (FVG bearish 22569.45-22573.20)
+2026-10-23 10:06:40,310 [INFO] [10s check] Trailing stop moved to ₹122.60 for open NIFTY26OCT22550PE (LTP: ₹128.35)
+2026-10-23 10:07:20,520 [INFO] [10s check] Trailing stop moved to ₹123.25 for open NIFTY26OCT22550PE (LTP: ₹129.00)
+2026-10-23 10:07:50,734 [INFO] [10s check] Trailing stop moved to ₹126.85 for open NIFTY26OCT22550PE (LTP: ₹132.60)
+2026-10-23 10:08:00,795 [INFO] [10s check] Trailing stop moved to ₹127.85 for open NIFTY26OCT22550PE (LTP: ₹133.60)
+2026-10-23 10:08:10,847 [INFO] [10s check] Trailing stop moved to ₹129.60 for open NIFTY26OCT22550PE (LTP: ₹135.35)
+2026-10-23 10:08:20,900 [INFO] [10s check] Trailing stop moved to ₹131.70 for open NIFTY26OCT22550PE (LTP: ₹137.45)
+2026-10-23 10:08:30,946 [INFO] [10s check] Trailing stop moved to ₹132.65 for open NIFTY26OCT22550PE (LTP: ₹138.40)
+2026-10-23 10:08:41,056 [INFO] [10s check] Trailing stop moved to ₹133.90 for open NIFTY26OCT22550PE (LTP: ₹139.65)
+2026-10-23 10:08:51,104 [INFO] [10s check] TARGET achieved @ ₹144.80 (Target: ₹143.30)! Full exit: Sold 65 qty of NIFTY26OCT22550PE (PUT) | Entry: ₹128.30
+2026-10-23 10:08:51,191 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22550PE on NFO @ ~144.80 (Exit LTP: 144.80)
+2026-10-23 10:08:52,139 [INFO] Trade closed (TARGET). Realized P&L: ₹1072.50 (+16.50 pts on 65 qty)
+2026-10-23 10:09:32,270 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22500PE on NFO @ ~126.10 (Spot: 22523.20, SL: 116.1, Target: 141.1)
+2026-10-23 10:09:33,146 [INFO] Entered NIFTY26OCT22500PE (PUT) 1 lot(s) (65 qty) @ ₹126.10 | SL=₹116.10 Target=₹141.10 | Spot: 22523.20 | ADX: 39.03 (FVG bearish 22537.25-22549.35)
+2026-10-23 10:09:43,201 [INFO] [10s check] Trailing stop moved to ₹116.75 for open NIFTY26OCT22500PE (LTP: ₹126.75)
+2026-10-23 10:09:53,255 [INFO] [10s check] Trailing stop moved to ₹117.30 for open NIFTY26OCT22500PE (LTP: ₹127.30)
+2026-10-23 10:10:13,361 [INFO] [10s check] Trailing stop moved to ₹118.00 for open NIFTY26OCT22500PE (LTP: ₹128.00)
+2026-10-23 10:10:23,413 [INFO] [10s check] Trailing stop moved to ₹118.50 for open NIFTY26OCT22500PE (LTP: ₹128.50)
+2026-10-23 10:10:43,555 [INFO] [10s check] Trailing stop moved to ₹119.15 for open NIFTY26OCT22500PE (LTP: ₹129.15)
+2026-10-23 10:12:14,048 [INFO] [10s check] Trailing stop moved to ₹119.20 for open NIFTY26OCT22500PE (LTP: ₹129.20)
+2026-10-23 10:12:34,203 [INFO] [10s check] Trailing stop moved to ₹121.00 for open NIFTY26OCT22500PE (LTP: ₹131.00)
+2026-10-23 10:13:44,764 [INFO] [10s check] Trailing stop moved to ₹121.50 for open NIFTY26OCT22500PE (LTP: ₹131.50)
+2026-10-23 10:13:54,820 [INFO] [10s check] Trailing stop moved to ₹122.55 for open NIFTY26OCT22500PE (LTP: ₹132.55)
+2026-10-23 10:14:04,880 [INFO] [10s check] Trailing stop moved to ₹125.50 for open NIFTY26OCT22500PE (LTP: ₹135.50)
+2026-10-23 10:14:35,060 [INFO] [10s check] Trailing stop moved to ₹126.65 for open NIFTY26OCT22500PE (LTP: ₹136.65)
+2026-10-23 10:15:25,401 [INFO] [10s check] Trailing stop moved to ₹128.45 for open NIFTY26OCT22500PE (LTP: ₹138.45)
+2026-10-23 10:15:35,465 [INFO] [10s check] TARGET achieved @ ₹141.60 (Target: ₹141.10)! Full exit: Sold 65 qty of NIFTY26OCT22500PE (PUT) | Entry: ₹126.10
+2026-10-23 10:15:35,594 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22500PE on NFO @ ~141.60 (Exit LTP: 141.60)
+2026-10-23 10:15:36,617 [INFO] Trade closed (TARGET). Realized P&L: ₹1007.50 (+15.50 pts on 65 qty)
+2026-10-23 10:15:36,762 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22500PE on NFO @ ~143.25 (Spot: 22491.60, SL: 136.45, Target: 158.25)
+2026-10-23 10:15:37,704 [INFO] Entered NIFTY26OCT22500PE (PUT) 1 lot(s) (65 qty) @ ₹143.25 | SL=₹136.45 Target=₹158.25 | Spot: 22491.60 | ADX: 46.60 (FVG bearish 22506.85-22511.65)
+2026-10-23 10:15:47,760 [INFO] [10s check] Trailing stop moved to ₹137.70 for open NIFTY26OCT22500PE (LTP: ₹144.50)
+2026-10-23 10:15:57,813 [INFO] [10s check] Trailing stop moved to ₹141.60 for open NIFTY26OCT22500PE (LTP: ₹148.40)
+2026-10-23 10:16:17,925 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22500PE (PUT) @ ₹140.95 (STOP_LOSS) | Entry: ₹143.25 | SL: ₹141.60
+2026-10-23 10:16:18,026 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22500PE on NFO @ ~140.95 (Exit LTP: 140.95)
+2026-10-23 10:16:18,925 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-149.50 (-2.30 pts on 65 qty)
+2026-10-23 10:34:40,810 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22500PE on NFO @ ~145.20 (Spot: 22486.55, SL: 135.2, Target: 160.2)
+2026-10-23 10:34:41,861 [INFO] Entered NIFTY26OCT22500PE (PUT) 1 lot(s) (65 qty) @ ₹145.20 | SL=₹135.20 Target=₹160.20 | Spot: 22486.55 | ADX: 30.76 (FVG bearish 22490.95-22500.65)
+2026-10-23 10:34:51,920 [INFO] [10s check] Trailing stop moved to ₹135.40 for open NIFTY26OCT22500PE (LTP: ₹145.40)
+2026-10-23 10:35:01,982 [INFO] [10s check] Trailing stop moved to ₹136.60 for open NIFTY26OCT22500PE (LTP: ₹146.60)
+2026-10-23 10:35:12,037 [INFO] [10s check] Trailing stop moved to ₹137.90 for open NIFTY26OCT22500PE (LTP: ₹147.90)
+2026-10-23 10:35:22,107 [INFO] [10s check] Trailing stop moved to ₹140.75 for open NIFTY26OCT22500PE (LTP: ₹150.75)
+2026-10-23 10:36:22,541 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22500PE (PUT) @ ₹139.75 (STOP_LOSS) | Entry: ₹145.20 | SL: ₹140.75
+2026-10-23 10:36:22,674 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22500PE on NFO @ ~139.75 (Exit LTP: 139.75)
+2026-10-23 10:36:23,671 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-354.25 (-5.45 pts on 65 qty)
+2026-10-23 10:45:44,872 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22500PE on NFO @ ~135.85 (Spot: 22497.10, SL: 132.35, Target: 150.85)
+2026-10-23 10:45:45,923 [INFO] Entered NIFTY26OCT22500PE (PUT) 1 lot(s) (65 qty) @ ₹135.85 | SL=₹132.35 Target=₹150.85 | Spot: 22497.10 | ADX: 34.77 (FVG bearish 22505.75-22507.25)
+2026-10-23 10:45:55,986 [INFO] [10s check] Trailing stop moved to ₹132.40 for open NIFTY26OCT22500PE (LTP: ₹135.90)
+2026-10-23 10:46:16,119 [INFO] [10s check] Trailing stop moved to ₹134.15 for open NIFTY26OCT22500PE (LTP: ₹137.65)
+2026-10-23 10:46:36,235 [INFO] [10s check] Trailing stop moved to ₹134.95 for open NIFTY26OCT22500PE (LTP: ₹138.45)
+2026-10-23 10:47:26,653 [INFO] [10s check] Trailing stop moved to ₹135.50 for open NIFTY26OCT22500PE (LTP: ₹139.00)
+2026-10-23 10:47:36,716 [INFO] [10s check] Trailing stop moved to ₹139.30 for open NIFTY26OCT22500PE (LTP: ₹142.80)
+2026-10-23 10:48:17,063 [INFO] [10s check] Trailing stop moved to ₹139.50 for open NIFTY26OCT22500PE (LTP: ₹143.00)
+2026-10-23 10:48:27,153 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22500PE (PUT) @ ₹138.30 (TRAILING_STOP) | Entry: ₹135.85 | SL: ₹139.50
+2026-10-23 10:48:27,271 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22500PE on NFO @ ~138.30 (Exit LTP: 138.30)
+2026-10-23 10:48:28,237 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹159.25 (+2.45 pts on 65 qty)
+2026-10-23 10:48:48,394 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22500CE on NFO @ ~181.55 (Spot: 22494.75, SL: 172.4, Target: 196.55)
+2026-10-23 10:48:49,565 [INFO] Entered NIFTY26OCT22500CE (CALL) 1 lot(s) (65 qty) @ ₹181.55 | SL=₹172.40 Target=₹196.55 | Spot: 22494.75 | ADX: 35.20 (FVG bullish 22487.10-22494.25)
+2026-10-23 10:48:59,632 [INFO] [10s check] Trailing stop moved to ₹174.75 for open NIFTY26OCT22500CE (LTP: ₹183.90)
+2026-10-23 10:49:09,691 [INFO] [10s check] Trailing stop moved to ₹176.75 for open NIFTY26OCT22500CE (LTP: ₹185.90)
+2026-10-23 10:50:00,088 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22500CE (CALL) @ ₹173.70 (STOP_LOSS) | Entry: ₹181.55 | SL: ₹176.75
+2026-10-23 10:50:00,200 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22500CE on NFO @ ~173.70 (Exit LTP: 173.70)
+2026-10-23 10:50:01,959 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-510.25 (-7.85 pts on 65 qty)
+2026-10-23 10:50:52,152 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22500PE on NFO @ ~143.50 (Spot: 22480.60, SL: 140.2, Target: 158.5)
+2026-10-23 10:50:53,112 [INFO] Entered NIFTY26OCT22500PE (PUT) 1 lot(s) (65 qty) @ ₹143.50 | SL=₹140.20 Target=₹158.50 | Spot: 22480.60 | ADX: 34.72 (FVG bearish 22485.05-22486.35)
+2026-10-23 10:51:03,185 [INFO] [10s check] Trailing stop moved to ₹141.05 for open NIFTY26OCT22500PE (LTP: ₹144.35)
+2026-10-23 10:51:23,303 [INFO] [10s check] Trailing stop moved to ₹141.70 for open NIFTY26OCT22500PE (LTP: ₹145.00)
+2026-10-23 10:51:33,376 [INFO] [10s check] Trailing stop moved to ₹143.70 for open NIFTY26OCT22500PE (LTP: ₹147.00)
+2026-10-23 10:52:23,789 [INFO] [10s check] Trailing stop moved to ₹145.00 for open NIFTY26OCT22500PE (LTP: ₹148.30)
+2026-10-23 10:52:43,916 [INFO] [10s check] Trailing stop moved to ₹147.65 for open NIFTY26OCT22500PE (LTP: ₹150.95)
+2026-10-23 10:52:53,982 [INFO] [10s check] Trailing stop moved to ₹148.35 for open NIFTY26OCT22500PE (LTP: ₹151.65)
+2026-10-23 10:53:04,122 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22500PE (PUT) @ ₹147.80 (TRAILING_STOP) | Entry: ₹143.50 | SL: ₹148.35
+2026-10-23 10:53:04,244 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22500PE on NFO @ ~147.80 (Exit LTP: 147.80)
+2026-10-23 10:53:05,299 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹279.50 (+4.30 pts on 65 qty)
+2026-10-23 10:58:56,026 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22450PE on NFO @ ~145.70 (Spot: 22432.10, SL: 142.75, Target: 160.7)
+2026-10-23 10:59:11,063 [WARNING] Telegram alert connection error for 1484937732: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7863022120:AAGtSbom4q714ozMjpY3Jn5zEIksGnlMbxw/sendMessage (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10bd1ca50>, 'Connection to api.telegram.org timed out. (connect timeout=15)'))
+2026-10-23 10:59:11,116 [INFO] Entered NIFTY26OCT22450PE (PUT) 1 lot(s) (65 qty) @ ₹145.70 | SL=₹142.75 Target=₹160.70 | Spot: 22432.10 | ADX: 39.39 (FVG bearish 22451.80-22452.75)
+2026-10-23 10:59:31,241 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22450PE (PUT) @ ₹141.15 (STOP_LOSS) | Entry: ₹145.70 | SL: ₹142.75
+2026-10-23 10:59:31,352 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22450PE on NFO @ ~141.15 (Exit LTP: 141.15)
+2026-10-23 10:59:32,737 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-295.75 (-4.55 pts on 65 qty)
+2026-10-23 11:09:03,897 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22450PE on NFO @ ~132.55 (Spot: 22453.35, SL: 126.05, Target: 147.55)
+2026-10-23 11:09:05,380 [INFO] Entered NIFTY26OCT22450PE (PUT) 1 lot(s) (65 qty) @ ₹132.55 | SL=₹126.05 Target=₹147.55 | Spot: 22453.35 | ADX: 33.10 (FVG bearish 22453.50-22458.00)
+2026-10-23 11:09:35,563 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22450PE (PUT) @ ₹126.05 (STOP_LOSS) | Entry: ₹132.55 | SL: ₹126.05
+2026-10-23 11:09:35,676 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22450PE on NFO @ ~126.05 (Exit LTP: 126.05)
+2026-10-23 11:09:36,643 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-422.50 (-6.50 pts on 65 qty)
+2026-10-23 11:22:08,173 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22500PE on NFO @ ~140.00 (Spot: 22486.75, SL: 130.0, Target: 155.0)
+2026-10-23 11:22:09,104 [INFO] Entered NIFTY26OCT22500PE (PUT) 1 lot(s) (65 qty) @ ₹140.00 | SL=₹130.00 Target=₹155.00 | Spot: 22486.75 | ADX: 24.36 (FVG bearish 22489.15-22505.25)
+2026-10-23 11:23:09,493 [INFO] [10s check] Trailing stop moved to ₹130.70 for open NIFTY26OCT22500PE (LTP: ₹140.70)
+2026-10-23 11:24:09,950 [INFO] [10s check] Trailing stop moved to ₹132.15 for open NIFTY26OCT22500PE (LTP: ₹142.15)
+2026-10-23 11:24:20,095 [INFO] [10s check] Trailing stop moved to ₹134.35 for open NIFTY26OCT22500PE (LTP: ₹144.35)
+2026-10-23 11:27:21,421 [INFO] [10s check] Trailing stop moved to ₹134.90 for open NIFTY26OCT22500PE (LTP: ₹144.90)
+2026-10-23 11:27:31,484 [INFO] [10s check] Trailing stop moved to ₹135.05 for open NIFTY26OCT22500PE (LTP: ₹145.05)
+2026-10-23 11:27:41,553 [INFO] [10s check] Trailing stop moved to ₹136.60 for open NIFTY26OCT22500PE (LTP: ₹146.60)
+2026-10-23 11:27:51,611 [INFO] [10s check] Trailing stop moved to ₹137.45 for open NIFTY26OCT22500PE (LTP: ₹147.45)
+2026-10-23 11:28:01,665 [INFO] [10s check] Trailing stop moved to ₹138.45 for open NIFTY26OCT22500PE (LTP: ₹148.45)
+2026-10-23 11:28:41,969 [INFO] [10s check] Trailing stop moved to ₹138.50 for open NIFTY26OCT22500PE (LTP: ₹148.50)
+2026-10-23 11:28:52,027 [INFO] [10s check] Trailing stop moved to ₹139.70 for open NIFTY26OCT22500PE (LTP: ₹149.70)
+2026-10-23 11:29:32,343 [INFO] [10s check] Trailing stop moved to ₹140.15 for open NIFTY26OCT22500PE (LTP: ₹150.15)
+2026-10-23 11:30:02,543 [INFO] [10s check] Trailing stop moved to ₹141.20 for open NIFTY26OCT22500PE (LTP: ₹151.20)
+2026-10-23 11:30:43,021 [INFO] [10s check] Trailing stop moved to ₹142.05 for open NIFTY26OCT22500PE (LTP: ₹152.05)
+2026-10-23 11:30:53,087 [INFO] [10s check] Trailing stop moved to ₹144.30 for open NIFTY26OCT22500PE (LTP: ₹154.30)
+2026-10-23 11:36:05,411 [INFO] [10s check] TARGET achieved @ ₹155.15 (Target: ₹155.00)! Full exit: Sold 65 qty of NIFTY26OCT22500PE (PUT) | Entry: ₹140.00
+2026-10-23 11:36:05,528 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22500PE on NFO @ ~155.15 (Exit LTP: 155.15)
+2026-10-23 11:36:06,505 [INFO] Trade closed (TARGET). Realized P&L: ₹984.75 (+15.15 pts on 65 qty)
+2026-10-23 11:36:16,646 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22450PE on NFO @ ~131.50 (Spot: 22452.75, SL: 122.7, Target: 146.5)
+2026-10-23 11:36:17,589 [INFO] Entered NIFTY26OCT22450PE (PUT) 1 lot(s) (65 qty) @ ₹131.50 | SL=₹122.70 Target=₹146.50 | Spot: 22452.75 | ADX: 21.49 (FVG bearish 22455.80-22462.60)
+2026-10-23 11:36:37,717 [INFO] [10s check] Trailing stop moved to ₹123.00 for open NIFTY26OCT22450PE (LTP: ₹131.80)
+2026-10-23 11:37:48,217 [INFO] [10s check] Trailing stop moved to ₹123.55 for open NIFTY26OCT22450PE (LTP: ₹132.35)
+2026-10-23 11:40:59,606 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22450PE (PUT) @ ₹121.70 (STOP_LOSS) | Entry: ₹131.50 | SL: ₹123.55
+2026-10-23 11:40:59,713 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22450PE on NFO @ ~119.65 (Exit LTP: 119.65)
+2026-10-23 11:41:01,138 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-637.00 (-9.80 pts on 65 qty)
+2026-10-23 11:43:21,533 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22450PE on NFO @ ~127.90 (Spot: 22455.90, SL: 124.5, Target: 142.9)
+2026-10-23 11:43:22,532 [INFO] Entered NIFTY26OCT22450PE (PUT) 1 lot(s) (65 qty) @ ₹127.90 | SL=₹124.50 Target=₹142.90 | Spot: 22455.90 | ADX: 20.84 (FVG bearish 22458.45-22459.85)
+2026-10-23 11:44:02,781 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22450PE (PUT) @ ₹124.40 (STOP_LOSS) | Entry: ₹127.90 | SL: ₹124.50
+2026-10-23 11:44:02,888 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22450PE on NFO @ ~124.40 (Exit LTP: 124.40)
+2026-10-23 11:44:03,873 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-227.50 (-3.50 pts on 65 qty)
+2026-10-23 11:49:24,636 [INFO] FVG PUT rejection signal detected, but ADX is 15.51 (< 18). Skipping entry (trend filter not met).
+2026-10-23 11:51:24,856 [INFO] FVG PUT rejection signal detected, but ADX is 15.90 (< 18). Skipping entry (trend filter not met).
+2026-10-23 11:53:25,069 [INFO] FVG PUT rejection signal detected, but ADX is 13.89 (< 18). Skipping entry (trend filter not met).
+2026-10-23 11:54:25,187 [INFO] FVG PUT rejection signal detected, but ADX is 13.68 (< 18). Skipping entry (trend filter not met).
+2026-10-23 12:01:26,034 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22400PE on NFO @ ~111.70 (Spot: 22424.85, SL: 106.3, Target: 126.7)
+2026-10-23 12:01:27,121 [INFO] Entered NIFTY26OCT22400PE (PUT) 1 lot(s) (65 qty) @ ₹111.70 | SL=₹106.30 Target=₹126.70 | Spot: 22424.85 | ADX: 18.36 (FVG bearish 22429.05-22432.45)
+2026-10-23 12:01:37,179 [INFO] [10s check] Trailing stop moved to ₹106.75 for open NIFTY26OCT22400PE (LTP: ₹112.15)
+2026-10-23 12:02:57,752 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22400PE (PUT) @ ₹105.45 (STOP_LOSS) | Entry: ₹111.70 | SL: ₹106.75
+2026-10-23 12:02:57,871 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22400PE on NFO @ ~105.45 (Exit LTP: 105.45)
+2026-10-23 12:02:58,956 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-406.25 (-6.25 pts on 65 qty)
+2026-10-23 12:09:29,757 [INFO] FVG PUT rejection signal detected, but ADX is 16.35 (< 18). Skipping entry (trend filter not met).
+2026-10-23 12:15:30,575 [INFO] FVG PUT rejection signal detected, but ADX is 14.54 (< 18). Skipping entry (trend filter not met).
+2026-10-23 12:17:30,818 [INFO] FVG PUT rejection signal detected, but ADX is 12.40 (< 18). Skipping entry (trend filter not met).
+2026-10-23 12:18:30,922 [INFO] FVG PUT rejection signal detected, but ADX is 12.22 (< 18). Skipping entry (trend filter not met).
+2026-10-23 12:24:31,615 [INFO] FVG PUT rejection signal detected, but ADX is 13.71 (< 18). Skipping entry (trend filter not met).
+2026-10-23 12:27:31,950 [INFO] FVG PUT rejection signal detected, but ADX is 16.06 (< 18). Skipping entry (trend filter not met).
+2026-10-23 12:35:32,984 [INFO] FVG PUT rejection signal detected, but ADX is 15.98 (< 18). Skipping entry (trend filter not met).
+2026-10-23 12:37:33,263 [INFO] FVG PUT rejection signal detected, but ADX is 14.46 (< 18). Skipping entry (trend filter not met).
+2026-10-23 12:50:35,149 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22400PE on NFO @ ~120.45 (Spot: 22394.45, SL: 110.45, Target: 135.45)
+2026-10-23 12:50:36,118 [INFO] Entered NIFTY26OCT22400PE (PUT) 1 lot(s) (65 qty) @ ₹120.45 | SL=₹110.45 Target=₹135.45 | Spot: 22394.45 | ADX: 18.70 (FVG bearish 22397.25-22410.25)
+2026-10-23 12:50:56,240 [INFO] [10s check] Trailing stop moved to ₹112.45 for open NIFTY26OCT22400PE (LTP: ₹122.45)
+2026-10-23 12:51:06,304 [INFO] [10s check] Trailing stop moved to ₹118.10 for open NIFTY26OCT22400PE (LTP: ₹128.10)
+2026-10-23 12:51:16,357 [INFO] [10s check] Trailing stop moved to ₹120.50 for open NIFTY26OCT22400PE (LTP: ₹130.50)
+2026-10-23 12:52:57,151 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22400PE (PUT) @ ₹120.30 (STOP_LOSS) | Entry: ₹120.45 | SL: ₹120.50
+2026-10-23 12:52:57,280 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22400PE on NFO @ ~120.20 (Exit LTP: 120.20)
+2026-10-23 12:52:58,436 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-9.75 (-0.15 pts on 65 qty)
+2026-10-23 12:53:38,562 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 12:54:38,692 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 12:55:38,818 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 12:56:38,970 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 12:57:39,085 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 12:58:39,218 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 12:59:39,347 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:00:39,511 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:01:39,657 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:02:39,787 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:03:39,908 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:04:40,037 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:05:40,171 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:06:40,312 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:07:40,460 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:08:40,625 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:09:40,799 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:10:40,926 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:11:41,073 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:12:41,234 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:13:41,389 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:14:41,560 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:15:41,689 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:16:41,856 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:17:42,002 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:18:42,152 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:19:42,314 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:20:42,449 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:21:42,572 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:22:42,720 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:23:42,863 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:24:42,996 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:25:43,151 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:26:43,275 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:27:43,426 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:28:43,569 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:29:43,701 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:30:43,840 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:31:43,989 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:32:44,145 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:33:44,291 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:34:44,412 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:35:44,557 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:36:44,683 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:37:44,830 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:38:44,968 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:39:45,118 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:40:45,241 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:41:45,389 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:42:45,515 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:43:45,640 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:44:45,774 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:45:45,887 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:46:45,996 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:47:46,130 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:48:46,272 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:49:46,404 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:50:46,510 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:51:46,619 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:52:46,758 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:53:46,879 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 13:54:47,016 [INFO] Not trading right now: Max trades per day (20) reached
+2026-10-23 14:07:06,877 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-23 14:07:06,877 [INFO] DRY_RUN = True
+2026-10-23 14:07:06,877 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-23 14:16:09,244 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22550CE on NFO @ ~183.60 (Spot: 22561.60, SL: 181.3, Target: 198.6)
+2026-10-23 14:16:10,218 [INFO] Entered NIFTY26OCT22550CE (CALL) 1 lot(s) (65 qty) @ ₹183.60 | SL=₹181.30 Target=₹198.60 | Spot: 22561.60 | ADX: 25.86 (FVG bullish 22558.55-22558.85)
+2026-10-23 14:16:20,330 [INFO] [10s check] Trailing stop moved to ₹183.10 for open NIFTY26OCT22550CE (LTP: ₹185.40)
+2026-10-23 14:16:30,404 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22550CE (CALL) @ ₹182.75 (STOP_LOSS) | Entry: ₹183.60 | SL: ₹183.10
+2026-10-23 14:16:30,508 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22550CE on NFO @ ~182.75 (Exit LTP: 182.75)
+2026-10-23 14:16:31,480 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-55.25 (-0.85 pts on 65 qty)
+2026-10-23 14:30:13,404 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22550PE on NFO @ ~116.10 (Spot: 22545.20, SL: 112.55, Target: 131.1)
+2026-10-23 14:30:14,456 [INFO] Entered NIFTY26OCT22550PE (PUT) 1 lot(s) (65 qty) @ ₹116.10 | SL=₹112.55 Target=₹131.10 | Spot: 22545.20 | ADX: 17.75 (FVG bearish 22545.35-22546.90)
+2026-10-23 14:30:24,548 [INFO] [10s check] Trailing stop moved to ₹114.30 for open NIFTY26OCT22550PE (LTP: ₹117.85)
+2026-10-23 14:30:44,685 [INFO] [10s check] Trailing stop moved to ₹114.50 for open NIFTY26OCT22550PE (LTP: ₹118.05)
+2026-10-23 14:31:45,102 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22550PE (PUT) @ ₹114.45 (STOP_LOSS) | Entry: ₹116.10 | SL: ₹114.50
+2026-10-23 14:31:45,234 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22550PE on NFO @ ~114.25 (Exit LTP: 114.25)
+2026-10-23 14:31:46,268 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-107.25 (-1.65 pts on 65 qty)
+2026-10-23 14:46:18,558 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22500CE on NFO @ ~163.05 (Spot: 22494.20, SL: 159.1, Target: 178.05)
+2026-10-23 14:46:19,463 [INFO] Entered NIFTY26OCT22500CE (CALL) 1 lot(s) (65 qty) @ ₹163.05 | SL=₹159.10 Target=₹178.05 | Spot: 22494.20 | ADX: 27.78 (FVG bullish 22484.90-22486.85)
+2026-10-23 14:47:09,783 [INFO] [10s check] Trailing stop moved to ₹163.05 for open NIFTY26OCT22500CE (LTP: ₹167.00)
+2026-10-23 14:47:19,863 [INFO] [10s check] Trailing stop moved to ₹166.00 for open NIFTY26OCT22500CE (LTP: ₹169.95)
+2026-10-23 14:48:20,318 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22500CE (CALL) @ ₹165.75 (TRAILING_STOP) | Entry: ₹163.05 | SL: ₹166.00
+2026-10-23 14:48:20,413 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22500CE on NFO @ ~166.30 (Exit LTP: 166.30)
+2026-10-23 14:48:21,416 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹175.50 (+2.70 pts on 65 qty)
+2026-10-23 14:53:22,239 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22500CE on NFO @ ~160.60 (Spot: 22487.10, SL: 150.6, Target: 175.6)
+2026-10-23 14:53:23,336 [INFO] Entered NIFTY26OCT22500CE (CALL) 1 lot(s) (65 qty) @ ₹160.60 | SL=₹150.60 Target=₹175.60 | Spot: 22487.10 | ADX: 23.98 (FVG bullish 22453.55-22485.00)
+2026-10-23 14:56:04,571 [INFO] [10s check] Trailing stop moved to ₹151.30 for open NIFTY26OCT22500CE (LTP: ₹161.30)
+2026-10-23 14:56:44,939 [INFO] [10s check] Trailing stop moved to ₹153.15 for open NIFTY26OCT22500CE (LTP: ₹163.15)
+2026-10-23 14:57:25,201 [INFO] [10s check] Trailing stop moved to ₹153.90 for open NIFTY26OCT22500CE (LTP: ₹163.90)
+2026-10-23 14:57:35,401 [INFO] [10s check] Trailing stop moved to ₹157.85 for open NIFTY26OCT22500CE (LTP: ₹167.85)
+2026-10-23 14:58:05,629 [INFO] [10s check] Trailing stop moved to ₹159.00 for open NIFTY26OCT22500CE (LTP: ₹169.00)
+2026-10-23 14:58:25,765 [INFO] [10s check] Trailing stop moved to ₹160.55 for open NIFTY26OCT22500CE (LTP: ₹170.55)
+2026-10-23 14:58:35,933 [INFO] [10s check] Trailing stop moved to ₹161.00 for open NIFTY26OCT22500CE (LTP: ₹171.00)
+2026-10-23 14:58:56,052 [INFO] [10s check] Trailing stop moved to ₹161.60 for open NIFTY26OCT22500CE (LTP: ₹171.60)
+2026-10-23 14:59:16,228 [INFO] [10s check] Trailing stop moved to ₹162.05 for open NIFTY26OCT22500CE (LTP: ₹172.05)
+2026-10-23 15:00:37,108 [INFO] [10s check] Trailing stop moved to ₹164.65 for open NIFTY26OCT22500CE (LTP: ₹174.65)
+2026-10-23 15:00:47,186 [INFO] [10s check] TARGET achieved @ ₹180.55 (Target: ₹175.60)! Full exit: Sold 65 qty of NIFTY26OCT22500CE (CALL) | Entry: ₹160.60
+2026-10-23 15:00:47,321 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22500CE on NFO @ ~180.55 (Exit LTP: 180.55)
+2026-10-23 15:00:48,316 [INFO] Trade closed (TARGET). Realized P&L: ₹1296.75 (+19.95 pts on 65 qty)
+2026-10-23 15:01:28,443 [INFO] Not trading right now: Outside configured trading hours
+2026-10-23 15:02:28,557 [INFO] Not trading right now: Outside configured trading hours
+2026-10-23 15:03:28,709 [INFO] Not trading right now: Outside configured trading hours
+2026-10-23 15:04:28,872 [INFO] Not trading right now: Outside configured trading hours
+2026-10-26 09:34:00,757 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-26 09:34:00,757 [INFO] DRY_RUN = True
+2026-10-26 09:34:00,757 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-26 09:43:02,355 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22450CE on NFO @ ~157.65 (Spot: 22443.00, SL: 147.65, Target: 172.65)
+2026-10-26 09:43:03,722 [INFO] Entered NIFTY26OCT22450CE (CALL) 1 lot(s) (65 qty) @ ₹157.65 | SL=₹147.65 Target=₹172.65 | Spot: 22443.00 | ADX: 18.67 (FVG bullish 22419.05-22430.75)
+2026-10-26 09:43:13,766 [INFO] [10s check] Trailing stop moved to ₹158.30 for open NIFTY26OCT22450CE (LTP: ₹168.30)
+2026-10-26 09:43:23,820 [INFO] [10s check] TARGET achieved @ ₹173.45 (Target: ₹172.65)! Full exit: Sold 65 qty of NIFTY26OCT22450CE (CALL) | Entry: ₹157.65
+2026-10-26 09:43:23,941 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22450CE on NFO @ ~173.45 (Exit LTP: 173.45)
+2026-10-26 09:43:24,918 [INFO] Trade closed (TARGET). Realized P&L: ₹1027.00 (+15.80 pts on 65 qty)
+2026-10-26 09:50:05,558 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22450CE on NFO @ ~163.95 (Spot: 22458.80, SL: 153.95, Target: 178.95)
+2026-10-26 09:50:06,701 [INFO] Entered NIFTY26OCT22450CE (CALL) 1 lot(s) (65 qty) @ ₹163.95 | SL=₹153.95 Target=₹178.95 | Spot: 22458.80 | ADX: 21.11 (FVG bullish 22446.50-22454.95)
+2026-10-26 09:50:26,796 [INFO] [10s check] Trailing stop moved to ₹154.95 for open NIFTY26OCT22450CE (LTP: ₹164.95)
+2026-10-26 09:50:46,918 [INFO] [10s check] Trailing stop moved to ₹159.40 for open NIFTY26OCT22450CE (LTP: ₹169.40)
+2026-10-26 09:50:56,966 [INFO] [10s check] Trailing stop moved to ₹162.90 for open NIFTY26OCT22450CE (LTP: ₹172.90)
+2026-10-26 09:51:27,182 [INFO] [10s check] Trailing stop moved to ₹164.70 for open NIFTY26OCT22450CE (LTP: ₹174.70)
+2026-10-26 09:51:37,247 [INFO] [10s check] Trailing stop moved to ₹165.80 for open NIFTY26OCT22450CE (LTP: ₹175.80)
+2026-10-26 09:51:47,311 [INFO] [10s check] TARGET achieved @ ₹180.65 (Target: ₹178.95)! Full exit: Sold 65 qty of NIFTY26OCT22450CE (CALL) | Entry: ₹163.95
+2026-10-26 09:51:47,408 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22450CE on NFO @ ~180.65 (Exit LTP: 180.65)
+2026-10-26 09:51:48,325 [INFO] Trade closed (TARGET). Realized P&L: ₹1085.50 (+16.70 pts on 65 qty)
+2026-10-26 09:56:08,818 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22550CE on NFO @ ~182.05 (Spot: 22572.40, SL: 172.05, Target: 197.05)
+2026-10-26 09:56:09,703 [INFO] Entered NIFTY26OCT22550CE (CALL) 1 lot(s) (65 qty) @ ₹182.05 | SL=₹172.05 Target=₹197.05 | Spot: 22572.40 | ADX: 30.70 (FVG bullish 22551.45-22565.25)
+2026-10-26 09:56:29,810 [INFO] [10s check] Trailing stop moved to ₹174.60 for open NIFTY26OCT22550CE (LTP: ₹184.60)
+2026-10-26 09:56:49,907 [INFO] [10s check] TARGET achieved @ ₹199.55 (Target: ₹197.05)! Full exit: Sold 65 qty of NIFTY26OCT22550CE (CALL) | Entry: ₹182.05
+2026-10-26 09:56:49,997 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22550CE on NFO @ ~199.55 (Exit LTP: 199.55)
+2026-10-26 09:56:50,894 [INFO] Trade closed (TARGET). Realized P&L: ₹1137.50 (+17.50 pts on 65 qty)
+2026-10-26 10:07:12,032 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22700CE on NFO @ ~167.75 (Spot: 22681.75, SL: 157.75, Target: 182.75)
+2026-10-26 10:07:12,994 [INFO] Entered NIFTY26OCT22700CE (CALL) 1 lot(s) (65 qty) @ ₹167.75 | SL=₹157.75 Target=₹182.75 | Spot: 22681.75 | ADX: 44.37 (FVG bullish 22639.65-22674.70)
+2026-10-26 10:07:33,113 [INFO] [10s check] Trailing stop moved to ₹159.10 for open NIFTY26OCT22700CE (LTP: ₹169.10)
+2026-10-26 10:07:53,238 [INFO] [10s check] Trailing stop moved to ₹159.60 for open NIFTY26OCT22700CE (LTP: ₹169.60)
+2026-10-26 10:08:03,301 [INFO] [10s check] Trailing stop moved to ₹161.20 for open NIFTY26OCT22700CE (LTP: ₹171.20)
+2026-10-26 10:08:23,498 [INFO] [10s check] Trailing stop moved to ₹163.60 for open NIFTY26OCT22700CE (LTP: ₹173.60)
+2026-10-26 10:08:43,598 [INFO] [10s check] Trailing stop moved to ₹165.80 for open NIFTY26OCT22700CE (LTP: ₹175.80)
+2026-10-26 10:09:33,914 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700CE (CALL) @ ₹164.00 (STOP_LOSS) | Entry: ₹167.75 | SL: ₹165.80
+2026-10-26 10:09:34,008 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22700CE on NFO @ ~164.90 (Exit LTP: 164.90)
+2026-10-26 10:09:35,040 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-243.75 (-3.75 pts on 65 qty)
+2026-10-26 10:13:15,469 [INFO] [DRY RUN / PAPER] Placing CE BUY order: 65 x NIFTY26OCT22700CE on NFO @ ~157.60 (Spot: 22688.95, SL: 147.6, Target: 172.6)
+2026-10-26 10:13:16,781 [INFO] Entered NIFTY26OCT22700CE (CALL) 1 lot(s) (65 qty) @ ₹157.60 | SL=₹147.60 Target=₹172.60 | Spot: 22688.95 | ADX: 45.36 (FVG bullish 22675.55-22686.40)
+2026-10-26 10:14:07,082 [INFO] [10s check] Trailing stop moved to ₹147.90 for open NIFTY26OCT22700CE (LTP: ₹157.90)
+2026-10-26 10:14:27,273 [INFO] [10s check] Trailing stop moved to ₹149.30 for open NIFTY26OCT22700CE (LTP: ₹159.30)
+2026-10-26 10:14:37,324 [INFO] [10s check] Trailing stop moved to ₹150.05 for open NIFTY26OCT22700CE (LTP: ₹160.05)
+2026-10-26 10:14:47,378 [INFO] [10s check] Trailing stop moved to ₹154.15 for open NIFTY26OCT22700CE (LTP: ₹164.15)
+2026-10-26 10:14:57,436 [INFO] [10s check] Trailing stop moved to ₹155.65 for open NIFTY26OCT22700CE (LTP: ₹165.65)
+2026-10-26 10:15:27,659 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700CE (CALL) @ ₹154.60 (STOP_LOSS) | Entry: ₹157.60 | SL: ₹155.65
+2026-10-26 10:15:27,762 [INFO] [DRY RUN / PAPER] Placing CE SELL order: 65 x NIFTY26OCT22700CE on NFO @ ~154.60 (Exit LTP: 154.60)
+2026-10-26 10:15:29,022 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-195.00 (-3.00 pts on 65 qty)
+2026-10-26 10:26:20,003 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22650PE on NFO @ ~91.75 (Spot: 22658.20, SL: 87.85, Target: 106.75)
+2026-10-26 10:26:21,112 [INFO] Entered NIFTY26OCT22650PE (PUT) 1 lot(s) (65 qty) @ ₹91.75 | SL=₹87.85 Target=₹106.75 | Spot: 22658.20 | ADX: 27.55 (FVG bearish 22661.65-22663.55)
+2026-10-26 10:26:31,168 [INFO] [10s check] Trailing stop moved to ₹92.45 for open NIFTY26OCT22650PE (LTP: ₹96.35)
+2026-10-26 10:26:41,226 [INFO] [10s check] Trailing stop moved to ₹94.40 for open NIFTY26OCT22650PE (LTP: ₹98.30)
+2026-10-26 10:26:51,273 [INFO] [10s check] Trailing stop moved to ₹95.55 for open NIFTY26OCT22650PE (LTP: ₹99.45)
+2026-10-26 10:27:11,408 [INFO] [10s check] Trailing stop moved to ₹97.90 for open NIFTY26OCT22650PE (LTP: ₹101.80)
+2026-10-26 10:27:41,649 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22650PE (PUT) @ ₹93.90 (TRAILING_STOP) | Entry: ₹91.75 | SL: ₹97.90
+2026-10-26 10:27:41,743 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22650PE on NFO @ ~93.90 (Exit LTP: 93.90)
+2026-10-26 10:27:43,023 [INFO] Trade closed (TRAILING_STOP). Realized P&L: ₹139.75 (+2.15 pts on 65 qty)
+2026-10-26 10:28:23,113 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:29:23,200 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:30:23,318 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:31:23,435 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:32:23,558 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:33:23,667 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:34:23,803 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:35:23,921 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:36:24,030 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:37:24,104 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:38:24,220 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:39:24,351 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:40:24,446 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:41:24,564 [INFO] Not trading right now: Max trades per day (6) reached
+2026-10-26 10:44:04,894 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-26 10:44:04,895 [INFO] DRY_RUN = True
+2026-10-26 10:44:04,895 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-26 10:44:05,358 [INFO] Not trading right now: Daily Target of Rs.1000 achieved
+2026-10-26 14:37:59,577 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-26 14:37:59,577 [INFO] DRY_RUN = True
+2026-10-26 14:37:59,577 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-26 14:38:06,024 [INFO] Starting NIFTY FVG rejection strategy (v3)
+2026-10-26 14:38:06,024 [INFO] DRY_RUN = True
+2026-10-26 14:38:06,024 [INFO] Entry/candle cycle: every 60s | Exit check cycle: every 10s
+2026-10-26 14:40:06,680 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~79.15 (Spot: 22686.40, SL: 75.65, Target: 94.15)
+2026-10-26 14:40:07,632 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹79.15 | SL=₹75.65 Target=₹94.15 | Spot: 22686.40 | ADX: 14.31 (FVG bearish 22688.50-22690.00)
+2026-10-26 14:40:37,784 [INFO] [10s check] Trailing stop moved to ₹77.05 for open NIFTY26OCT22700PE (LTP: ₹80.55)
+2026-10-26 14:42:08,353 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700PE (PUT) @ ₹75.30 (STOP_LOSS) | Entry: ₹79.15 | SL: ₹77.05
+2026-10-26 14:42:08,447 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~75.30 (Exit LTP: 75.30)
+2026-10-26 14:42:09,361 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-250.25 (-3.85 pts on 65 qty)
+2026-10-26 14:44:09,817 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~80.45 (Spot: 22687.05, SL: 78.15, Target: 95.45)
+2026-10-26 14:44:10,718 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹80.45 | SL=₹78.15 Target=₹95.45 | Spot: 22687.05 | ADX: 12.25 (FVG bearish 22691.85-22692.15)
+2026-10-26 14:44:50,982 [INFO] [10s check] Trailing stop moved to ₹78.75 for open NIFTY26OCT22700PE (LTP: ₹81.05)
+2026-10-26 14:45:31,290 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700PE (PUT) @ ₹77.80 (STOP_LOSS) | Entry: ₹80.45 | SL: ₹78.75
+2026-10-26 14:45:31,405 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~77.80 (Exit LTP: 77.80)
+2026-10-26 14:45:32,250 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-172.25 (-2.65 pts on 65 qty)
+2026-10-26 14:51:13,140 [INFO] [DRY RUN / PAPER] Placing PE BUY order: 65 x NIFTY26OCT22700PE on NFO @ ~75.75 (Spot: 22701.00, SL: 72.9, Target: 90.75)
+2026-10-26 14:51:14,134 [INFO] Entered NIFTY26OCT22700PE (PUT) 1 lot(s) (65 qty) @ ₹75.75 | SL=₹72.90 Target=₹90.75 | Spot: 22701.00 | ADX: 17.39 (FVG bearish 22703.45-22704.30)
+2026-10-26 14:51:54,367 [INFO] [10s check] Trailing stop moved to ₹73.05 for open NIFTY26OCT22700PE (LTP: ₹75.90)
+2026-10-26 14:52:14,471 [INFO] [10s check] Exiting ALL 65 qty of NIFTY26OCT22700PE (PUT) @ ₹72.65 (STOP_LOSS) | Entry: ₹75.75 | SL: ₹73.05
+2026-10-26 14:52:14,575 [INFO] [DRY RUN / PAPER] Placing PE SELL order: 65 x NIFTY26OCT22700PE on NFO @ ~72.65 (Exit LTP: 72.65)
+2026-10-26 14:52:15,470 [INFO] Trade closed (STOP_LOSS). Realized P&L: ₹-201.50 (-3.10 pts on 65 qty)
+2026-10-26 15:00:16,699 [INFO] Not trading right now: Outside configured trading hours

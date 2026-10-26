@@ -31,6 +31,7 @@ import config
 import risk
 import executor
 from auth import get_kite_client
+from fvg import detect_fvgs
 from strategy_v3 import DayFVGState, check_entry, compute_exit_levels, update_trailing_stop, compute_adx
 
 logging.basicConfig(
@@ -191,6 +192,7 @@ def main():
 
     state = DayFVGState()
     last_processed_idx = -1     # highest candle index already fed into state.update()
+    traded_fvg_keys = set()     # set of (formed_idx, direction, top, bottom) already traded today
     current_day = dt.date.today()
 
     position = None             # dict: side, tradingsymbol, entry_price, stop_loss, target, ...
@@ -211,6 +213,7 @@ def main():
                 logger.info(f"New day detected ({today}). Resetting FVG state.")
                 state = DayFVGState()
                 last_processed_idx = -1
+                traded_fvg_keys.clear()
                 current_day = today
                 trades_today = 0
                 realized_pnl_today = 0.0
@@ -242,7 +245,11 @@ def main():
 
             # ---- SLOW PATH: candle refresh + entry logic, only once per POLL_SECONDS ----
             now_ts = time.time()
-            #print("now_ts", now_ts)
+            dt_time = dt.datetime.now()
+            #print("dt_time.second", dt_time.second, "dt_time.minute", dt_time.minute)
+            #print("now_ts:", now_ts, "last_candle_poll:", last_candle_poll, "config.POLL_SECONDS:", config.POLL_SECONDS)
+            #print("now:", now_ts - last_candle_poll)
+            #if dt_time.second <= 1 and dt_time.minute % config.POLL_SECONDS == 0:
             if now_ts - last_candle_poll >= config.POLL_SECONDS:
                 last_candle_poll = now_ts
 
@@ -260,14 +267,22 @@ def main():
                         allowed, why = risk.can_open_new_position(realized_pnl_today, trades_today)
                         if not allowed:
                             logger.info(f"Not trading right now: {why}")
+                            break
                         else:
                             latest = candles.iloc[-1]
                             candle = {
                                 "open": latest["open"], "high": latest["high"],
                                 "low": latest["low"], "close": latest["close"],
                             }
-                            tracked = state.classify()
-                            side, fvg = check_entry(candle, tracked, require_full_body=True)
+                            # Detect all FVGs today and filter for active (unmitigated, untraded)
+                            all_fvgs = detect_fvgs(candles)
+                            for f in all_fvgs:
+                                f_key = (f["formed_idx"], f["direction"], round(f["top"], 2), round(f["bottom"], 2))
+                                f["traded"] = f_key in traded_fvg_keys
+
+                            active_fvgs = [f for f in all_fvgs if not f.get("mitigated", False) and not f.get("traded", False)]
+
+                            side, fvg = check_entry(candle, active_fvgs, require_full_body=True)
                             if side is not None:
                                 adx_enabled = getattr(config, "FVG_ADX_ENABLED", True)
                                 adx_period = getattr(config, "FVG_ADX_PERIOD", getattr(config, "ADX_PERIOD", 14))
@@ -276,16 +291,18 @@ def main():
                                 adx_series = compute_adx(candles, period=adx_period)
                                 current_adx = float(adx_series.iloc[-1]) if (not adx_series.empty and not pd.isna(adx_series.iloc[-1])) else 0.0
                                 print("current_adx", current_adx)
-                                print("tracked", tracked)
+                                print("active_fvgs count", len(active_fvgs))
                                 print("side", side)
                                 print("fvg", fvg)
-                                if adx_enabled and adx_series.iloc[-1]>adx_threshold:
+                                if adx_enabled and current_adx < adx_threshold:
                                     logger.info(
                                         f"FVG {side} rejection signal detected, but ADX is {current_adx:.2f} (< {adx_threshold}). "
                                         f"Skipping entry (trend filter not met)."
                                     )
                                 else:
                                     fvg["traded"] = True
+                                    f_key = (fvg["formed_idx"], fvg["direction"], round(fvg["top"], 2), round(fvg["bottom"], 2))
+                                    traded_fvg_keys.add(f_key)
                                     spot_entry_price = candle["close"]
                                     open_txn = "BUY" if side == "CALL" else "SELL"
                                     result = executor.place_order(
